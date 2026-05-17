@@ -1,0 +1,395 @@
+/* ─── Deal Cards ─────────────────────────────────────────────────────────────── */
+.card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(8, 27, 27, 0.12);
+}
+
+.card__top-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.card__brand {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+
+.card__category-badge {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(150, 205, 176, 0.2);
+  color: var(--color-mid);
+  white-space: nowrap;
+}
+
+.card__verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.7rem;
+  color: var(--color-light);
+}
+
+.card__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-text-dark);
+  line-height: 1.3;
+}
+
+.card__pricing {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.card__deal-price {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: var(--color-dark);
+}
+
+.card__normal-price {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-decoration: line-through;
+}
+
+.card__saving-badge {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  background: rgba(193, 141, 82, 0.15);
+  color: var(--color-gold);
+}
+
+.card__tip {
+  background: rgba(150, 205, 176, 0.12);
+  border-left: 3px solid var(--color-mint);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-xs) var(--space-sm);
+}
+
+.card__tip-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-light);
+  margin-bottom: 2px;
+}
+
+.card__tip-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text-mid);
+  line-height: 1.5;
+}
+
+.card__bottom-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: var(--space-xs);
+  border-top: 1px solid rgba(90, 143, 118, 0.1);
+}
+
+.card__expiry {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.card__expiry--soon {
+  color: var(--color-gold);
+  font-weight: 500;
+}
+
+.card__view-link {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  transition: color 200ms ease;
+}
+
+.card__view-link:hover {
+  color: var(--color-gold);
+}
+
+.card__expiring-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: var(--color-gold);
+  color: var(--color-dark);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-bottom-left-radius: var(--radius-sm);
+}
+
+/* ─── Buttons ────────────────────────────────────────────────────────────────── */
+.btn {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: var(--radius-sm);
+  padding: 14px 28px;
+  transition: all 200ms ease;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  line-height: 1;
+}
+
+.btn--primary {
+  background: var(--color-gold);
+  color: var(--color-dark);
+}
+
+.btn--primary:hover {
+  background: var(--color-gold-light);
+}
+
+.btn--outline {
+  background: transparent;
+  border: 2px solid var(--color-gold);
+  color: var(--color-gold);
+}
+
+.btn--outline:hover {
+  background: rgba(193, 141, 82, 0.1);
+}
+
+.btn--mint {
+  background: var(--color-mint);
+  color: var(--color-dark);
+}
+
+.btn--mint:hover {
+  background: #a8d9be;
+}
+
+.btn--sm {
+  padding: 10px 20px;
+  font-size: 0.875rem;
+}
+
+/* ─── Filter Bar ─────────────────────────────────────────────────────────────── */
+.filter-bar {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.filter-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--color-light);
+  color: var(--color-text-mid);
+  background: transparent;
+  transition: all 200ms ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.filter-btn:hover {
+  background: rgba(150, 205, 176, 0.2);
+}
+
+.filter-btn--active {
+  background: var(--color-mid);
+  border-color: var(--color-mid);
+  color: var(--color-text-light);
+}
+
+/* ─── Section Headers ────────────────────────────────────────────────────────── */
+.section-header {
+  margin-bottom: var(--space-xl);
+}
+
+.section-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-light);
+  margin-bottom: var(--space-sm);
+  display: block;
+}
+
+.section-eyebrow--gold { color: var(--color-gold); }
+.section-eyebrow--mint { color: var(--color-mint); }
+
+.section-subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: var(--color-text-mid);
+  max-width: 560px;
+  margin-top: var(--space-sm);
+}
+
+.section--dark .section-subtitle,
+.section--mid .section-subtitle {
+  color: var(--color-mint);
+}
+
+/* ─── Accordions ─────────────────────────────────────────────────────────────── */
+.accordion {
+  border: 1px solid rgba(90, 143, 118, 0.3);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-bottom: var(--space-sm);
+}
+
+.accordion__trigger {
+  width: 100%;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  transition: background 200ms ease;
+}
+
+.accordion__trigger:hover {
+  background: rgba(90, 143, 118, 0.08);
+}
+
+.accordion__icon {
+  flex-shrink: 0;
+  transition: transform 300ms ease;
+}
+
+.accordion--open .accordion__icon {
+  transform: rotate(180deg);
+}
+
+.accordion__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 400ms ease;
+}
+
+.accordion--open .accordion__body {
+  max-height: 2000px;
+}
+
+.accordion__content {
+  padding: var(--space-md) var(--space-lg) var(--space-lg);
+}
+
+/* ─── Form Elements ──────────────────────────────────────────────────────────── */
+.input {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  padding: 14px 20px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-light);
+  background: var(--color-dark);
+  color: var(--color-text-light);
+  width: 100%;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.input::placeholder {
+  color: var(--color-text-muted);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(193, 141, 82, 0.15);
+}
+
+/* ─── Badges ─────────────────────────────────────────────────────────────────── */
+.badge {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 3px 10px;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.badge--gold {
+  background: rgba(193, 141, 82, 0.15);
+  color: var(--color-gold);
+}
+
+.badge--mint {
+  background: rgba(150, 205, 176, 0.2);
+  color: var(--color-mid);
+}
+
+.badge--dark {
+  background: var(--color-mid);
+  color: var(--color-mint);
+}

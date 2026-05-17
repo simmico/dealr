@@ -1,0 +1,312 @@
+/* Page-specific styles. Add styles here that only apply to one page. */
+/* Prefix all selectors with the page class added to <body>           */
+/* Example: body.page-subscriptions .vitality-calculator { }          */
+
+/* ═══════════════════════════════════════════════════════════════════
+   PAGE: HOME  (body.page-home)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── Hero ───────────────────────────────────────────────────────────────────── */
+body.page-home .hero {
+  height: 100svh;
+  background: var(--color-dark);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+body.page-home .hero__bg-art {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  height: 75%;
+  pointer-events: none;
+}
+
+body.page-home .hero__content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: var(--nav-height) 40px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body.page-home .hero__text {
+  max-width: 520px;
+  padding: var(--space-xl) 0;
+}
+
+body.page-home .hero__eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-mint);
+  display: block;
+  margin-bottom: 20px;
+}
+
+body.page-home .hero__h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 4.5rem;
+  color: var(--color-text-light);
+  line-height: 1.05;
+}
+
+body.page-home .hero__h1 span {
+  color: var(--color-gold);
+}
+
+body.page-home .hero__subheading {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1.05rem;
+  color: var(--color-mint);
+  max-width: 460px;
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+body.page-home .hero__cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 36px;
+}
+
+body.page-home .hero__stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: 48px;
+}
+
+body.page-home .hero__stat {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+body.page-home .hero__stat-divider {
+  width: 1px;
+  height: 16px;
+  background: rgba(90, 143, 118, 0.3);
+  flex-shrink: 0;
+}
+
+body.page-home .scroll-indicator {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: var(--color-gold);
+  transition: opacity 400ms ease;
+  pointer-events: none;
+}
+
+body.page-home .scroll-indicator svg {
+  animation: bounce 1.8s ease-in-out infinite;
+}
+
+@media (max-width: 768px) {
+  body.page-home .hero__content {
+    padding: var(--nav-height) 20px 0;
+    justify-content: center;
+  }
+
+  body.page-home .hero__text {
+    text-align: center;
+    padding: var(--space-lg) 0;
+  }
+
+  body.page-home .hero__h1 {
+    font-size: 3rem;
+  }
+
+  body.page-home .hero__subheading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body.page-home .hero__cta {
+    justify-content: center;
+  }
+
+  body.page-home .hero__stats {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  body.page-home .hero__stat-divider {
+    display: none;
+  }
+}
+
+/* ─── Featured Deals ─────────────────────────────────────────────────────────── */
+body.page-home .filter-bar {
+  margin-bottom: 40px;
+}
+
+body.page-home .featured-deals__more {
+  margin-top: 40px;
+  text-align: center;
+}
+
+body.page-home .featured-deals__see-all {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-light);
+  transition: color 200ms ease;
+}
+
+body.page-home .featured-deals__see-all:hover {
+  color: var(--color-gold);
+}
+
+/* ─── How It Works ───────────────────────────────────────────────────────────── */
+body.page-home .how-it-works__grid {
+  margin-top: 60px;
+}
+
+body.page-home .how-it-works__item {
+  padding: var(--space-sm) 0;
+}
+
+body.page-home .how-it-works__number {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 5rem;
+  color: var(--color-gold);
+  opacity: 0.35;
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+body.page-home .how-it-works__item h3 {
+  color: var(--color-text-light);
+  margin-bottom: var(--space-sm);
+}
+
+body.page-home .how-it-works__item p {
+  font-size: 0.95rem;
+  color: var(--color-mint);
+  line-height: 1.7;
+}
+
+/* ─── Subscriptions Teaser ───────────────────────────────────────────────────── */
+body.page-home .subs-teaser__inner {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+body.page-home .subs-teaser__text h2 {
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+body.page-home .subs-teaser__text > p {
+  color: var(--color-text-mid);
+  line-height: 1.7;
+}
+
+body.page-home .subs-teaser__text .btn {
+  margin-top: 32px;
+}
+
+body.page-home .subs-teaser__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.page-home .card-stack {
+  width: 100%;
+  max-width: 380px;
+  overflow: visible;
+}
+
+@media (max-width: 768px) {
+  body.page-home .subs-teaser__inner {
+    grid-template-columns: 1fr;
+  }
+
+  body.page-home .subs-teaser__visual {
+    order: -1;
+  }
+}
+
+/* ─── Banking Teaser ─────────────────────────────────────────────────────────── */
+body.page-home .banking-teaser {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20'%3E%3Cpath d='M0 20L20 0' stroke='%23203B37' stroke-width='1' opacity='0.4'/%3E%3C/svg%3E");
+}
+
+body.page-home .banking-teaser__inner {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.page-home .banking-teaser__inner h2 {
+  color: var(--color-text-light);
+}
+
+body.page-home .banking-teaser__body {
+  color: var(--color-mint);
+  margin-top: 16px;
+  line-height: 1.7;
+}
+
+body.page-home .banking-teaser__inner .btn {
+  margin-top: 32px;
+}
+
+/* ─── Mailing List ───────────────────────────────────────────────────────────── */
+body.page-home .mailing__inner {
+  max-width: 520px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.page-home .mailing__inner h2 {
+  color: var(--color-text-light);
+}
+
+body.page-home .mailing__body {
+  color: var(--color-mint);
+  margin-top: 12px;
+  line-height: 1.7;
+}
+
+body.page-home .mailing__form {
+  display: flex;
+  gap: var(--space-sm);
+  margin-top: 32px;
+}
+
+body.page-home .mailing__form .input {
+  flex: 1;
+}
+
+body.page-home .mailing__note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 12px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  body.page-home .mailing__form {
+    flex-direction: column;
+  }
+}

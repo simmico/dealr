@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dealr | South Africa's best deals, promotions and benefits</title>
+  <meta name="description" content="Curated SA deals from Woolworths, Checkers, Krispy Kreme and more. Promotions, birthday perks, and subscription benefits updated daily.">
+  <meta name="theme-color" content="#081B1B">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Dealr | South Africa's smartest deals platform">
+  <meta property="og:description" content="Curated promotions, loyalty benefits, and subscription perks for South Africans.">
+  <meta property="og:url" content="https://dealr.simmico.co.za/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/pages.css">
+</head>
+<body class="page-home">
+
+  <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__wordmark">Dealr</a>
+      <ul class="nav__links" role="list">
+        <li><a href="deals.html" class="nav__link">Deals</a></li>
+        <li><a href="birthdays.html" class="nav__link">Birthdays</a></li>
+        <li><a href="subscriptions.html" class="nav__link">Subscriptions</a></li>
+        <li><a href="banking.html" class="nav__link">Banking</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <ul class="nav__mobile-links" role="list">
+        <li><a href="deals.html" class="nav__mobile-link">Deals</a></li>
+        <li><a href="birthdays.html" class="nav__mobile-link">Birthdays</a></li>
+        <li><a href="subscriptions.html" class="nav__mobile-link">Subscriptions</a></li>
+        <li><a href="banking.html" class="nav__mobile-link">Banking</a></li>
+        <li><a href="about.html" class="nav__mobile-link">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ── Gold Thread (fixed left accent) ────────────────────────────────────── -->
+  <div class="gold-thread" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2" height="100%">
+      <line x1="1" y1="15%" x2="1" y2="85%" stroke="#C18D52" stroke-width="1" opacity="0.35"/>
+    </svg>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 1 — HERO
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Welcome to Dealr">
+
+      <!-- Organic paint-stroke background art -->
+      <div class="hero__bg-art" aria-hidden="true">
+        <svg
+          viewBox="0 0 900 700"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMinYMax meet"
+          width="100%"
+          height="100%"
+        >
+          <!-- Shape 1: organic filled blob in mid-green -->
+          <path
+            d="M 0 700
+               C 0 530 40 390 110 290
+               C 180 190 300 130 460 115
+               C 610 100 750 160 840 260
+               C 910 340 930 450 900 570
+               C 875 660 820 710 760 700 Z"
+            fill="#203B37"
+          />
+          <!-- Shape 2: gold thread tracing the upper edge -->
+          <path
+            class="hero__gold-stroke"
+            d="M 110 290
+               C 180 190 300 130 460 115
+               C 610 100 750 160 840 260
+               C 910 340 930 450 900 570"
+            fill="none"
+            stroke="#C18D52"
+            stroke-width="2"
+            pathLength="1"
+            stroke-dasharray="1"
+            stroke-dashoffset="1"
+          />
+        </svg>
+      </div>
+
+      <!-- Hero text content -->
+      <div class="hero__content">
+        <div class="hero__text">
+          <span class="hero__eyebrow">South Africa's smartest deals platform</span>
+
+          <h1 class="hero__h1">
+            Know the<br>
+            <span>deal.</span>
+          </h1>
+
+          <p class="hero__subheading">
+            Curated promotions, loyalty benefits, and subscription perks
+            that actually matter to South Africans.
+          </p>
+
+          <div class="hero__cta">
+            <a href="deals.html" class="btn btn--primary">Explore deals</a>
+            <a href="#how-it-works" class="btn btn--outline">How it works</a>
+          </div>
+
+          <div class="hero__stats" aria-label="Platform stats">
+            <span class="hero__stat">247 active deals</span>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <span class="hero__stat">6 categories</span>
+            <div class="hero__stat-divider" aria-hidden="true"></div>
+            <span class="hero__stat">Updated daily</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" id="scroll-indicator" aria-hidden="true">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </div>
+
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 2 — FEATURED DEALS
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--beige" id="featured-deals">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Today's best</span>
+          <h2>Deals worth knowing about</h2>
+          <p class="section-subtitle">Verified promotions from brands you trust</p>
+        </header>
+
+        <div
+          class="filter-bar"
+          id="category-filter"
+          role="group"
+          aria-label="Filter deals by category"
+        >
+          <button class="filter-btn filter-btn--active" data-category="all">All</button>
+          <button class="filter-btn" data-category="grocery">Groceries</button>
+          <button class="filter-btn" data-category="restaurant">Restaurants</button>
+          <button class="filter-btn" data-category="birthday">Birthdays</button>
+          <button class="filter-btn" data-category="health">Health</button>
+          <button class="filter-btn" data-category="banking">Banking</button>
+          <button class="filter-btn" data-category="subscription">Subscriptions</button>
+        </div>
+
+        <div
+          class="grid grid--3"
+          id="deals-grid"
+          data-max="6"
+          aria-live="polite"
+          aria-label="Deal cards"
+        ></div>
+
+        <div class="featured-deals__more">
+          <a href="deals.html" class="featured-deals__see-all">See all deals →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 3 — HOW IT WORKS
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--mid" id="how-it-works">
+      <div class="container">
+
+        <header class="section-header section-header--center">
+          <span class="section-eyebrow section-eyebrow--mint">The Dealr difference</span>
+          <h2>How it works</h2>
+        </header>
+
+        <div class="grid grid--3 how-it-works__grid">
+
+          <div class="how-it-works__item animate-ready">
+            <div class="how-it-works__number" aria-hidden="true">1</div>
+            <h3>We find it</h3>
+            <p>We monitor retailers, brand newsletters, and loyalty programmes daily so you never miss a deal worth knowing about.</p>
+          </div>
+
+          <div class="how-it-works__item animate-ready">
+            <div class="how-it-works__number" aria-hidden="true">2</div>
+            <h3>We verify it</h3>
+            <p>Every deal is checked before it goes live. Verified deals carry a gold badge so you know it is current and active.</p>
+          </div>
+
+          <div class="how-it-works__item animate-ready">
+            <div class="how-it-works__number" aria-hidden="true">3</div>
+            <h3>You save</h3>
+            <p>Every deal includes a tip on how to get even more value — stacking loyalty cards, combining cashback, timing your shop.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 4 — SUBSCRIPTIONS TEASER
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--beige">
+      <div class="container">
+        <div class="subs-teaser__inner">
+
+          <!-- Left: text -->
+          <div class="subs-teaser__text">
+            <span class="section-eyebrow">You are probably leaving money on the table</span>
+            <h2>Benefits you already have but are not using</h2>
+            <p>
+              Most South Africans with FNB, Discovery, or a major retailer loyalty
+              card are sitting on benefits they have never activated. We break it all
+              down — what you have, what it is worth, and exactly how to use it.
+            </p>
+            <a href="subscriptions.html" class="btn btn--primary">Explore subscriptions</a>
+          </div>
+
+          <!-- Right: SVG card stack -->
+          <div class="subs-teaser__visual">
+            <svg
+              class="card-stack"
+              viewBox="-50 -40 460 310"
+              xmlns="http://www.w3.org/2000/svg"
+              role="img"
+              aria-label="Stacked subscription and loyalty cards"
+            >
+              <!-- Card 1: back layer -->
+              <g class="card-stack__card card-stack__card--1">
+                <rect x="50" y="40" width="280" height="180" rx="14"
+                      fill="#203B37" stroke="#C18D52" stroke-width="1"/>
+                <rect x="70" y="62" width="80" height="8" rx="4"
+                      fill="rgba(150,205,176,0.3)"/>
+                <rect x="70" y="78" width="50" height="6" rx="3"
+                      fill="rgba(150,205,176,0.15)"/>
+              </g>
+
+              <!-- Card 2: middle layer -->
+              <g class="card-stack__card card-stack__card--2">
+                <rect x="50" y="40" width="280" height="180" rx="14"
+                      fill="#081B1B" stroke="#96CDB0" stroke-width="1"/>
+                <rect x="70" y="62" width="60" height="8" rx="4"
+                      fill="rgba(150,205,176,0.2)"/>
+                <rect x="70" y="78" width="40" height="6" rx="3"
+                      fill="rgba(150,205,176,0.1)"/>
+              </g>
+
+              <!-- Card 3: front layer with badges -->
+              <g class="card-stack__card card-stack__card--3">
+                <rect x="50" y="40" width="280" height="180" rx="14"
+                      fill="#E0D89A" stroke="#C18D52" stroke-width="1.5"/>
+
+                <text x="70" y="80"
+                      font-family="Georgia, 'Times New Roman', serif"
+                      font-size="14" font-weight="600"
+                      fill="#203B37">My Benefits</text>
+
+                <rect x="70" y="90" width="220" height="1" fill="rgba(32,59,55,0.2)"/>
+
+                <!-- Vitality badge -->
+                <rect x="68" y="175" width="62" height="24" rx="12" fill="#203B37"/>
+                <text x="99" y="191" text-anchor="middle"
+                      font-family="'DM Sans', sans-serif" font-size="10"
+                      fill="#96CDB0">Vitality</text>
+
+                <!-- Entertainer badge -->
+                <rect x="140" y="175" width="86" height="24" rx="12" fill="#203B37"/>
+                <text x="183" y="191" text-anchor="middle"
+                      font-family="'DM Sans', sans-serif" font-size="10"
+                      fill="#96CDB0">Entertainer</text>
+
+                <!-- WRewards badge -->
+                <rect x="236" y="175" width="76" height="24" rx="12" fill="#203B37"/>
+                <text x="274" y="191" text-anchor="middle"
+                      font-family="'DM Sans', sans-serif" font-size="10"
+                      fill="#96CDB0">WRewards</text>
+              </g>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 5 — BANKING TEASER
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--dark banking-teaser">
+      <div class="container">
+        <div class="banking-teaser__inner">
+          <span class="section-eyebrow section-eyebrow--gold">Banking</span>
+          <h2>Find the account that actually works for you</h2>
+          <p class="banking-teaser__body">
+            Not all accounts are equal. Tell us how you spend and we will
+            show you which banks offer real benefits for your lifestyle.
+          </p>
+          <a href="banking.html" class="btn btn--primary">Compare banks</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 6 — MAILING LIST
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--mid" id="mailing-list">
+      <div class="container">
+        <div class="mailing__inner">
+          <h2>Get the best deals before everyone else</h2>
+          <p class="mailing__body">
+            No spam. Just the deals worth knowing about,
+            straight to your inbox.
+          </p>
+
+          <!--
+            BREVO EMBED: Replace the form below with your Brevo embed code
+            when ready. Instructions in the Owner Setup Guide.
+          -->
+          <form class="mailing__form" onsubmit="return false;" novalidate>
+            <label for="email-input" class="sr-only">Email address</label>
+            <input
+              class="input"
+              id="email-input"
+              type="email"
+              placeholder="your@email.com"
+              autocomplete="email"
+            >
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+
+          <p class="mailing__note">Join South Africans already in the loop</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────────────────────── -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer__grid">
+
+      <div>
+        <span class="footer__wordmark">Dealr</span>
+        <p class="footer__tagline">South Africa's smartest deals platform</p>
+      </div>
+
+      <div>
+        <span class="footer__links-label">Explore</span>
+        <ul class="footer__links" role="list">
+          <li><a href="deals.html">Deals</a></li>
+          <li><a href="birthdays.html">Birthdays</a></li>
+          <li><a href="subscriptions.html">Subscriptions</a></li>
+          <li><a href="banking.html">Banking</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <p class="footer__meta">A Simmico project</p>
+        <a href="https://simmico.co.za" class="footer__meta" target="_blank" rel="noopener noreferrer">simmico.co.za</a>
+        <p class="footer__meta">Built for South Africans</p>
+        <a href="mailto:deals@simmico.co.za" class="footer__meta">deals@simmico.co.za</a>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Dealr · A Simmico project · dealr.simmico.co.za</p>
+    </div>
+  </footer>
+
+  <!-- ── Inline script (simplified; full logic moves to js/main.js in Prompt 3) -->
+  <script>
+  (function () {
+    'use strict';
+
+    /* ── Service worker ───────────────────────────────────────────── */
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js');
+      });
+    }
+
+    /* ── Nav scroll ───────────────────────────────────────────────── */
+    var nav             = document.getElementById('main-nav');
+    var scrollIndicator = document.getElementById('scroll-indicator');
+
+    window.addEventListener('scroll', function () {
+      var y = window.scrollY;
+      nav.classList.toggle('nav--scrolled', y > 80);
+      if (scrollIndicator) {
+        scrollIndicator.style.opacity = y > 100 ? '0' : '1';
+      }
+    }, { passive: true });
+
+    /* ── Hamburger ────────────────────────────────────────────────── */
+    var hamburger  = document.getElementById('hamburger');
+    var mobileMenu = document.getElementById('mobile-menu');
+
+    hamburger.addEventListener('click', function () {
+      var open = mobileMenu.classList.toggle('is-open');
+      hamburger.classList.toggle('nav__hamburger--open', open);
+      hamburger.setAttribute('aria-expanded', String(open));
+      mobileMenu.setAttribute('aria-hidden', String(!open));
+    });
+
+    /* ── Entrance animations ──────────────────────────────────────── */
+    var animObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var el  = entry.target;
+        var siblings = Array.from(el.parentElement ? el.parentElement.children : [el]);
+        var idx = siblings.indexOf(el) % 4;
+        if (idx > 0) el.classList.add('animate-delay-' + idx);
+        el.classList.add('animate-in');
+        animObserver.unobserve(el);
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.animate-ready').forEach(function (el) {
+      animObserver.observe(el);
+    });
+
+    /* ── Card stack fan ───────────────────────────────────────────── */
+    var cardStack = document.querySelector('.card-stack');
+    if (cardStack) {
+      var stackObserver = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+          cardStack.classList.add('card-stack--animated');
+          stackObserver.disconnect();
+        }
+      }, { threshold: 0.3 });
+      stackObserver.observe(cardStack);
+    }
+
+    /* ── Deal helpers ─────────────────────────────────────────────── */
+    function isExpired(dateStr) {
+      return new Date(dateStr) < new Date();
+    }
+
+    function formatDate(dateStr) {
+      var p = dateStr.split('-').map(Number);
+      var m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return p[2] + ' ' + m[p[1] - 1] + ' ' + p[0];
+    }
+
+    function daysUntil(dateStr) {
+      var t = new Date(dateStr), d = new Date();
+      d.setHours(0,0,0,0); t.setHours(0,0,0,0);
+      return Math.round((t - d) / 86400000);
+    }
+
+    function formatCurrency(n) {
+      return 'R ' + Number(n).toLocaleString('en-ZA');
+    }
+
+    /* ── Card renderer ────────────────────────────────────────────── */
+    function renderCard(deal) {
+      var days       = daysUntil(deal.expiry);
+      var soon       = days >= 0 && days <= 7;
+      var expiryBadge = soon ? '<span class="card__expiring-badge">Expiring soon</span>' : '';
+      var expiryClass = soon ? ' card__expiry--soon' : '';
+
+      var priceHtml = '';
+      if (deal.deal_price) {
+        priceHtml += '<span class="card__deal-price">' + formatCurrency(deal.deal_price) + '</span>';
+        if (deal.normal_price) {
+          priceHtml += '<span class="card__normal-price">' + formatCurrency(deal.normal_price) + '</span>';
+          priceHtml += '<span class="card__saving-badge">Save ' + formatCurrency(deal.normal_price - deal.deal_price) + '</span>';
+        }
+      } else if (deal.discount) {
+        priceHtml += '<span class="card__deal-price">' + deal.discount + '</span>';
+      }
+
+      var tipHtml = deal.tip
+        ? '<div class="card__tip"><div class="card__tip-label">Pro tip</div><p class="card__tip-text">' + deal.tip + '</p></div>'
+        : '';
+
+      var verifiedHtml = deal.verified
+        ? '<span class="card__verified">✓ Verified</span>'
+        : '';
+
+      return '<article class="card animate-ready">'
+        + expiryBadge
+        + '<div class="card__top-row">'
+        +   '<div>'
+        +     '<span class="card__brand">' + (deal.brand || '') + '</span> '
+        +     '<span class="card__category-badge">' + (deal.category || '') + '</span>'
+        +   '</div>'
+        +   verifiedHtml
+        + '</div>'
+        + '<h3 class="card__title">' + deal.title + '</h3>'
+        + '<div class="card__pricing">' + priceHtml + '</div>'
+        + tipHtml
+        + '<div class="card__bottom-row">'
+        +   '<span class="card__expiry' + expiryClass + '">Expires ' + formatDate(deal.expiry) + '</span>'
+        +   '<a href="' + (deal.url || '#') + '" class="card__view-link" target="_blank" rel="noopener">View deal →</a>'
+        + '</div>'
+        + '</article>';
+    }
+
+    /* ── Deal grid state ──────────────────────────────────────────── */
+    var dealsGrid      = document.getElementById('deals-grid');
+    var categoryFilter = document.getElementById('category-filter');
+    var allDeals       = [];
+    var activeCategory = 'all';
+
+    function renderDeals() {
+      var max = parseInt(dealsGrid.dataset.max, 10) || 6;
+      var list = activeCategory === 'all'
+        ? allDeals
+        : allDeals.filter(function (d) { return d.category === activeCategory; });
+      var visible = list.slice(0, max);
+      dealsGrid.innerHTML = visible.length
+        ? visible.map(renderCard).join('')
+        : '<p style="color:var(--color-text-muted);grid-column:1/-1">No deals in this category right now.</p>';
+      dealsGrid.querySelectorAll('.animate-ready').forEach(function (el, i) {
+        setTimeout(function () { el.classList.add('animate-in'); }, i * 80);
+      });
+    }
+
+    /* ── Filter buttons ───────────────────────────────────────────── */
+    if (categoryFilter) {
+      categoryFilter.addEventListener('click', function (e) {
+        var btn = e.target.closest('.filter-btn');
+        if (!btn) return;
+        categoryFilter.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('filter-btn--active');
+        });
+        btn.classList.add('filter-btn--active');
+        activeCategory = btn.dataset.category || 'all';
+        renderDeals();
+      });
+    }
+
+    /* ── Active filter from URL hash ──────────────────────────────── */
+    if (location.hash) {
+      var hashCat = location.hash.slice(1);
+      var matchBtn = categoryFilter && categoryFilter.querySelector('[data-category="' + hashCat + '"]');
+      if (matchBtn) {
+        categoryFilter.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('filter-btn--active');
+        });
+        matchBtn.classList.add('filter-btn--active');
+        activeCategory = hashCat;
+      }
+    }
+
+    /* ── Fetch deals ──────────────────────────────────────────────── */
+    fetch('/data/dealr.json')
+      .then(function (r) {
+        if (!r.ok) throw new Error('No data');
+        return r.json();
+      })
+      .then(function (data) {
+        var raw  = Array.isArray(data) ? data : (data.deals || []);
+        allDeals = raw.filter(function (d) { return !isExpired(d.expiry); });
+        renderDeals();
+      })
+      .catch(function () { /* data/dealr.json not yet available */ });
+
+  }());
+  </script>
+
+</body>
+</html>
