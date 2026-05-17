@@ -207,4 +207,8 @@ function removeTyping() {
   document.getElementById('bot-typing')?.remove();
 }
 
-document.addEventListener('DOMContentLoaded', initBot);
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initBot);
+} else {
+  initBot();
+}
