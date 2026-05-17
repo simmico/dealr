@@ -1,5 +1,4 @@
 const CACHE_NAME = 'dealr-v1';
-
 const PRECACHE_ASSETS = [
   '/',
   '/index.html',
@@ -21,10 +20,8 @@ const PRECACHE_ASSETS = [
   '/js/bot.js',
   '/manifest.json',
 ];
-
 const DATA_URLS = ['/data/dealr.json', '/data/banking.json'];
 
-/* ── Install: pre-cache shell assets ───────────────────────────────────────── */
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => cache.addAll(PRECACHE_ASSETS))
@@ -32,7 +29,6 @@ self.addEventListener('install', (event) => {
   self.skipWaiting();
 });
 
-/* ── Activate: purge old caches ─────────────────────────────────────────────── */
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
@@ -46,26 +42,21 @@ self.addEventListener('activate', (event) => {
   self.clients.claim();
 });
 
-/* ── Fetch ───────────────────────────────────────────────────────────────────── */
 self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
-
-  // Network-first for data files
   if (DATA_URLS.some((path) => url.pathname === path)) {
     event.respondWith(networkFirst(request));
     return;
   }
-
-  // Cache-first for everything else
   event.respondWith(cacheFirst(request));
 });
 
 async function networkFirst(request) {
   const cache = await caches.open(CACHE_NAME);
   try {
-    const response = await fetch(request);
-    if (response.ok) cache.put(request, response.clone());
+    const response = await fetch(request, { redirect: 'follow' });
+    if (response.ok && response.type !== 'opaqueredirect') cache.put(request, response.clone());
     return response;
   } catch {
     const cached = await cache.match(request);
@@ -77,10 +68,9 @@ async function cacheFirst(request) {
   const cache  = await caches.open(CACHE_NAME);
   const cached = await cache.match(request);
   if (cached) return cached;
-
   try {
-    const response = await fetch(request);
-    if (response.ok) cache.put(request, response.clone());
+    const response = await fetch(request, { redirect: 'follow' });
+    if (response.ok && response.type !== 'opaqueredirect') cache.put(request, response.clone());
     return response;
   } catch {
     if (request.mode === 'navigate') return offlinePage();
@@ -123,7 +113,6 @@ function offlinePage() {
   <p>You are offline. Please check your connection and try again.</p>
 </body>
 </html>`;
-
   return new Response(html, {
     status: 200,
     headers: { 'Content-Type': 'text/html; charset=utf-8' },
