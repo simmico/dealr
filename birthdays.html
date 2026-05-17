@@ -269,7 +269,13 @@
       <div class="bot-body" id="bot-body"></div>
     </div>
   </div>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => reg.unregister());
+    });
+  }
+</script>
   <!-- ── Birthday deals init ────────────────────────────────────────────────── -->
   <script type="module">
     import { loadDeals, filterDeals, sortDeals, renderDeals } from './js/main.js';
