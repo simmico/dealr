@@ -185,7 +185,13 @@
       <div class="bot-body" id="bot-body"></div>
     </div>
   </div>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => reg.unregister());
+    });
+  }
+</script>
   <script type="module" src="js/scroll.js"></script>
   <script type="module" src="js/bot.js"></script>
 
