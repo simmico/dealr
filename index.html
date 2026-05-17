@@ -181,7 +181,6 @@
         <div
           class="grid grid--3"
           id="deals-grid"
-          data-max="6"
           aria-live="polite"
           aria-label="Deal cards"
         ></div>
@@ -399,198 +398,42 @@
     </div>
   </footer>
 
-  <!-- ── Inline script (simplified; full logic moves to js/main.js in Prompt 3) -->
-  <script>
-  (function () {
-    'use strict';
+  <!-- ── Bot Widget ───────────────────────────────────────────────────────────── -->
+  <div class="bot-container" id="bot-container">
+    <button class="bot-trigger bot-trigger--pulse" id="bot-trigger" aria-label="Open Dealr Assistant" aria-expanded="false">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" fill="var(--color-dark)"/>
+      </svg>
+    </button>
+    <div class="bot-panel" id="bot-panel" aria-hidden="true" role="dialog" aria-label="Dealr Assistant">
+      <div class="bot-header">
+        <div class="bot-header__left">
+          <div class="bot-header__icon" aria-hidden="true"></div>
+          <div>
+            <div class="bot-header__name">Dealr Assistant</div>
+            <div class="bot-header__sub">Ask me about deals and benefits</div>
+          </div>
+        </div>
+        <button class="bot-close" id="bot-close" aria-label="Close assistant">×</button>
+      </div>
+      <div class="bot-body" id="bot-body"></div>
+    </div>
+  </div>
 
-    /* ── Service worker ───────────────────────────────────────────── */
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', function () {
-        navigator.serviceWorker.register('/sw.js');
-      });
-    }
+  <!-- ── Deals init ─────────────────────────────────────────────────────────── -->
+  <script type="module">
+    import { loadDeals, filterDeals, sortDeals, renderDeals, initFilterBar } from './js/main.js';
 
-    /* ── Nav scroll ───────────────────────────────────────────────── */
-    var nav             = document.getElementById('main-nav');
-    var scrollIndicator = document.getElementById('scroll-indicator');
-
-    window.addEventListener('scroll', function () {
-      var y = window.scrollY;
-      nav.classList.toggle('nav--scrolled', y > 80);
-      if (scrollIndicator) {
-        scrollIndicator.style.opacity = y > 100 ? '0' : '1';
-      }
-    }, { passive: true });
-
-    /* ── Hamburger ────────────────────────────────────────────────── */
-    var hamburger  = document.getElementById('hamburger');
-    var mobileMenu = document.getElementById('mobile-menu');
-
-    hamburger.addEventListener('click', function () {
-      var open = mobileMenu.classList.toggle('is-open');
-      hamburger.classList.toggle('nav__hamburger--open', open);
-      hamburger.setAttribute('aria-expanded', String(open));
-      mobileMenu.setAttribute('aria-hidden', String(!open));
-    });
-
-    /* ── Entrance animations ──────────────────────────────────────── */
-    var animObserver = new IntersectionObserver(function (entries) {
-      entries.forEach(function (entry) {
-        if (!entry.isIntersecting) return;
-        var el  = entry.target;
-        var siblings = Array.from(el.parentElement ? el.parentElement.children : [el]);
-        var idx = siblings.indexOf(el) % 4;
-        if (idx > 0) el.classList.add('animate-delay-' + idx);
-        el.classList.add('animate-in');
-        animObserver.unobserve(el);
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.animate-ready').forEach(function (el) {
-      animObserver.observe(el);
-    });
-
-    /* ── Card stack fan ───────────────────────────────────────────── */
-    var cardStack = document.querySelector('.card-stack');
-    if (cardStack) {
-      var stackObserver = new IntersectionObserver(function (entries) {
-        if (entries[0].isIntersecting) {
-          cardStack.classList.add('card-stack--animated');
-          stackObserver.disconnect();
-        }
-      }, { threshold: 0.3 });
-      stackObserver.observe(cardStack);
-    }
-
-    /* ── Deal helpers ─────────────────────────────────────────────── */
-    function isExpired(dateStr) {
-      return new Date(dateStr) < new Date();
-    }
-
-    function formatDate(dateStr) {
-      var p = dateStr.split('-').map(Number);
-      var m = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
-      return p[2] + ' ' + m[p[1] - 1] + ' ' + p[0];
-    }
-
-    function daysUntil(dateStr) {
-      var t = new Date(dateStr), d = new Date();
-      d.setHours(0,0,0,0); t.setHours(0,0,0,0);
-      return Math.round((t - d) / 86400000);
-    }
-
-    function formatCurrency(n) {
-      return 'R ' + Number(n).toLocaleString('en-ZA');
-    }
-
-    /* ── Card renderer ────────────────────────────────────────────── */
-    function renderCard(deal) {
-      var days       = daysUntil(deal.expiry);
-      var soon       = days >= 0 && days <= 7;
-      var expiryBadge = soon ? '<span class="card__expiring-badge">Expiring soon</span>' : '';
-      var expiryClass = soon ? ' card__expiry--soon' : '';
-
-      var priceHtml = '';
-      if (deal.deal_price) {
-        priceHtml += '<span class="card__deal-price">' + formatCurrency(deal.deal_price) + '</span>';
-        if (deal.normal_price) {
-          priceHtml += '<span class="card__normal-price">' + formatCurrency(deal.normal_price) + '</span>';
-          priceHtml += '<span class="card__saving-badge">Save ' + formatCurrency(deal.normal_price - deal.deal_price) + '</span>';
-        }
-      } else if (deal.discount) {
-        priceHtml += '<span class="card__deal-price">' + deal.discount + '</span>';
-      }
-
-      var tipHtml = deal.tip
-        ? '<div class="card__tip"><div class="card__tip-label">Pro tip</div><p class="card__tip-text">' + deal.tip + '</p></div>'
-        : '';
-
-      var verifiedHtml = deal.verified
-        ? '<span class="card__verified">✓ Verified</span>'
-        : '';
-
-      return '<article class="card animate-ready">'
-        + expiryBadge
-        + '<div class="card__top-row">'
-        +   '<div>'
-        +     '<span class="card__brand">' + (deal.brand || '') + '</span> '
-        +     '<span class="card__category-badge">' + (deal.category || '') + '</span>'
-        +   '</div>'
-        +   verifiedHtml
-        + '</div>'
-        + '<h3 class="card__title">' + deal.title + '</h3>'
-        + '<div class="card__pricing">' + priceHtml + '</div>'
-        + tipHtml
-        + '<div class="card__bottom-row">'
-        +   '<span class="card__expiry' + expiryClass + '">Expires ' + formatDate(deal.expiry) + '</span>'
-        +   '<a href="' + (deal.url || '#') + '" class="card__view-link" target="_blank" rel="noopener">View deal →</a>'
-        + '</div>'
-        + '</article>';
-    }
-
-    /* ── Deal grid state ──────────────────────────────────────────── */
-    var dealsGrid      = document.getElementById('deals-grid');
-    var categoryFilter = document.getElementById('category-filter');
-    var allDeals       = [];
-    var activeCategory = 'all';
-
-    function renderDeals() {
-      var max = parseInt(dealsGrid.dataset.max, 10) || 6;
-      var list = activeCategory === 'all'
-        ? allDeals
-        : allDeals.filter(function (d) { return d.category === activeCategory; });
-      var visible = list.slice(0, max);
-      dealsGrid.innerHTML = visible.length
-        ? visible.map(renderCard).join('')
-        : '<p style="color:var(--color-text-muted);grid-column:1/-1">No deals in this category right now.</p>';
-      dealsGrid.querySelectorAll('.animate-ready').forEach(function (el, i) {
-        setTimeout(function () { el.classList.add('animate-in'); }, i * 80);
-      });
-    }
-
-    /* ── Filter buttons ───────────────────────────────────────────── */
-    if (categoryFilter) {
-      categoryFilter.addEventListener('click', function (e) {
-        var btn = e.target.closest('.filter-btn');
-        if (!btn) return;
-        categoryFilter.querySelectorAll('.filter-btn').forEach(function (b) {
-          b.classList.remove('filter-btn--active');
-        });
-        btn.classList.add('filter-btn--active');
-        activeCategory = btn.dataset.category || 'all';
-        renderDeals();
-      });
-    }
-
-    /* ── Active filter from URL hash ──────────────────────────────── */
-    if (location.hash) {
-      var hashCat = location.hash.slice(1);
-      var matchBtn = categoryFilter && categoryFilter.querySelector('[data-category="' + hashCat + '"]');
-      if (matchBtn) {
-        categoryFilter.querySelectorAll('.filter-btn').forEach(function (b) {
-          b.classList.remove('filter-btn--active');
-        });
-        matchBtn.classList.add('filter-btn--active');
-        activeCategory = hashCat;
-      }
-    }
-
-    /* ── Fetch deals ──────────────────────────────────────────────── */
-    fetch('/data/dealr.json')
-      .then(function (r) {
-        if (!r.ok) throw new Error('No data');
-        return r.json();
-      })
-      .then(function (data) {
-        var raw  = Array.isArray(data) ? data : (data.deals || []);
-        allDeals = raw.filter(function (d) { return !isExpired(d.expiry); });
-        renderDeals();
-      })
-      .catch(function () { /* data/dealr.json not yet available */ });
-
-  }());
+    (async () => {
+      const deals  = await loadDeals();
+      const sorted = sortDeals(filterDeals(deals));
+      renderDeals('#deals-grid', sorted, 6);
+      initFilterBar('#category-filter', '#deals-grid', 6);
+    })();
   </script>
+
+  <script type="module" src="js/scroll.js"></script>
+  <script type="module" src="js/bot.js"></script>
 
 </body>
 </html>

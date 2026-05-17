@@ -310,3 +310,1116 @@ body.page-home .mailing__note {
     flex-direction: column;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   SHARED INNER-PAGE HERO  (deals, subscriptions, banking, etc.)
+   ═══════════════════════════════════════════════════════════════════ */
+
+.page-inner-hero {
+  height: 280px;
+  background: var(--color-dark);
+  padding-top: var(--nav-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.page-inner-hero h1 {
+  color: var(--color-text-light);
+  margin-bottom: 12px;
+}
+
+.page-inner-hero__subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-mint);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   PAGE: SUBSCRIPTIONS  (body.page-subscriptions)
+   ═══════════════════════════════════════════════════════════════════ */
+
+/* ─── Programme guides section (continues from deals section above) ── */
+body.page-subscriptions .subs-programme {
+  padding-top: 0;
+}
+
+/* ─── Accordion name + tagline in trigger ─────────────────────────── */
+body.page-subscriptions .acc-name {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+}
+
+body.page-subscriptions .acc-tagline {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: 3px;
+}
+
+/* ─── Accordion content typography ───────────────────────────────── */
+body.page-subscriptions .accordion__content h4 {
+  color: var(--color-text-dark);
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+body.page-subscriptions .accordion__content h4:first-child {
+  margin-top: 0;
+}
+
+body.page-subscriptions .accordion__content p {
+  font-size: 0.95rem;
+  color: var(--color-text-mid);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+body.page-subscriptions .accordion__content ol {
+  list-style: decimal;
+  margin-left: 20px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-text-mid);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+body.page-subscriptions .accordion__content li {
+  margin-bottom: 4px;
+  padding-left: 4px;
+}
+
+body.page-subscriptions .accordion__content .btn {
+  margin-top: 20px;
+}
+
+/* ─── Status/cashback table ───────────────────────────────────────── */
+body.page-subscriptions .status-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  margin: 12px 0 16px;
+}
+
+body.page-subscriptions .status-table th {
+  font-weight: 500;
+  text-align: left;
+  padding: 8px 12px;
+  background: rgba(32, 59, 55, 0.06);
+  color: var(--color-text-mid);
+  border-bottom: 2px solid rgba(90, 143, 118, 0.2);
+}
+
+body.page-subscriptions .status-table td {
+  padding: 8px 12px;
+  color: var(--color-text-mid);
+  border-bottom: 1px solid rgba(90, 143, 118, 0.1);
+}
+
+body.page-subscriptions .status-table tr:last-child td {
+  border-bottom: none;
+}
+
+body.page-subscriptions .status-table .table-note {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+}
+
+/* ─── Vitality calculator panels ─────────────────────────────────── */
+body.page-subscriptions .calc-panels {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: 48px;
+}
+
+@media (min-width: 768px) {
+  body.page-subscriptions .calc-panels {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+body.page-subscriptions .calc-panel {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(90, 143, 118, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+}
+
+body.page-subscriptions .calc-panel h4 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text-light);
+  margin-bottom: 14px;
+}
+
+body.page-subscriptions .calc-panel h4.calc-h4-spaced {
+  margin-top: 24px;
+}
+
+/* ─── Pill buttons (status / members / product selectors) ─────────── */
+body.page-subscriptions .pill-group {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+body.page-subscriptions .pill-btn {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  padding: 7px 18px;
+  border-radius: 20px;
+  border: 1px solid var(--color-light);
+  color: var(--color-mint);
+  background: transparent;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+body.page-subscriptions .pill-btn--active {
+  background: var(--color-gold);
+  color: var(--color-dark);
+  border-color: var(--color-gold);
+}
+
+body.page-subscriptions .pill-btn:hover:not(.pill-btn--active) {
+  background: rgba(90, 143, 118, 0.15);
+}
+
+body.page-subscriptions .calc-note {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 8px;
+  line-height: 1.5;
+  display: block;
+}
+
+/* ─── Spend sliders ───────────────────────────────────────────────── */
+body.page-subscriptions .calc-spend-section {
+  margin-top: 32px;
+}
+
+body.page-subscriptions .calc-spend-section:first-of-type {
+  margin-top: 0;
+}
+
+body.page-subscriptions .calc-slider-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: var(--color-gold);
+  display: block;
+  margin-bottom: 4px;
+}
+
+body.page-subscriptions .calc-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2px;
+  outline: none;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+body.page-subscriptions .calc-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  cursor: pointer;
+  transition: transform 150ms ease;
+}
+
+body.page-subscriptions .calc-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.15);
+}
+
+body.page-subscriptions .calc-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--color-gold);
+  cursor: pointer;
+  border: none;
+}
+
+/* ─── Spend progress bar ──────────────────────────────────────────── */
+body.page-subscriptions .calc-progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  height: 8px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+body.page-subscriptions .calc-progress__fill {
+  height: 100%;
+  border-radius: 4px;
+  background: var(--color-light);
+  transition: width 200ms ease, background-color 200ms ease;
+  width: 0%;
+}
+
+body.page-subscriptions .calc-cap-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 6px;
+  display: block;
+}
+
+/* ─── Results panel ───────────────────────────────────────────────── */
+body.page-subscriptions .calc-result-number {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 3.2rem;
+  color: var(--color-gold);
+  line-height: 1.1;
+  display: block;
+}
+
+body.page-subscriptions .calc-result-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: 4px;
+  display: block;
+}
+
+body.page-subscriptions .calc-breakdown {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(90, 143, 118, 0.2);
+}
+
+body.page-subscriptions .calc-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  border-bottom: 1px solid rgba(90, 143, 118, 0.08);
+}
+
+body.page-subscriptions .calc-breakdown-row:last-child {
+  border-bottom: none;
+}
+
+body.page-subscriptions .calc-breakdown-row .row-label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+body.page-subscriptions .calc-breakdown-row .row-value {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--color-gold);
+}
+
+body.page-subscriptions .calc-message {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-mint);
+  font-style: italic;
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* ─── Calculator disclaimer ───────────────────────────────────────── */
+body.page-subscriptions .calc-disclaimer {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 600px;
+  margin: 32px auto 0;
+  line-height: 1.6;
+}
+
+body.page-subscriptions .calc-disclaimer a {
+  color: var(--color-mint);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BANKING PAGE
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Hero ────────────────────────────────────────────────────────────────── */
+body.page-banking .hero__subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-mint);
+  margin-top: 12px;
+}
+
+/* ─── Quiz container ──────────────────────────────────────────────────────── */
+body.page-banking #quiz-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+body.page-banking .quiz-progress {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+  min-height: 1.2em;
+}
+
+body.page-banking .quiz-step__heading {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: var(--color-text-dark);
+  margin-bottom: 8px;
+}
+
+body.page-banking .quiz-step__subtext {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-bottom: 24px;
+}
+
+/* ─── Quiz option grid ────────────────────────────────────────────────────── */
+body.page-banking .quiz-options--grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 560px) {
+  body.page-banking .quiz-options--grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+body.page-banking .quiz-options--income,
+body.page-banking .quiz-options--priority {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+@media (min-width: 560px) {
+  body.page-banking .quiz-options--income,
+  body.page-banking .quiz-options--priority {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ─── Quiz option button ──────────────────────────────────────────────────── */
+body.page-banking .quiz-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 16px;
+  background: var(--color-white);
+  border: 1px solid var(--color-light);
+  border-radius: var(--radius-md, 12px);
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-text-dark);
+  text-align: center;
+  line-height: 1.3;
+  transition: border-color 0.18s, background 0.18s, opacity 0.18s;
+  min-height: 80px;
+}
+
+body.page-banking .quiz-options--income .quiz-option,
+body.page-banking .quiz-options--priority .quiz-option {
+  flex-direction: row;
+  justify-content: center;
+  min-height: 60px;
+  padding: 16px;
+  font-size: 0.875rem;
+}
+
+body.page-banking .quiz-option:hover:not(:disabled) {
+  border-color: var(--color-gold);
+}
+
+body.page-banking .quiz-option--selected {
+  border: 2px solid var(--color-gold) !important;
+  background: rgba(193, 141, 82, 0.08);
+}
+
+body.page-banking .quiz-option--disabled,
+body.page-banking .quiz-option:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+body.page-banking .quiz-option svg {
+  color: var(--color-mid);
+  flex-shrink: 0;
+}
+
+body.page-banking .quiz-option--selected svg {
+  color: var(--color-gold);
+}
+
+body.page-banking .quiz-option__label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: inherit;
+}
+
+/* ─── Quiz navigation buttons ─────────────────────────────────────────────── */
+body.page-banking .quiz-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+body.page-banking .quiz-nav--space-between {
+  justify-content: space-between;
+}
+
+/* ─── Quiz disclaimer box ─────────────────────────────────────────────────── */
+body.page-banking .quiz-disclaimer {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  background: rgba(90, 143, 118, 0.08);
+  border-left: 3px solid var(--color-light);
+  border-radius: 0 var(--radius-md, 12px) var(--radius-md, 12px) 0;
+  padding: 14px 16px;
+  margin: 20px 0 28px;
+  line-height: 1.6;
+}
+
+/* ─── Start over link ─────────────────────────────────────────────────────── */
+body.page-banking .quiz-start-over {
+  display: block;
+  text-align: center;
+  margin-top: 28px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body.page-banking .quiz-start-over:hover {
+  color: var(--color-gold);
+}
+
+/* ─── Results grid ────────────────────────────────────────────────────────── */
+body.page-banking .results-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media (min-width: 640px) {
+  body.page-banking .results-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  body.page-banking .results-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+body.page-banking .no-results {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  padding: 32px 0;
+  grid-column: 1 / -1;
+}
+
+/* ─── Result card ─────────────────────────────────────────────────────────── */
+body.page-banking .result-card {
+  background: var(--color-white);
+  border: 1px solid rgba(32, 59, 55, 0.15);
+  border-radius: var(--radius-md, 12px);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+body.page-banking .result-card__header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+body.page-banking .result-card__title {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+body.page-banking .result-card__bank {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--color-text-dark);
+}
+
+body.page-banking .result-card__tier {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+body.page-banking .result-card__fee {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: var(--color-mid);
+  white-space: nowrap;
+}
+
+body.page-banking .result-card__fee-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  vertical-align: super;
+  margin-left: 2px;
+}
+
+/* ─── Score dots ──────────────────────────────────────────────────────────── */
+body.page-banking .score-dots {
+  display: flex;
+  gap: 5px;
+}
+
+body.page-banking .score-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(193, 141, 82, 0.18);
+  border: 1px solid rgba(193, 141, 82, 0.4);
+}
+
+body.page-banking .score-dot--filled {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+/* ─── Matched benefits list ───────────────────────────────────────────────── */
+body.page-banking .result-card__matches {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+body.page-banking .result-card__match {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-gold);
+  line-height: 1.4;
+}
+
+body.page-banking .result-card__match svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ─── Expand button ───────────────────────────────────────────────────────── */
+body.page-banking .result-card__expand {
+  margin-top: auto;
+  padding: 8px 0;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-mid);
+  background: none;
+  border: none;
+  border-top: 1px solid rgba(32, 59, 55, 0.1);
+  cursor: pointer;
+  text-align: left;
+  transition: color 0.18s;
+}
+
+body.page-banking .result-card__expand:hover {
+  color: var(--color-gold);
+}
+
+/* ─── Expanded details ────────────────────────────────────────────────────── */
+body.page-banking .result-card__details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+body.page-banking .result-card__details--open {
+  max-height: 600px;
+}
+
+body.page-banking .result-card__details-list {
+  list-style: disc;
+  padding-left: 18px;
+  margin: 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+body.page-banking .result-card__details-list li {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-dark);
+  line-height: 1.5;
+}
+
+body.page-banking .result-card__key-benefit {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--color-mid);
+  font-style: italic;
+}
+
+/* ─── Bank badge ──────────────────────────────────────────────────────────── */
+body.page-banking .bank-badge {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--color-white);
+  flex-shrink: 0;
+}
+
+body.page-banking .bank-badge--sm {
+  width: 28px;
+  height: 28px;
+  font-size: 0.75rem;
+}
+
+/* ─── Comparison accordion ────────────────────────────────────────────────── */
+body.page-banking #comparison-grid {
+  border: 1px solid var(--color-beige-dark);
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+body.page-banking .comp-bank {
+  border-bottom: 1px solid var(--color-beige-dark);
+}
+
+body.page-banking .comp-bank:last-child {
+  border-bottom: none;
+}
+
+body.page-banking .comp-bank__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: var(--color-beige);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.18s;
+}
+
+body.page-banking .comp-bank__header:hover {
+  background: var(--color-beige-dark);
+}
+
+body.page-banking .comp-bank__name {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.05rem;
+  color: var(--color-text-dark);
+}
+
+body.page-banking .comp-bank__meta {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+body.page-banking .comp-bank__header svg {
+  color: var(--color-mid);
+  transition: transform 0.25s ease;
+  flex-shrink: 0;
+}
+
+body.page-banking .comp-bank--open .comp-bank__header svg {
+  transform: rotate(180deg);
+}
+
+/* ─── Comparison body ─────────────────────────────────────────────────────── */
+body.page-banking .comp-bank__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+body.page-banking .comp-bank--open .comp-bank__body {
+  max-height: 1200px;
+}
+
+body.page-banking .comp-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* ─── Comparison table ────────────────────────────────────────────────────── */
+body.page-banking .comp-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+}
+
+body.page-banking .comp-table thead tr {
+  background: var(--color-mid);
+}
+
+body.page-banking .comp-table thead th {
+  padding: 12px 16px;
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+body.page-banking .comp-table tbody td {
+  padding: 11px 16px;
+  color: var(--color-text-dark);
+  vertical-align: top;
+  line-height: 1.4;
+}
+
+body.page-banking .comp-table__row--alt {
+  background: rgba(238, 232, 178, 0.3);
+}
+
+body.page-banking .comp-table__check {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--color-light);
+  white-space: nowrap;
+}
+
+/* ─── Comparison footnote ─────────────────────────────────────────────────── */
+body.page-banking .comp-note {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BIRTHDAYS PAGE  (body.page-birthdays)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── Eyebrow gold variant ────────────────────────────────────────────────── */
+body.page-birthdays .section__eyebrow--gold {
+  color: var(--color-gold);
+}
+
+/* ─── How it works two-column layout ─────────────────────────────────────── */
+body.page-birthdays .bday-how__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  body.page-birthdays .bday-how__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+body.page-birthdays .bday-how__text h2 {
+  color: var(--color-text-light);
+  margin-top: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+body.page-birthdays .bday-how__text p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.975rem;
+  color: var(--color-mint);
+  line-height: 1.75;
+  margin-bottom: var(--space-sm);
+}
+
+/* ─── Pro tip box ─────────────────────────────────────────────────────────── */
+body.page-birthdays .bday-tip {
+  background: rgba(193, 141, 82, 0.1);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+body.page-birthdays .bday-tip p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* ─── Decorative SVG visual ───────────────────────────────────────────────── */
+body.page-birthdays .bday-how__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.page-birthdays .bday-badges {
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
+/* ─── Reference table ─────────────────────────────────────────────────────── */
+body.page-birthdays .bday-table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+body.page-birthdays .bday-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  border-radius: var(--radius-md);
+}
+
+body.page-birthdays .bday-table thead tr {
+  background: var(--color-mid);
+}
+
+body.page-birthdays .bday-table thead th {
+  padding: 14px 18px;
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-text-light);
+  white-space: nowrap;
+}
+
+body.page-birthdays .bday-table tbody td {
+  padding: 13px 18px;
+  color: var(--color-text-dark);
+  vertical-align: top;
+  line-height: 1.45;
+}
+
+body.page-birthdays .bday-table tbody tr {
+  background: var(--color-white);
+}
+
+body.page-birthdays .bday-table__row--alt {
+  background: rgba(238, 232, 178, 0.4) !important;
+}
+
+body.page-birthdays .bday-table tbody tr:not(:last-child) td {
+  border-bottom: 1px solid rgba(32, 59, 55, 0.08);
+}
+
+body.page-birthdays .bday-table__disclaimer {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: 16px;
+  line-height: 1.6;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   ABOUT PAGE  (body.page-about)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ─── What we do two-column layout ───────────────────────────────────────── */
+body.page-about .about-what__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+}
+
+@media (min-width: 768px) {
+  body.page-about .about-what__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+body.page-about .about-col h2 {
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-md);
+}
+
+body.page-about .about-col p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.975rem;
+  color: var(--color-text-mid);
+  line-height: 1.75;
+  margin-bottom: var(--space-sm);
+}
+
+/* ─── Who we are ──────────────────────────────────────────────────────────── */
+body.page-about .about-who {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body.page-about .about-who h2 {
+  color: var(--color-text-light);
+  margin-bottom: var(--space-md);
+}
+
+body.page-about .about-who p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--color-mint);
+  line-height: 1.75;
+}
+
+body.page-about .about-who__link {
+  display: inline-block;
+  margin-top: 24px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-gold);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+body.page-about .about-who__link:hover {
+  color: var(--color-gold-light);
+}
+
+/* ─── Contact card ────────────────────────────────────────────────────────── */
+body.page-about .about-contact {
+  background: var(--color-mid);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  max-width: 400px;
+  margin: 32px auto 0;
+  text-align: center;
+}
+
+body.page-about .about-contact__label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--color-mint);
+  margin-bottom: 8px;
+}
+
+body.page-about .about-contact__email {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-gold);
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: color 200ms ease;
+}
+
+body.page-about .about-contact__email:hover {
+  color: var(--color-gold-light);
+}
+
+body.page-about .about-contact__note {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin: 0;
+}
+
+/* ─── Disclaimer section ──────────────────────────────────────────────────── */
+body.page-about .about-disclaimer-section {
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-md);
+}
+
+body.page-about .about-disclaimer {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+body.page-about .about-disclaimer h3 {
+  color: var(--color-text-dark);
+  margin-bottom: var(--space-sm);
+}
+
+body.page-about .about-disclaimer p {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+}
