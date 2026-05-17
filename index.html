@@ -419,7 +419,13 @@
       <div class="bot-body" id="bot-body"></div>
     </div>
   </div>
-
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(regs => {
+      regs.forEach(reg => reg.unregister());
+    });
+  }
+</script>
   <!-- ── Deals init ─────────────────────────────────────────────────────────── -->
   <script type="module">
     import { loadDeals, filterDeals, sortDeals, renderDeals, initFilterBar } from './js/main.js';
