@@ -1,5 +1,11 @@
 import { isExpired, daysUntil, isExpiringSoon, formatDate, debounce, addAnimationClasses } from './utils.js';
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    registrations.forEach((reg) => reg.unregister());
+  });
+}
+
 let _cache = null;
 
 export async function loadDeals() {
