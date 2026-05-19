@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\" | Where-Object { -not $_.PSIsContainer } | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\\\\\", \"\"\\) })"
+      "PowerShell(Get-ChildItem -Recurse \"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\" | Where-Object { -not $_.PSIsContainer } | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\\\\\", \"\"\\) })",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git rm *)",
+      "Bash(git push *)"
     ]
   }
 }
