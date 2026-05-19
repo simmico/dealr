@@ -1,58 +1,74 @@
 [
   {
     "name": "McDonald's",
-    "deal": "App-only Saver Menu from R25 — includes McFlurry, Small Fries, and Quarter Pounder deals updated weekly",
+    "deal": "Nazo 30th Birthday Promo — Special limited-edition promotional tier standalone burger options starting right at R29.90",
     "days": "Monday–Sunday",
-    "howToClaim": "Download the McDonald's SA app, browse the Deals tab, and add to cart before ordering",
-    "badge": "App Only",
-    "active": true
-  },
-  {
-    "name": "Nando's",
-    "deal": "Fire Points loyalty reward — earn 10 points per R10 spent, redeem for free peri-peri chicken",
-    "days": "Monday–Sunday",
-    "howToClaim": "Register a Nando's card at any store or via the Nando's website. Present card at payment",
-    "badge": "Loyalty",
-    "active": true
-  },
-  {
-    "name": "Debonairs Pizza",
-    "deal": "Buy any large pizza online, get a second medium pizza free using the app",
-    "days": "Sunday–Thursday",
-    "howToClaim": "Order via the Debonairs app or website. Deal auto-applies at checkout with qualifying cart",
-    "badge": "Online Only",
-    "active": true
-  },
-  {
-    "name": "Steers",
-    "deal": "Double Delivery deal — free burger added to qualifying delivery orders over R150 via the app",
-    "days": "Wednesday",
-    "howToClaim": "Order on the Steers app. Add a qualifying burger combo and the free item appears at checkout",
-    "badge": "App Only",
+    "howToClaim": "Ask for the R30 Nazo value tier at the counter, drive-thru, or unlock the exclusive pricing tier directly inside the McDonald's SA App",
+    "badge": "Limited Time Only",
     "active": true
   },
   {
     "name": "KFC",
-    "deal": "Tuesday Treat — buy any 2-piece meal and get a free Streetwise Two every Tuesday",
-    "days": "Tuesday",
-    "howToClaim": "Visit any KFC store on Tuesdays. Show the KFC app coupon at the till to redeem",
+    "deal": "Streetwise 2 — 2 pieces of Original Recipe chicken and a small portion of chips for under R40",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order a Streetwise 2 over the counter, at the drive-thru, or via the KFC South Africa app",
+    "badge": "Everyday Value",
+    "active": true
+  },
+  {
+    "name": "The Fish & Chip Co.",
+    "deal": "Small Hake & Mini Chips combo — hot battered hake fillet served with a 200g portion of straight-cut chips for R47.90",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order in-store at any local branch for takeaway or collection",
+    "badge": "Everyday Value",
+    "active": true
+  },
+  {
+    "name": "The Fish & Chip Co.",
+    "deal": "Small Russian & Mini Chips combo — classic smoked Russian sausage with a 200g portion of chips for R42.90",
+    "days": "Monday–Sunday",
+    "howToClaim": "Ask for the Small Russian and Mini Chips meal option at the counter",
+    "badge": "Everyday Value",
+    "active": true
+  },
+  {
+    "name": "Nando's",
+    "deal": "Casa Deals value tier — budget-friendly signature meals like a 1/4 chicken and side starting from R65",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order from the Casa Deals section of the menu in-store, drive-thru, or via the Nando's app",
+    "badge": "Everyday Value",
+    "active": true
+  },
+  {
+    "name": "Steers",
+    "deal": "Wacky Wednesday — get two classic Steers beef or chicken burgers for a heavily discounted promotional price",
+    "days": "Wednesday",
+    "howToClaim": "Order the Wacky Wednesday promotional bundle at any Steers branch, drive-thru, or via the Steers delivery app",
     "badge": "Weekly Special",
     "active": true
   },
   {
-    "name": "Romans Pizza",
-    "deal": "Slice of the Action loyalty — earn slices with every order, redeem for a free pizza after 10 slices",
+    "name": "Debonairs Pizza",
+    "deal": "Real Deal Pizzas — everyday pocket-friendly value tier featuring small (19cm) select pizzas from R39.90 to R44.90",
     "days": "Monday–Sunday",
-    "howToClaim": "Join the Slice of the Action programme via the Romans Pizza website or app. Scan at checkout",
-    "badge": "Loyalty",
+    "howToClaim": "Order any pizza from the Real Deal menu category online, on the app, or at any Debonairs counter",
+    "badge": "Everyday Value",
     "active": true
   },
   {
-    "name": "Burger King",
-    "deal": "App-exclusive R49 Whopper Meal — includes small fries and a drink, app users only",
+    "name": "Wimpy",
+    "deal": "Quick Bites Mzansi Breakfast — classic breakfast featuring 1 egg, 2 rashers of bacon, and toast at a budget-friendly everyday price",
     "days": "Monday–Sunday",
-    "howToClaim": "Download the Burger King SA app. The deal appears in the Offers section — add to cart to activate",
-    "badge": "App Only",
+    "howToClaim": "Order from the Quick Bites section of the menu at any Wimpy branch during breakfast hours",
+    "badge": "Everyday Value",
+    "active": true
+  },
+  {
+    "name": "FreshStop",
+    "deal": "Food & Coffee Combo — pair a standard Seattle Coffee Co. blend with selected hot food items for a discounted combo price",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Caltex/Astron Energy FreshStop forecourt. Select a qualifying hot food item and pair it with a Seattle coffee at the till",
+    "badge": "Everyday Value",
     "active": true
   }
 ]

@@ -15,28 +15,36 @@
     "badge": "Loyalty",
     "active": true
   },
-  {
-    "name": "Mugg & Bean",
-    "deal": "On The House loyalty — earn stamps per visit and redeem for free coffee and meals",
+ {
+    "name": "Ocean Basket",
+    "deal": "Epic Catch: Sushi 11 + Soda Combo — 11 pieces of fresh assorted sushi served with a refreshing soda for R99",
     "days": "Monday–Sunday",
-    "howToClaim": "Get an On The House card at any Mugg & Bean. Staff stamp it on each visit. Redeem when full",
-    "badge": "Loyalty",
+    "howToClaim": "Order the Sushi 11 Epic Catch combo from the specials menu for sit-down or takeaway",
+    "badge": "Value Combo",
     "active": true
   },
   {
     "name": "Ocean Basket",
-    "deal": "Early Bird special — 20% off all mains when you dine before 6pm on weeknights",
-    "days": "Monday–Friday",
-    "howToClaim": "Dine in before 18:00 on weeknights. Mention the Early Bird special when ordering. No card needed",
-    "badge": null,
+    "deal": "Epic Catch: Sushi 16 — A generous 16-piece sushi platter built for hearty appetites for R125",
+    "days": "Monday–Sunday",
+    "howToClaim": "Ask for the Epic Catch Sushi 16 platter at any participating branch nationwide",
+    "badge": "Limited Time Only",
     "active": true
   },
   {
-    "name": "Panarottis",
-    "deal": "Pizza for Two special — two medium pizzas and two Cokes from R189 every Tuesday and Wednesday",
-    "days": "Tuesday–Wednesday",
-    "howToClaim": "Visit any Panarottis on Tuesdays or Wednesdays and ask for the Pizza for Two deal at the till",
-    "badge": "Weekly Special",
+    "name": "Ocean Basket",
+    "deal": "Epic Catch: Seafood Burger + Soda — Crispy seafood patty tucked into a soft bun, served with a side of chips and a soda for R99",
+    "days": "Monday–Sunday",
+    "howToClaim": "Select your choice of seafood burger from the Epic Catch promotional menu tier",
+    "badge": "Value Combo",
+    "active": true
+  },
+  {
+    "name": "Ocean Basket",
+    "deal": "Epic Catch: Oceans Platter — A greatest-hits solo plate featuring classic fish, prawns, and signature sides for R145",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order the solo Oceans Platter from the limited-time Epic Catch menu",
+    "badge": "Everyday Value",
     "active": true
   },
   {
@@ -45,6 +53,46 @@
     "days": "Monday–Friday",
     "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
     "badge": null,
+    "active": true
+  },
+  {
+    "name": "Spur",
+    "deal": "Classic Monday Burger Special — buy any single original Spur Burger (Beef, Chicken, Soya, or Rib) and get another one free",
+    "days": "Monday",
+    "howToClaim": "Visit any Spur on a Monday for sit-down dining. The cheaper burger of the two is free automatically",
+    "badge": "Dine-in Only",
+    "active": true
+  },
+  {
+    "name": "Spur",
+    "deal": "Unreal Breakfast — get 2 fried eggs, 2 rashers of grilled bacon, 1 pork sausage, fried tomato, and toast for under R50",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order before 11:00 AM daily at any Spur branch. Available for sit-down only",
+    "badge": "Everyday Value",
+    "active": true
+  },
+  {
+    "name": "Panarottis",
+    "deal": "Big Monday Pizza Special — buy any standard pizza or pasta and get another one free",
+    "days": "Monday",
+    "howToClaim": "Dine in at any Panarottis on a Monday. Buy one pizza or pasta and the second one is free automatically",
+    "badge": "Dine-in Only",
+    "active": true
+  },
+  {
+    "name": "Panarottis",
+    "deal": "Thursday Pizza Night — Eat-As-Much-As-You-Can pizza slices for a fixed price per person",
+    "days": "Thursday",
+    "howToClaim": "Visit any Panarottis on a Thursday from 16:00. Pay the fixed per-person rate for continuous pizza slice rotations",
+    "badge": "Weekly Special",
+    "active": true
+  },
+  {
+    "name": "John Dory's",
+    "deal": "Half-Price Sushi Wednesdays — 50% off all single sushi plates and platters all day",
+    "days": "Wednesday",
+    "howToClaim": "Visit any John Dory's branch on a Wednesday for sit-down dining. Discount applies to all single plates at checkout",
+    "badge": "Dine-in Only",
     "active": true
   }
 ]

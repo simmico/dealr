@@ -38,5 +38,29 @@
     "howToClaim": "Download The Entertainer app (free via FNB Gold and above, or R499/year). Browse and redeem at checkout",
     "badge": "App Only",
     "active": true
+  },
+    {
+    "name": "The Tasting Room",
+    "deal": "Date Night Special — Spaghetti and Meatballs for two with a glass of wine each for R215 all day",
+    "days": "Monday–Tuesday",
+    "howToClaim": "Visit the Long Street or Cedar Road branch on a Monday or Tuesday and ask for the Date Night special",
+    "badge": "Date Night",
+    "active": true
+  },
+  {
+    "name": "Panarottis",
+    "deal": "Pizza for Two special — two medium pizzas and two Cokes from R189 every Tuesday and Wednesday",
+    "days": "Tuesday–Wednesday",
+    "howToClaim": "Visit any Panarottis on Tuesdays or Wednesdays and ask for the Pizza for Two deal at the till",
+    "badge": "Weekly Special",
+    "active": true
+  },
+  {
+    "name": "Primi Piatti",
+    "deal": "Happy Hour drinks at 50% off, plus complimentary olives and bread for the table before 6:30pm",
+    "days": "Monday–Friday",
+    "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
+    "badge": null,
+    "active": true
   }
 ]
