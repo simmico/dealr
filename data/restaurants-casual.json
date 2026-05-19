@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Paparazzi / Papachinos",
+    "deal": "Half-price pizza and pasta every Monday — all mains at 50% off when you dine in",
+    "days": "Monday",
+    "howToClaim": "Visit any Papachinos branch on a Monday. No voucher needed — discount applies automatically at the till",
+    "badge": "Dine-in Only",
+    "active": true
+  },
+  {
+    "name": "Spur",
+    "deal": "Kids eat free on Sundays — one free kids meal per paying adult with the Spur Family Card",
+    "days": "Sunday",
+    "howToClaim": "Register a Spur Family Card at your nearest Spur or online. Present card at checkout on Sundays",
+    "badge": "Loyalty",
+    "active": true
+  },
+  {
+    "name": "Mugg & Bean",
+    "deal": "On The House loyalty — earn stamps per visit and redeem for free coffee and meals",
+    "days": "Monday–Sunday",
+    "howToClaim": "Get an On The House card at any Mugg & Bean. Staff stamp it on each visit. Redeem when full",
+    "badge": "Loyalty",
+    "active": true
+  },
+  {
+    "name": "Ocean Basket",
+    "deal": "Early Bird special — 20% off all mains when you dine before 6pm on weeknights",
+    "days": "Monday–Friday",
+    "howToClaim": "Dine in before 18:00 on weeknights. Mention the Early Bird special when ordering. No card needed",
+    "badge": null,
+    "active": true
+  },
+  {
+    "name": "Panarottis",
+    "deal": "Pizza for Two special — two medium pizzas and two Cokes from R189 every Tuesday and Wednesday",
+    "days": "Tuesday–Wednesday",
+    "howToClaim": "Visit any Panarottis on Tuesdays or Wednesdays and ask for the Pizza for Two deal at the till",
+    "badge": "Weekly Special",
+    "active": true
+  },
+  {
+    "name": "Primi Piatti",
+    "deal": "Happy Hour drinks at 50% off, plus complimentary olives and bread for the table before 6:30pm",
+    "days": "Monday–Friday",
+    "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
+    "badge": null,
+    "active": true
+  }
+]

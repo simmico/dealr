@@ -1,0 +1,58 @@
+[
+  {
+    "name": "McDonald's",
+    "deal": "App-only Saver Menu from R25 — includes McFlurry, Small Fries, and Quarter Pounder deals updated weekly",
+    "days": "Monday–Sunday",
+    "howToClaim": "Download the McDonald's SA app, browse the Deals tab, and add to cart before ordering",
+    "badge": "App Only",
+    "active": true
+  },
+  {
+    "name": "Nando's",
+    "deal": "Fire Points loyalty reward — earn 10 points per R10 spent, redeem for free peri-peri chicken",
+    "days": "Monday–Sunday",
+    "howToClaim": "Register a Nando's card at any store or via the Nando's website. Present card at payment",
+    "badge": "Loyalty",
+    "active": true
+  },
+  {
+    "name": "Debonairs Pizza",
+    "deal": "Buy any large pizza online, get a second medium pizza free using the app",
+    "days": "Sunday–Thursday",
+    "howToClaim": "Order via the Debonairs app or website. Deal auto-applies at checkout with qualifying cart",
+    "badge": "Online Only",
+    "active": true
+  },
+  {
+    "name": "Steers",
+    "deal": "Double Delivery deal — free burger added to qualifying delivery orders over R150 via the app",
+    "days": "Wednesday",
+    "howToClaim": "Order on the Steers app. Add a qualifying burger combo and the free item appears at checkout",
+    "badge": "App Only",
+    "active": true
+  },
+  {
+    "name": "KFC",
+    "deal": "Tuesday Treat — buy any 2-piece meal and get a free Streetwise Two every Tuesday",
+    "days": "Tuesday",
+    "howToClaim": "Visit any KFC store on Tuesdays. Show the KFC app coupon at the till to redeem",
+    "badge": "Weekly Special",
+    "active": true
+  },
+  {
+    "name": "Romans Pizza",
+    "deal": "Slice of the Action loyalty — earn slices with every order, redeem for a free pizza after 10 slices",
+    "days": "Monday–Sunday",
+    "howToClaim": "Join the Slice of the Action programme via the Romans Pizza website or app. Scan at checkout",
+    "badge": "Loyalty",
+    "active": true
+  },
+  {
+    "name": "Burger King",
+    "deal": "App-exclusive R49 Whopper Meal — includes small fries and a drink, app users only",
+    "days": "Monday–Sunday",
+    "howToClaim": "Download the Burger King SA app. The deal appears in the Offers section — add to cart to activate",
+    "badge": "App Only",
+    "active": true
+  }
+]

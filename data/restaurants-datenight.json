@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Vida e Caffè",
+    "deal": "Happy Hour — buy one coffee or hot drink, get one free between 3pm and 5pm daily",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Vida e Caffè between 15:00 and 17:00. Order at the counter and mention Happy Hour",
+    "badge": "Happy Hour",
+    "active": true
+  },
+  {
+    "name": "Mythos Greek Restaurant",
+    "deal": "Date Night set menu for two — starter, two mains, and dessert from R395 per couple on weeknights",
+    "days": "Monday–Thursday",
+    "howToClaim": "Book via the Mythos website or call ahead. Ask for the Date Night set menu when seated",
+    "badge": "Set Menu",
+    "active": true
+  },
+  {
+    "name": "News Café",
+    "deal": "Happy Hour cocktails from R49 and 2-for-1 shooters between 5pm and 7pm, Monday to Friday",
+    "days": "Monday–Friday",
+    "howToClaim": "Visit any News Café between 17:00 and 19:00 on weeknights. Prices apply automatically at the bar",
+    "badge": "Happy Hour",
+    "active": true
+  },
+  {
+    "name": "Assaggi Ristorante",
+    "deal": "Complimentary glass of house wine with any two-course dinner — present a printed reservation confirmation",
+    "days": "Tuesday–Thursday",
+    "howToClaim": "Book online via their website and print or show your confirmation. Valid for dinner service only",
+    "badge": null,
+    "active": true
+  },
+  {
+    "name": "The Entertainer App",
+    "deal": "2-for-1 mains at hundreds of participating restaurants across SA — pay for one, second one is free",
+    "days": "Monday–Sunday",
+    "howToClaim": "Download The Entertainer app (free via FNB Gold and above, or R499/year). Browse and redeem at checkout",
+    "badge": "App Only",
+    "active": true
+  }
+]

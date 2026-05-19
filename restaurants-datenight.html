@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Deals | Dealr</title>
-  <meta name="description" content="Browse current South African deals and promotions across groceries, restaurants, health, and more. Updated daily.">
+  <title>Date Night Restaurant Deals South Africa 2026 | Dealr</title>
+  <meta name="description" content="The best date night restaurant deals in South Africa — happy hours, set menus, and complimentary treats at restaurants worth dressing up for.">
   <meta name="theme-color" content="#081B1B">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="All Deals | Dealr">
-  <meta property="og:description" content="Browse current South African deals and promotions across groceries, restaurants, health, and more. Updated daily.">
-  <meta property="og:url" content="https://dealr.simmico.co.za/deals.html">
+  <meta property="og:title" content="Date Night Restaurant Deals South Africa 2026 | Dealr">
+  <meta property="og:description" content="The best date night restaurant deals in South Africa — happy hours, set menus, and complimentary treats at restaurants worth dressing up for.">
+  <meta property="og:url" content="https://dealr.simmico.co.za/restaurants-datenight.html">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="css/base.css">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="page-deals">
+<body class="page-restaurants-datenight">
 
   <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
   <nav class="nav" id="main-nav" aria-label="Main navigation">
@@ -29,9 +29,9 @@
       <a href="index.html" class="nav__wordmark">Dealr</a>
       <ul class="nav__links" role="list">
         <li><a href="index.html" class="nav__link">Home</a></li>
-        <li><a href="deals.html" class="nav__link nav__link--active">Deals</a></li>
+        <li><a href="deals.html" class="nav__link">Deals</a></li>
         <li class="nav__item--has-dropdown">
-          <a href="restaurants.html" class="nav__link">Restaurants</a>
+          <a href="restaurants.html" class="nav__link nav__link--active">Restaurants</a>
           <ul class="nav__dropdown" role="list">
             <li><a href="restaurants-fastfood.html" class="nav__dropdown-link">Fast Food</a></li>
             <li><a href="restaurants-casual.html" class="nav__dropdown-link">Casual Dining</a></li>
@@ -89,73 +89,27 @@
 
   <main>
 
-    <!-- ── Hero ───────────────────────────────────────────────────────────────── -->
-    <section
-      class="deals-hero"
-      aria-label="All deals"
-      style="
-        background: var(--color-dark);
-        height: 280px;
-        padding-top: var(--nav-height);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      "
-    >
+    <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
+    <section class="page-inner-hero" aria-label="Date night deals">
       <div style="text-align:center">
-        <h1 style="color:var(--color-text-light);margin-bottom:12px">All deals.</h1>
-        <p style="font-family:'DM Sans',sans-serif;font-weight:400;font-size:1rem;color:var(--color-mint)">
-          Every current promotion, updated daily.
-        </p>
+        <h1>Date Night.</h1>
+        <p class="hero__subtitle">Make a night out special without paying full price — set menus, happy hours, and complimentary extras.</p>
       </div>
     </section>
 
-    <!-- ── Deals Section ──────────────────────────────────────────────────────── -->
-    <section class="section section--beige">
+    <!-- ── Deals Grid ─────────────────────────────────────────────────────────── -->
+    <section class="section section--beige" aria-label="Date night deals list">
       <div class="container">
-
-        <!-- Search -->
-        <div style="margin-bottom:24px;max-width:480px">
-          <label for="deal-search" class="sr-only">Search deals</label>
-          <input
-            class="input"
-            id="deal-search"
-            type="search"
-            placeholder="Search deals, brands, or tips..."
-            autocomplete="off"
-          >
+        <div class="resto-grid" id="deals-grid">
+          <!-- Cards injected by JS -->
         </div>
+      </div>
+    </section>
 
-        <!-- Results counter -->
-        <p style="margin-bottom:16px;font-family:'DM Sans',sans-serif;font-weight:400;font-size:0.875rem;color:var(--color-text-muted)">
-          <span id="results-count">Showing 0 deals</span>
-        </p>
-
-        <!-- Filter bar -->
-        <div
-          class="filter-bar"
-          id="category-filter"
-          role="group"
-          aria-label="Filter deals by category"
-          style="margin-bottom:32px"
-        >
-          <button class="filter-btn filter-btn--active" data-category="all">All</button>
-          <button class="filter-btn" data-category="grocery">Groceries</button>
-          <button class="filter-btn" data-category="restaurant">Restaurants</button>
-          <button class="filter-btn" data-category="birthday">Birthdays</button>
-          <button class="filter-btn" data-category="health">Health</button>
-          <button class="filter-btn" data-category="banking">Banking</button>
-          <button class="filter-btn" data-category="subscription">Subscriptions</button>
-        </div>
-
-        <!-- Deals grid -->
-        <div
-          class="grid grid--3"
-          id="deals-grid"
-          aria-live="polite"
-          aria-label="Deal cards"
-        ></div>
-
+    <!-- ── Back link ─────────────────────────────────────────────────────────── -->
+    <section class="section section--dark" aria-label="Navigation">
+      <div class="container" style="text-align:center">
+        <a href="restaurants.html" class="btn btn--outline">← All Restaurant Categories</a>
       </div>
     </section>
 
@@ -164,12 +118,10 @@
   <!-- ── Footer ─────────────────────────────────────────────────────────────── -->
   <footer class="footer" aria-label="Site footer">
     <div class="footer__grid">
-
       <div>
         <span class="footer__wordmark">Dealr</span>
         <p class="footer__tagline">South Africa's smartest deals platform</p>
       </div>
-
       <div>
         <span class="footer__links-label">Explore</span>
         <ul class="footer__links" role="list">
@@ -181,16 +133,13 @@
           <li><a href="about.html">About</a></li>
         </ul>
       </div>
-
       <div>
         <p class="footer__meta">A Simmico project</p>
         <a href="https://simmico.co.za" class="footer__meta" target="_blank" rel="noopener noreferrer">simmico.co.za</a>
         <p class="footer__meta">Built for South Africans</p>
         <a href="mailto:deals@simmico.co.za" class="footer__meta">deals@simmico.co.za</a>
       </div>
-
     </div>
-
     <div class="footer__bottom">
       <p>© 2026 Dealr · A Simmico project · dealr.simmico.co.za</p>
     </div>
@@ -224,11 +173,11 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       <span>Home</span>
     </a>
-    <a href="deals.html" class="mobile-nav__tab mobile-nav__tab--active">
+    <a href="deals.html" class="mobile-nav__tab">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
       <span>Deals</span>
     </a>
-    <a href="restaurants.html" class="mobile-nav__tab">
+    <a href="restaurants.html" class="mobile-nav__tab mobile-nav__tab--active">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2s2-.9 2-2V2"/><line x1="7" y1="2" x2="7" y2="22"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3z"/><line x1="21" y1="15" x2="21" y2="22"/></svg>
       <span>Eat</span>
     </a>
@@ -262,23 +211,6 @@
     });
   }
 </script>
-  <!-- ── Deals init ──────────────────────────────────────────────────────────── -->
-  <script type="module">
-    import { loadDeals, filterDeals, sortDeals, renderDeals, initFilterBar, initSearch } from './js/main.js';
-
-    (async () => {
-      const deals  = await loadDeals();
-      const sorted = sortDeals(filterDeals(deals));
-      renderDeals('#deals-grid', sorted);
-
-      const counter = document.querySelector('#results-count');
-      if (counter) counter.textContent = `Showing ${sorted.length} deal${sorted.length !== 1 ? 's' : ''}`;
-
-      initFilterBar('#category-filter', '#deals-grid');
-      initSearch('#deal-search', '#deals-grid');
-    })();
-  </script>
-
   <script type="module" src="js/scroll.js"></script>
   <script type="module" src="js/bot.js"></script>
 
@@ -295,6 +227,31 @@
       overlay.addEventListener('click', closeDrawer);
       closeBtn.addEventListener('click', closeDrawer);
     })();
+  </script>
+
+  <script>
+    fetch('data/restaurants-datenight.json')
+      .then(function(r) { return r.json(); })
+      .then(function(deals) {
+        var grid = document.getElementById('deals-grid');
+        var html = '';
+        deals.forEach(function(d) {
+          if (!d.active) return;
+          var badge = d.badge ? '<span class="resto-card__badge">' + d.badge + '</span>' : '';
+          html += '<article class="resto-card">' +
+            '<div class="resto-card__header">' +
+              '<h3 class="resto-card__name">' + d.name + '</h3>' +
+              badge +
+            '</div>' +
+            '<p class="resto-card__deal">' + d.deal + '</p>' +
+            '<div class="resto-card__meta">' +
+              '<span class="resto-card__days">' + d.days + '</span>' +
+              '<p class="resto-card__claim">' + d.howToClaim + '</p>' +
+            '</div>' +
+          '</article>';
+        });
+        grid.innerHTML = html;
+      });
   </script>
 
 </body>
