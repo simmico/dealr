@@ -85,12 +85,12 @@ export function buildCardHTML(deal) {
     ${normalPrice}
     ${savingBadge}
   </div>
-  <div style="margin-top:16px;border-top:1px solid var(--color-beige-dark);padding-top:14px">
-    <div style="display:flex;align-items:center;gap:6px;color:var(--color-gold)">
+  <div style="margin-top:16px;border-top:1px solid rgba(150,205,176,0.2);padding-top:14px">
+    <div style="display:flex;align-items:center;gap:6px;color:var(--color-mint)">
       ${LIGHTBULB_SVG}
       <span style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.7rem;text-transform:uppercase;letter-spacing:0.08em">How to maximise this</span>
     </div>
-    <p style="font-family:'DM Sans',sans-serif;font-weight:400;font-size:0.85rem;color:var(--color-text-mid);font-style:italic;margin-top:4px;line-height:1.5">${deal.tip}</p>
+    <p style="font-family:'DM Sans',sans-serif;font-weight:400;font-size:0.85rem;color:rgba(150,205,176,0.85);font-style:italic;margin-top:4px;line-height:1.5">${deal.tip}</p>
   </div>
   <div class="card__bottom-row" style="margin-top:16px">
     ${expiryEl}
