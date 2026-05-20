@@ -321,6 +321,7 @@ a.footer__meta:hover {
 
 /* ─── Gold Thread (fixed left bar, all pages) ────────────────────────────────── */
 .gold-thread {
+  display: none;
   position: fixed;
   left: 36px;
   top: 0;
@@ -415,6 +416,15 @@ a.footer__meta:hover {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(-50%) translateY(0);
+}
+
+.nav__dropdown::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 0;
+  right: 0;
+  height: 10px;
 }
 
 .nav__dropdown-link {

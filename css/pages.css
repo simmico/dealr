@@ -116,6 +116,10 @@ body.page-home .scroll-indicator svg {
 }
 
 @media (max-width: 768px) {
+  body.page-home .hero__bg-art {
+    display: none;
+  }
+
   body.page-home .hero__content {
     padding: var(--nav-height) 20px 0;
     justify-content: center;
@@ -1665,3 +1669,574 @@ body.page-home .banking-cta-card .btn {
   font-style: italic;
   line-height: 1.5;
 }
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DISCOVERY PAGES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+body.page-discovery .hub-cards,
+body.page-vitality-core .hub-cards,
+body.page-healthyfood .hub-cards {
+  margin-top: 40px;
+}
+
+/* Discovery Guide Components */
+.discovery-guide-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.discovery-section {
+  background: var(--color-mid);
+  border: 1px solid rgba(150, 205, 176, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.discovery-section h3 {
+  color: var(--color-gold);
+  margin-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-gold);
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+.discovery-section p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--color-mint);
+  line-height: 1.7;
+  margin-bottom: var(--space-sm);
+}
+
+.discovery-section ul, .discovery-section ol {
+  margin-left: 24px;
+  margin-bottom: var(--space-sm);
+}
+
+.discovery-section li {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.95rem;
+  color: var(--color-mint);
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
+
+.discovery-section strong {
+  color: var(--color-text-light);
+  font-weight: 600;
+}
+
+/* CTA buttons inside discovery guide content */
+.discovery-guide-content .hero__cta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: var(--space-sm);
+}
+
+/* Tier Table — on dark card background */
+.tier-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.tier-table th {
+  background: var(--color-dark);
+  color: var(--color-text-light);
+  text-align: left;
+  padding: 12px;
+}
+
+.tier-table td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(150, 205, 176, 0.15);
+  color: var(--color-text-light);
+}
+
+.tier-table tr:nth-child(even) {
+  background: rgba(150, 205, 176, 0.08);
+}
+
+/* Checklist */
+.verification-checklist {
+  background: rgba(193, 141, 82, 0.08);
+  border: 2px dashed var(--color-gold);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-top: 32px;
+}
+
+.verification-checklist h4 {
+  color: var(--color-gold);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 8px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.checklist-item input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-gold);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Pro-tip box inside discovery dark cards */
+.discovery-tip {
+  background: rgba(193, 141, 82, 0.1);
+  border: 1px solid rgba(193, 141, 82, 0.4);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.discovery-tip p {
+  font-size: 0.9rem !important;
+  color: var(--color-text-light) !important;
+  margin-bottom: 0 !important;
+}
+
+/* Warning box inside discovery dark cards */
+.discovery-warning {
+  background: rgba(193, 141, 82, 0.06);
+  border-left: 3px solid var(--color-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: var(--space-sm) var(--space-md);
+  margin: var(--space-sm) 0;
+}
+
+.discovery-warning p {
+  font-size: 0.9rem !important;
+  margin-bottom: 0 !important;
+}
+
+/* Bday-tip reused on discovery/d-day sections (global) */
+.bday-tip {
+  background: rgba(193, 141, 82, 0.1);
+  border: 1px solid var(--color-gold);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  margin-top: var(--space-md);
+}
+
+.bday-tip p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   DISCOVERY MILES CALCULATOR  (body.page-miles-calculator)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+.miles-explainer {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.miles-rule-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+@media (min-width: 640px) {
+  .miles-rule-cards { grid-template-columns: 1fr 1fr 1fr; }
+}
+
+.miles-rule-card {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  border: 1px solid rgba(32, 59, 55, 0.12);
+}
+
+.miles-rule-card__number {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: var(--color-gold);
+  opacity: 0.85;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.miles-rule-card__title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--color-text-dark);
+  margin-bottom: 4px;
+}
+
+.miles-rule-card__desc {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text-mid);
+  line-height: 1.55;
+}
+
+/* Calculator */
+.miles-calc {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.miles-calc__toggles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+@media (max-width: 600px) {
+  .miles-calc__toggles { grid-template-columns: 1fr; }
+}
+
+.miles-toggle {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(90, 143, 118, 0.3);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  cursor: pointer;
+  transition: all 200ms ease;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-align: left;
+  width: 100%;
+}
+
+.miles-toggle:hover {
+  border-color: rgba(193, 141, 82, 0.5);
+  background: rgba(193, 141, 82, 0.04);
+}
+
+.miles-toggle.active {
+  border-color: var(--color-gold);
+  background: rgba(193, 141, 82, 0.1);
+}
+
+.miles-toggle__dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid rgba(90, 143, 118, 0.5);
+  flex-shrink: 0;
+  transition: all 200ms ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.miles-toggle.active .miles-toggle__dot {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+}
+
+.miles-toggle__info { flex: 1; }
+
+.miles-toggle__label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: rgba(150, 205, 176, 0.7);
+  line-height: 1.2;
+  transition: color 200ms ease;
+  display: block;
+}
+
+.miles-toggle.active .miles-toggle__label {
+  color: var(--color-text-light);
+}
+
+.miles-toggle__pct {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.75rem;
+  color: rgba(193, 141, 82, 0.5);
+  margin-top: 2px;
+  transition: color 200ms ease;
+  display: block;
+}
+
+.miles-toggle.active .miles-toggle__pct {
+  color: var(--color-gold);
+}
+
+/* Price Input */
+.miles-calc__input-row {
+  margin-bottom: var(--space-lg);
+}
+
+.miles-calc__input-label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.miles-calc__price-wrap {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(90, 143, 118, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 0 20px;
+  transition: border-color 200ms ease, box-shadow 200ms ease;
+}
+
+.miles-calc__price-wrap:focus-within {
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px rgba(193, 141, 82, 0.15);
+}
+
+.miles-price-prefix {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.miles-price-input {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: var(--color-text-light);
+  background: transparent;
+  border: none;
+  padding: 14px 0;
+  flex: 1;
+  outline: none;
+  -moz-appearance: textfield;
+  width: 100%;
+  min-width: 0;
+}
+
+.miles-price-input::-webkit-outer-spin-button,
+.miles-price-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.miles-price-input::placeholder {
+  color: var(--color-text-muted);
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+/* Results */
+.miles-calc__results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+@media (max-width: 480px) {
+  .miles-calc__results { grid-template-columns: 1fr; }
+}
+
+.miles-result {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(90, 143, 118, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-md);
+  position: relative;
+}
+
+.miles-result--dday {
+  border-color: var(--color-gold);
+  background: rgba(193, 141, 82, 0.07);
+}
+
+.miles-result__label {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-text-muted);
+  display: block;
+  margin-bottom: 10px;
+}
+
+.miles-result--dday .miles-result__label {
+  color: var(--color-gold);
+}
+
+.miles-result__discount {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: var(--color-mint);
+  line-height: 1;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.miles-result--dday .miles-result__discount {
+  color: var(--color-gold);
+}
+
+.miles-result__cost {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--color-text-light);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.miles-result__miles-val {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  display: block;
+}
+
+.miles-dday-badge {
+  position: absolute;
+  top: -10px;
+  right: 14px;
+  background: var(--color-gold);
+  color: var(--color-dark);
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 3px 10px;
+  border-radius: 10px;
+}
+
+/* Savings highlight bar */
+.miles-savings {
+  background: rgba(150, 205, 176, 0.07);
+  border: 1px solid rgba(150, 205, 176, 0.2);
+  border-radius: var(--radius-md);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.miles-savings__label {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--color-mint);
+}
+
+.miles-savings__numbers {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.miles-savings__big {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  color: var(--color-mint);
+}
+
+.miles-savings__sub {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.miles-savings--zero .miles-savings__big,
+.miles-savings--zero .miles-savings__label {
+  opacity: 0.35;
+}
+
+/* Case study tables */
+.miles-case-study {
+  margin-bottom: var(--space-lg);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(32, 59, 55, 0.12);
+}
+
+.miles-case-study__header {
+  background: var(--color-mid);
+  padding: var(--space-md);
+}
+
+.miles-case-study__title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--color-gold);
+  margin-bottom: 4px;
+}
+
+.miles-case-study__meta {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  color: var(--color-mint);
+}
+
+.miles-case-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  background: var(--color-white);
+}
+
+.miles-case-table th {
+  background: rgba(32, 59, 55, 0.06);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 500;
+  color: var(--color-text-mid);
+  border-bottom: 2px solid rgba(90, 143, 118, 0.2);
+}
+
+.miles-case-table td {
+  padding: 10px 14px;
+  color: var(--color-text-dark);
+  border-bottom: 1px solid rgba(90, 143, 118, 0.1);
+}
+
+.miles-case-table tr:last-child td {
+  border-bottom: none;
+}
+
+.miles-case-table .row--dday {
+  background: rgba(193, 141, 82, 0.06);
+}
+
+.miles-case-table .row--dday td:last-child {
+  font-weight: 600;
+  color: var(--color-gold);
+}
+
