@@ -73,6 +73,33 @@ body.page-home .hero__subheading {
   line-height: 1.7;
 }
 
+body.page-home .hero__hidden-perks {
+  margin-top: 24px;
+  max-width: 480px;
+  padding: 16px 20px;
+  background: rgba(32, 59, 55, 0.6);
+  border-left: 2px solid var(--color-gold);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+body.page-home .hero__hidden-perks p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-mint);
+  line-height: 1.65;
+  margin: 0;
+}
+
+body.page-home .hero__hidden-perks a {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+body.page-home .hero__hidden-perks a:hover {
+  color: var(--color-text-light);
+}
+
 body.page-home .hero__cta {
   display: flex;
   gap: 16px;
@@ -872,8 +899,8 @@ body.page-banking .no-results {
 
 /* ─── Result card ─────────────────────────────────────────────────────────── */
 body.page-banking .result-card {
-  background: var(--color-white);
-  border: 1px solid rgba(32, 59, 55, 0.15);
+  background: var(--color-mid);
+  border: 1px solid rgba(150, 205, 176, 0.25);
   border-radius: var(--radius-md, 12px);
   padding: 20px;
   display: flex;
@@ -1056,7 +1083,7 @@ body.page-banking #comparison-grid {
 }
 
 body.page-banking .comp-bank {
-  border-bottom: 1px solid var(--color-beige-dark);
+  border-bottom: 1px solid rgba(150, 205, 176, 0.15);
 }
 
 body.page-banking .comp-bank:last-child {
@@ -1069,15 +1096,16 @@ body.page-banking .comp-bank__header {
   align-items: center;
   gap: 12px;
   padding: 16px 20px;
-  background: var(--color-beige);
+  background: var(--color-mid);
   border: none;
+  border-bottom: 1px solid rgba(150, 205, 176, 0.2);
   cursor: pointer;
   text-align: left;
   transition: background 0.18s;
 }
 
 body.page-banking .comp-bank__header:hover {
-  background: var(--color-beige-dark);
+  background: rgba(32, 59, 55, 0.8);
 }
 
 body.page-banking .comp-bank__name {
@@ -1088,14 +1116,14 @@ body.page-banking .comp-bank__name {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 1.05rem;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
 }
 
 body.page-banking .comp-bank__meta {
   font-family: 'DM Sans', sans-serif;
   font-weight: 400;
   font-size: 0.8rem;
-  color: var(--color-text-muted);
+  color: var(--color-mint);
 }
 
 body.page-banking .comp-bank__header svg {
@@ -1146,13 +1174,14 @@ body.page-banking .comp-table thead th {
 
 body.page-banking .comp-table tbody td {
   padding: 11px 16px;
-  color: var(--color-text-dark);
+  color: var(--color-text-light);
   vertical-align: top;
   line-height: 1.4;
+  background: var(--color-dark);
 }
 
 body.page-banking .comp-table__row--alt {
-  background: rgba(238, 232, 178, 0.3);
+  background: rgba(150, 205, 176, 0.06);
 }
 
 body.page-banking .comp-table__check {
@@ -1826,7 +1855,7 @@ body.page-healthyfood .hub-cards {
   margin-bottom: 0 !important;
 }
 
-/* Bday-tip reused on discovery/d-day sections (global) */
+/* Bday-tip reused on discovery/d-day and banking sections */
 .bday-tip {
   background: rgba(193, 141, 82, 0.1);
   border: 1px solid var(--color-gold);
@@ -1838,9 +1867,14 @@ body.page-healthyfood .hub-cards {
 .bday-tip p {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.9rem;
-  color: var(--color-text-light);
+  color: var(--color-text-dark);
   line-height: 1.65;
   margin-bottom: 0;
+}
+
+.section--dark .bday-tip p,
+.section--mid .bday-tip p {
+  color: var(--color-text-light);
 }
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -2238,5 +2272,93 @@ body.page-healthyfood .hub-cards {
 .miles-case-table .row--dday td:last-child {
   font-weight: 600;
   color: var(--color-gold);
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   BANKING HUB & GUIDE PAGES
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+body.page-banking-hub .page-inner-hero__subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: var(--color-mint);
+  max-width: 560px;
+  margin-top: var(--space-sm);
+  line-height: 1.7;
+}
+
+body.page-banking-guide .page-inner-hero__subtitle {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: var(--color-mint);
+  max-width: 560px;
+  margin-top: var(--space-sm);
+  line-height: 1.7;
+}
+
+body.page-banking-hub .subs-teaser__inner {
+  display: grid;
+  grid-template-columns: 60fr 40fr;
+  gap: var(--space-xl);
+  align-items: center;
+}
+
+body.page-banking-hub .subs-teaser__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  body.page-banking-hub .subs-teaser__inner {
+    grid-template-columns: 1fr;
+  }
+
+  body.page-banking-hub .subs-teaser__visual {
+    order: -1;
+  }
+}
+
+/* Result card text colours on dark background */
+body.page-banking .result-card__bank {
+  color: var(--color-text-light);
+}
+
+body.page-banking .result-card__tier {
+  color: var(--color-mint);
+}
+
+body.page-banking .result-card__fee {
+  color: var(--color-gold);
+}
+
+body.page-banking .result-card__match {
+  color: var(--color-mint);
+}
+
+body.page-banking .result-card__expand {
+  color: var(--color-mint);
+  border-top: 1px solid rgba(150, 205, 176, 0.2);
+}
+
+body.page-banking .result-card__details-list li {
+  color: var(--color-mint);
+}
+
+body.page-banking .result-card__key-benefit {
+  color: var(--color-text-light);
+}
+
+body.page-banking .quiz-disclaimer {
+  color: var(--color-text-mid);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-md);
+}
+
+body.page-banking .comp-note {
+  color: var(--color-mint) !important;
+  opacity: 0.7;
 }
 

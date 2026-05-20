@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Date Night Restaurant Deals South Africa 2026 | Dealr</title>
-  <meta name="description" content="The best date night restaurant deals in South Africa — happy hours, set menus, and complimentary treats at restaurants worth dressing up for.">
+  <title>Compare SA Bank Accounts 2026 | Dealr</title>
+  <meta name="description" content="Compare FNB, Absa, Nedbank, Standard Bank, Capitec and Discovery Bank side by side. Full fee and benefit breakdowns for every tier in 2026.">
   <meta name="theme-color" content="#081B1B">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Date Night Restaurant Deals South Africa 2026 | Dealr">
-  <meta property="og:description" content="The best date night restaurant deals in South Africa — happy hours, set menus, and complimentary treats at restaurants worth dressing up for.">
-  <meta property="og:url" content="https://dealr.simmico.co.za/restaurants-datenight.html">
+  <meta property="og:title" content="Compare SA Bank Accounts 2026 | Dealr">
+  <meta property="og:description" content="Compare FNB, Absa, Nedbank, Standard Bank, Capitec and Discovery Bank side by side. Full fee and benefit breakdowns for every tier in 2026.">
+  <meta property="og:url" content="https://dealr.simmico.co.za/banking-compare.html">
   <meta property="og:type" content="website">
 
   <link rel="stylesheet" href="css/base.css">
@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="css/animations.css">
   <link rel="stylesheet" href="css/pages.css">
 </head>
-<body class="page-restaurants-datenight">
+<body class="page-banking">
 
   <!-- ── Navigation ─────────────────────────────────────────────────────────── -->
   <nav class="nav" id="main-nav" aria-label="Main navigation">
@@ -31,7 +31,7 @@
         <li><a href="index.html" class="nav__link">Home</a></li>
         <li><a href="deals.html" class="nav__link">Deals</a></li>
         <li class="nav__item--has-dropdown">
-          <a href="restaurants.html" class="nav__link nav__link--active">Restaurants</a>
+          <a href="restaurants.html" class="nav__link">Restaurants</a>
           <ul class="nav__dropdown" role="list">
             <li><a href="restaurants-fastfood.html" class="nav__dropdown-link">Fast Food</a></li>
             <li><a href="restaurants-casual.html" class="nav__dropdown-link">Casual Dining</a></li>
@@ -51,7 +51,7 @@
           </ul>
         </li>
         <li class="nav__item--has-dropdown">
-          <a href="banking.html" class="nav__link">Banking</a>
+          <a href="banking.html" class="nav__link nav__link--active">Banking</a>
           <ul class="nav__dropdown" role="list">
             <li><a href="banking-ebucks.html" class="nav__dropdown-link">FNB eBucks</a></li>
             <li><a href="banking-greenbacks.html" class="nav__dropdown-link">Nedbank Greenbacks</a></li>
@@ -84,26 +84,142 @@
   <main>
 
     <!-- ── Hero ──────────────────────────────────────────────────────────────── -->
-    <section class="page-inner-hero" aria-label="Date night deals">
+    <section class="page-inner-hero" aria-label="Compare Banks">
       <div style="text-align:center">
-        <h1>Date Night.</h1>
-        <p class="hero__subtitle">Make a night out special without paying full price — set menus, happy hours, and complimentary extras.</p>
+        <h1>Compare Banks.</h1>
+        <p class="hero__subtitle">Every major SA bank. Every tier. Find the account built for how you spend.</p>
       </div>
     </section>
 
-    <!-- ── Deals Grid ─────────────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="Date night deals list">
+    <!-- ── Quiz ──────────────────────────────────────────────────────────────── -->
+    <section class="section section--beige" id="banking-quiz">
       <div class="container">
-        <div class="resto-grid" id="deals-grid">
-          <!-- Cards injected by JS -->
+
+        <div class="section__header">
+          <span class="section__eyebrow">Personalised</span>
+          <h2>What matters to you?</h2>
+          <p class="section__subtitle">Tell us how you spend and we will show you which banks offer real benefits in those areas.</p>
+        </div>
+
+        <div id="quiz-container">
+          <p class="quiz-progress">Step 1 of 3</p>
+
+          <!-- Step 1: Spending categories -->
+          <div id="quiz-step-1">
+            <h3 class="quiz-step__heading">What do you spend the most on?</h3>
+            <p class="quiz-step__subtext">Select up to 3 categories</p>
+
+            <div class="quiz-options quiz-options--grid">
+
+              <button class="quiz-option" type="button" data-value="groceries">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                <span>Groceries</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="fuel">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="3" y2="2"/><line x1="3" y1="2" x2="13" y2="2"/><line x1="13" y1="2" x2="13" y2="22"/><path d="M13 10h3a2 2 0 012 2v3.5a1.5 1.5 0 003 0V9l-3-4"/><line x1="2" y1="22" x2="22" y2="22"/><line x1="6" y1="7" x2="10" y2="7"/></svg>
+                <span>Fuel</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="eating-out">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2s2-.9 2-2V2"/><line x1="7" y1="2" x2="7" y2="22"/><path d="M21 15V2a5 5 0 00-5 5v6c0 1.1.9 2 2 2h3z"/><line x1="21" y1="15" x2="21" y2="22"/></svg>
+                <span>Eating out</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="travel">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+                <span>Travel</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="gym">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 010 8h-1"/><path d="M2 8h16v9a4 4 0 01-4 4H6a4 4 0 01-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+                <span>Gym and wellness</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="online-shopping">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+                <span>Online shopping</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="entertainment">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                <span>Entertainment</span>
+              </button>
+
+              <button class="quiz-option" type="button" data-value="pharmacy">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg>
+                <span>Pharmacy</span>
+              </button>
+
+            </div>
+
+            <div class="quiz-nav">
+              <button id="quiz-next-1" class="btn btn--primary" type="button" disabled>Next →</button>
+            </div>
+          </div>
+
+          <!-- Step 2: Income -->
+          <div id="quiz-step-2" hidden>
+            <h3 class="quiz-step__heading">What is your approximate monthly income?</h3>
+
+            <div class="quiz-options quiz-options--income">
+              <button class="quiz-option" type="button" data-value="0-7999"><span class="quiz-option__label">Under R8,000</span></button>
+              <button class="quiz-option" type="button" data-value="8000-25000"><span class="quiz-option__label">R8,000 – R25,000</span></button>
+              <button class="quiz-option" type="button" data-value="25000-60000"><span class="quiz-option__label">R25,000 – R60,000</span></button>
+              <button class="quiz-option" type="button" data-value="60000-999999"><span class="quiz-option__label">Over R60,000</span></button>
+            </div>
+
+            <div class="quiz-nav quiz-nav--space-between">
+              <button id="quiz-back-2" class="btn btn--outline" type="button">← Back</button>
+              <button id="quiz-next-2" class="btn btn--primary" type="button" disabled>Next →</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Priority -->
+          <div id="quiz-step-3" hidden>
+            <h3 class="quiz-step__heading">What matters most in a bank account?</h3>
+
+            <div class="quiz-options quiz-options--priority">
+              <button class="quiz-option" type="button" data-value="fees"><span class="quiz-option__label">Lowest fees</span></button>
+              <button class="quiz-option" type="button" data-value="rewards"><span class="quiz-option__label">Best rewards</span></button>
+              <button class="quiz-option" type="button" data-value="lifestyle"><span class="quiz-option__label">Best lifestyle benefits</span></button>
+              <button class="quiz-option" type="button" data-value="app"><span class="quiz-option__label">Best app</span></button>
+            </div>
+
+            <div class="quiz-nav quiz-nav--space-between">
+              <button id="quiz-back-3" class="btn btn--outline" type="button">← Back</button>
+              <button id="quiz-show-results" class="btn btn--primary" type="button" disabled>Show my matches</button>
+            </div>
+          </div>
+
+          <!-- Results panel -->
+          <div id="quiz-results" hidden>
+            <h3 class="quiz-step__heading">Banks that match your priorities</h3>
+            <div class="quiz-disclaimer" role="note">
+              This is not financial advice. We show you accounts offering benefits matching your selections.
+              Fees and benefits change — always verify on the bank's official website before switching.
+            </div>
+            <div id="results-grid" class="results-grid" aria-live="polite"></div>
+            <a href="#" id="quiz-start-over" class="quiz-start-over">Start over</a>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- ── Back link ─────────────────────────────────────────────────────────── -->
-    <section class="section section--dark" aria-label="Navigation">
-      <div class="container" style="text-align:center">
-        <a href="restaurants.html" class="btn btn--outline">← All Restaurant Categories</a>
+    <!-- ── Full Comparison ───────────────────────────────────────────────────── -->
+    <section class="section section--mid" id="banking-comparison">
+      <div class="container">
+
+        <div class="section__header">
+          <h2 style="color:var(--color-text-light)">Full comparison</h2>
+          <p class="section__subtitle">Every major SA bank, every tier.</p>
+        </div>
+
+        <div id="comparison-grid"></div>
+
+        <p class="comp-note" style="color:var(--color-text-muted)">Monthly fees and benefits accurate as at May 2026. Always verify on the bank's official website.</p>
+
       </div>
     </section>
 
@@ -171,11 +287,11 @@
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
       <span>Deals</span>
     </a>
-    <a href="restaurants.html" class="mobile-nav__tab mobile-nav__tab--active">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 2v7c0 1.1.9 2 2 2s2-.9 2-2V2"/><line x1="7" y1="2" x2="7" y2="22"/><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3z"/><line x1="21" y1="15" x2="21" y2="22"/></svg>
+    <a href="restaurants.html" class="mobile-nav__tab">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
       <span>Eat</span>
     </a>
-    <a href="banking.html" class="mobile-nav__tab">
+    <a href="banking.html" class="mobile-nav__tab mobile-nav__tab--active">
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg>
       <span>Banking</span>
     </a>
@@ -204,6 +320,7 @@
     });
   }
 </script>
+  <script type="module" src="js/banking.js"></script>
   <script type="module" src="js/scroll.js"></script>
   <script type="module" src="js/bot.js"></script>
 
@@ -220,31 +337,6 @@
       overlay.addEventListener('click', closeDrawer);
       closeBtn.addEventListener('click', closeDrawer);
     })();
-  </script>
-
-  <script>
-    fetch('data/restaurants-datenight.json')
-      .then(function(r) { return r.json(); })
-      .then(function(deals) {
-        var grid = document.getElementById('deals-grid');
-        var html = '';
-        deals.forEach(function(d) {
-          if (!d.active) return;
-          var badge = d.badge ? '<span class="resto-card__badge">' + d.badge + '</span>' : '';
-          html += '<article class="resto-card">' +
-            '<div class="resto-card__header">' +
-              '<h3 class="resto-card__name">' + d.name + '</h3>' +
-              badge +
-            '</div>' +
-            '<p class="resto-card__deal">' + d.deal + '</p>' +
-            '<div class="resto-card__meta">' +
-              '<span class="resto-card__days">' + d.days + '</span>' +
-              '<p class="resto-card__claim">' + d.howToClaim + '</p>' +
-            '</div>' +
-          '</article>';
-        });
-        grid.innerHTML = html;
-      });
   </script>
 
 </body>
