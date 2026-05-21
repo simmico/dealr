@@ -3,8 +3,9 @@
     "name": "Paparazzi / Papachinos",
     "deal": "Half-price pizza and pasta every Monday — all mains at 50% off when you dine in",
     "days": "Monday",
-    "howToClaim": "Visit any Papachinos branch on a Monday. No voucher needed — discount applies automatically at the till",
+    "howToClaim": "Visit any Papachinos branch on a Monday. No voucher needed - discount applies automatically at the till",
     "badge": "Dine-in Only",
+    "link": "https://www.papachinos.co.za",
     "active": true
   },
   {
@@ -13,14 +14,16 @@
     "days": "Sunday",
     "howToClaim": "Register a Spur Family Card at your nearest Spur or online. Present card at checkout on Sundays",
     "badge": "Loyalty",
+    "link": "https://www.spur.co.za",
     "active": true
   },
- {
+  {
     "name": "Ocean Basket",
     "deal": "Epic Catch: Sushi 11 + Soda Combo — 11 pieces of fresh assorted sushi served with a refreshing soda for R99",
     "days": "Monday–Sunday",
     "howToClaim": "Order the Sushi 11 Epic Catch combo from the specials menu for sit-down or takeaway",
     "badge": "Value Combo",
+    "link": "https://oceanbasket.com",
     "active": true
   },
   {
@@ -29,6 +32,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Ask for the Epic Catch Sushi 16 platter at any participating branch nationwide",
     "badge": "Limited Time Only",
+    "link": "https://oceanbasket.com",
     "active": true
   },
   {
@@ -37,6 +41,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Select your choice of seafood burger from the Epic Catch promotional menu tier",
     "badge": "Value Combo",
+    "link": "https://oceanbasket.com",
     "active": true
   },
   {
@@ -45,6 +50,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Order the solo Oceans Platter from the limited-time Epic Catch menu",
     "badge": "Everyday Value",
+    "link": "https://oceanbasket.com",
     "active": true
   },
   {
@@ -53,22 +59,25 @@
     "days": "Monday–Friday",
     "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
     "badge": null,
+    "link": "https://www.primi.co.za",
     "active": true
   },
   {
     "name": "Spur",
-    "deal": "Classic Monday Burger Special — buy any single original Spur Burger (Beef, Chicken, Soya, or Rib) and get another one free",
+    "deal": "Classic Monday Burger Special — buy any single original Spur Burger and get another one free",
     "days": "Monday",
     "howToClaim": "Visit any Spur on a Monday for sit-down dining. The cheaper burger of the two is free automatically",
     "badge": "Dine-in Only",
+    "link": "https://www.spur.co.za",
     "active": true
   },
   {
     "name": "Spur",
     "deal": "Unreal Breakfast — get 2 fried eggs, 2 rashers of grilled bacon, 1 pork sausage, fried tomato, and toast for under R50",
     "days": "Monday–Sunday",
-    "howToClaim": "Order before 11:00 AM daily at any Spur branch. Available for sit-down only",
+    "howToClaim": "Order before 11:00 daily at any Spur branch. Available for sit-down only",
     "badge": "Everyday Value",
+    "link": "https://www.spur.co.za",
     "active": true
   },
   {
@@ -77,6 +86,7 @@
     "days": "Monday",
     "howToClaim": "Dine in at any Panarottis on a Monday. Buy one pizza or pasta and the second one is free automatically",
     "badge": "Dine-in Only",
+    "link": "https://www.panarottis.co.za",
     "active": true
   },
   {
@@ -85,6 +95,7 @@
     "days": "Thursday",
     "howToClaim": "Visit any Panarottis on a Thursday from 16:00. Pay the fixed per-person rate for continuous pizza slice rotations",
     "badge": "Weekly Special",
+    "link": "https://www.panarottis.co.za",
     "active": true
   },
   {
@@ -93,6 +104,7 @@
     "days": "Wednesday",
     "howToClaim": "Visit any John Dory's branch on a Wednesday for sit-down dining. Discount applies to all single plates at checkout",
     "badge": "Dine-in Only",
+    "link": "https://www.johndorys.co.za",
     "active": true
   }
 ]

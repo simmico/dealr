@@ -5,6 +5,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Ask for the R30 Nazo value tier at the counter, drive-thru, or unlock the exclusive pricing tier directly inside the McDonald's SA App",
     "badge": "Limited Time Only",
+    "link": "https://www.mcdonalds.co.za",
     "active": true
   },
   {
@@ -13,6 +14,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Order a Streetwise 2 over the counter, at the drive-thru, or via the KFC South Africa app",
     "badge": "Everyday Value",
+    "link": "https://kfc.co.za",
     "active": true
   },
   {
@@ -21,6 +23,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Order in-store at any local branch for takeaway or collection",
     "badge": "Everyday Value",
+    "link": "https://www.thefishandchipco.co.za",
     "active": true
   },
   {
@@ -29,6 +32,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Ask for the Small Russian and Mini Chips meal option at the counter",
     "badge": "Everyday Value",
+    "link": "https://www.thefishandchipco.co.za",
     "active": true
   },
   {
@@ -37,6 +41,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Order from the Casa Deals section of the menu in-store, drive-thru, or via the Nando's app",
     "badge": "Everyday Value",
+    "link": "https://www.nandos.co.za",
     "active": true
   },
   {
@@ -45,6 +50,7 @@
     "days": "Wednesday",
     "howToClaim": "Order the Wacky Wednesday promotional bundle at any Steers branch, drive-thru, or via the Steers delivery app",
     "badge": "Weekly Special",
+    "link": "https://www.steers.co.za",
     "active": true
   },
   {
@@ -53,6 +59,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Order any pizza from the Real Deal menu category online, on the app, or at any Debonairs counter",
     "badge": "Everyday Value",
+    "link": "https://www.debonairs.co.za",
     "active": true
   },
   {
@@ -61,6 +68,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Order from the Quick Bites section of the menu at any Wimpy branch during breakfast hours",
     "badge": "Everyday Value",
+    "link": "https://wimpy.co.za",
     "active": true
   },
   {
@@ -69,6 +77,7 @@
     "days": "Monday–Sunday",
     "howToClaim": "Visit any Caltex/Astron Energy FreshStop forecourt. Select a qualifying hot food item and pair it with a Seattle coffee at the till",
     "badge": "Everyday Value",
+    "link": "https://www.freshstop.co.za",
     "active": true
   }
 ]

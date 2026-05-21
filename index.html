@@ -84,7 +84,7 @@
   <main>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         SECTION 1 — HERO
+         SECTION 1  -  HERO
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="hero" aria-label="Welcome to Dealr">
 
@@ -138,7 +138,7 @@
           </p>
 
           <div class="hero__hidden-perks">
-            <p>Most South Africans with a VISA Signature or Infinite card don't know they have <a href="card-privileges.html"><strong>airport lounge visits</strong></a> that are completely separate from their bank's allowance — even if your bank says you've used them up, VISA's own access still works. Your card also quietly includes <a href="card-privileges.html"><strong>free purchase insurance</strong></a> on eligible items you pay for with the card.</p>
+            <p>Most South Africans with a VISA Signature or Infinite card don't know they have <a href="card-privileges.html"><strong>airport lounge visits</strong></a> that are completely separate from their bank's allowance  -  even if your bank says you've used them up, VISA's own access still works. Your card also quietly includes <a href="card-privileges.html"><strong>free purchase insurance</strong></a> on eligible items you pay for with the card.</p>
           </div>
 
           <div class="hero__cta">
@@ -147,9 +147,9 @@
           </div>
 
           <div class="hero__stats" aria-label="Platform stats">
-            <span class="hero__stat">247 active deals</span>
+            <span class="hero__stat" id="stat-deals">247 active deals</span>
             <div class="hero__stat-divider" aria-hidden="true"></div>
-            <span class="hero__stat">6 categories</span>
+            <span class="hero__stat" id="stat-cats">6 categories</span>
             <div class="hero__stat-divider" aria-hidden="true"></div>
             <span class="hero__stat">Updated daily</span>
           </div>
@@ -177,7 +177,7 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         SECTION 2 — FEATURED DEALS
+         SECTION 2  -  FEATURED DEALS
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="section section--beige" id="featured-deals">
       <div class="container">
@@ -218,7 +218,35 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         SECTION 3 — HOW IT WORKS
+         SECTION  -  WEDNESDAY VITALITY MALL SPECIAL (shown by JS on Wednesdays)
+         ══════════════════════════════════════════════════════════════════════ -->
+    <section class="section section--mid" id="wednesday-special" aria-label="Wednesday Vitality Mall special" style="display:none">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-eyebrow section-eyebrow--mint">Today only</span>
+          <h2>Wednesday Vitality Mall Special</h2>
+          <p class="section-subtitle">Log in to Discovery Vitality and claim this week's voucher before midnight.</p>
+        </header>
+        <div style="background:rgba(0,0,0,0.18);border:1px solid rgba(163,213,188,0.2);border-radius:var(--radius-md);padding:var(--space-md) var(--space-lg);margin-bottom:var(--space-md)">
+          <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-mint);margin-bottom:8px">This week's deal</p>
+          <!-- UPDATE EACH WEDNESDAY: replace the line below with this week's Vitality Mall voucher details -->
+          <p style="font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:600;color:var(--color-text-light);line-height:1.4" id="wednesday-deal-text">Update this text each Wednesday with the current Vitality Mall voucher offer.</p>
+        </div>
+        <div style="margin-bottom:var(--space-md)">
+          <p style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.08em;color:var(--color-mint);margin-bottom:10px">How to redeem</p>
+          <ol style="list-style:decimal;padding-left:20px;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(240,237,226,0.85);line-height:2">
+            <li>Open the Discovery app or go to vitality.co.za</li>
+            <li>Navigate to <strong>Vitality Mall</strong></li>
+            <li>Find today's special and add it to your cart</li>
+            <li>Apply the voucher code at checkout before midnight tonight</li>
+          </ol>
+        </div>
+        <a href="https://www.discovery.co.za/vitality/vitality-mall" class="btn btn--primary" style="display:inline-flex" target="_blank" rel="noopener noreferrer">Go to Vitality Mall →</a>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════════════════════════
+         SECTION 3  -  HOW IT WORKS
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="section section--mid" id="how-it-works">
       <div class="container">
@@ -245,7 +273,7 @@
           <div class="how-it-works__item animate-ready">
             <div class="how-it-works__number" aria-hidden="true">3</div>
             <h3>You save</h3>
-            <p>Every deal includes a tip on how to get even more value — stacking loyalty cards, combining cashback, timing your shop.</p>
+            <p>Every deal includes a tip on how to get even more value  -  stacking loyalty cards, combining cashback, timing your shop.</p>
           </div>
 
         </div>
@@ -253,7 +281,7 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         SECTION 4 — SUBSCRIPTIONS TEASER
+         SECTION 4  -  SUBSCRIPTIONS TEASER
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="section section--beige">
       <div class="container">
@@ -266,7 +294,7 @@
             <p>
               Most South Africans with FNB, Discovery, or a major retailer loyalty
               card are sitting on benefits they have never activated. We break it all
-              down — what you have, what it is worth, and exactly how to use it.
+              down  -  what you have, what it is worth, and exactly how to use it.
             </p>
             <a href="subscriptions.html" class="btn btn--primary">Explore subscriptions</a>
           </div>
@@ -325,7 +353,7 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         SECTION 5 — BANKING CTA CARD
+         SECTION 5  -  BANKING CTA CARD
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="section section--beige">
       <div class="container">
@@ -341,7 +369,7 @@
     </section>
 
     <!-- ══════════════════════════════════════════════════════════════════════
-         SECTION 6 — MAILING LIST
+         SECTION 6  -  MAILING LIST
          ══════════════════════════════════════════════════════════════════════ -->
     <section class="section section--mid" id="mailing-list">
       <div class="container">
@@ -492,10 +520,23 @@
 
     (async () => {
       const deals  = await loadDeals();
-      const sorted = sortDeals(filterDeals(deals));
+      const active = filterDeals(deals);
+      const sorted = sortDeals(active);
       renderDeals('#deals-grid', sorted, 6);
       initFilterBar('#category-filter', '#deals-grid', 6);
+
+      const statDeals = document.getElementById('stat-deals');
+      const statCats  = document.getElementById('stat-cats');
+      if (statDeals) statDeals.textContent = active.length + ' active deals';
+      if (statCats)  statCats.textContent  = new Set(active.map(d => d.category).filter(Boolean)).size + ' categories';
     })();
+  </script>
+
+  <script>
+    if (new Date().getDay() === 3) {
+      var ws = document.getElementById('wednesday-special');
+      if (ws) ws.style.display = '';
+    }
   </script>
 
   <script type="module" src="js/scroll.js"></script>

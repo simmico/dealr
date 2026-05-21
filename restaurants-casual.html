@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Casual Dining Deals South Africa 2026 | Dealr</title>
-  <meta name="description" content="Best casual dining deals in South Africa — Spur, Mugg &amp; Bean, Ocean Basket, Panarottis and more. Family specials and loyalty rewards.">
+  <meta name="description" content="Best casual dining deals in South Africa  -  Spur, Mugg &amp; Bean, Ocean Basket, Panarottis and more. Family specials and loyalty rewards.">
   <meta name="theme-color" content="#081B1B">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Casual Dining Deals South Africa 2026 | Dealr">
-  <meta property="og:description" content="Best casual dining deals in South Africa — Spur, Mugg &amp; Bean, Ocean Basket, Panarottis and more. Family specials and loyalty rewards.">
+  <meta property="og:description" content="Best casual dining deals in South Africa  -  Spur, Mugg &amp; Bean, Ocean Basket, Panarottis and more. Family specials and loyalty rewards.">
   <meta property="og:url" content="https://dealr.simmico.co.za/restaurants-casual.html">
   <meta property="og:type" content="website">
 
@@ -242,6 +242,7 @@
               '<span class="resto-card__meta-label">How to claim</span>' +
               '<p class="resto-card__claim">' + d.howToClaim + '</p>' +
             '</div>' +
+            (d.link ? '<a href="' + d.link + '" class="resto-card__view-deal" target="_blank" rel="noopener noreferrer">View deal →</a>' : '') +
           '</article>';
         });
         grid.innerHTML = html;

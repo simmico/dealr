@@ -1,10 +1,11 @@
 [
   {
-    "name": "Vida e Caffè",
+    "name": "Vida e Caffe",
     "deal": "Happy Hour — buy one coffee or hot drink, get one free between 3pm and 5pm daily",
     "days": "Monday–Sunday",
-    "howToClaim": "Visit any Vida e Caffè between 15:00 and 17:00. Order at the counter and mention Happy Hour",
+    "howToClaim": "Visit any Vida e Caffe between 15:00 and 17:00. Order at the counter and mention Happy Hour",
     "badge": "Happy Hour",
+    "link": "https://www.vidacoffee.co.za",
     "active": true
   },
   {
@@ -13,14 +14,16 @@
     "days": "Monday–Thursday",
     "howToClaim": "Book via the Mythos website or call ahead. Ask for the Date Night set menu when seated",
     "badge": "Set Menu",
+    "link": "https://www.mythos.co.za",
     "active": true
   },
   {
-    "name": "News Café",
+    "name": "News Cafe",
     "deal": "Happy Hour cocktails from R49 and 2-for-1 shooters between 5pm and 7pm, Monday to Friday",
     "days": "Monday–Friday",
-    "howToClaim": "Visit any News Café between 17:00 and 19:00 on weeknights. Prices apply automatically at the bar",
+    "howToClaim": "Visit any News Cafe between 17:00 and 19:00 on weeknights. Prices apply automatically at the bar",
     "badge": "Happy Hour",
+    "link": "https://www.newscafe.co.za",
     "active": true
   },
   {
@@ -29,6 +32,7 @@
     "days": "Tuesday–Thursday",
     "howToClaim": "Book online via their website and print or show your confirmation. Valid for dinner service only",
     "badge": null,
+    "link": "https://www.assaggi.co.za",
     "active": true
   },
   {
@@ -37,14 +41,16 @@
     "days": "Monday–Sunday",
     "howToClaim": "Download The Entertainer app (free via FNB Gold and above, or R499/year). Browse and redeem at checkout",
     "badge": "App Only",
+    "link": "https://www.theentertainersa.com",
     "active": true
   },
-    {
+  {
     "name": "The Tasting Room",
     "deal": "Date Night Special — Spaghetti and Meatballs for two with a glass of wine each for R215 all day",
     "days": "Monday–Tuesday",
     "howToClaim": "Visit the Long Street or Cedar Road branch on a Monday or Tuesday and ask for the Date Night special",
     "badge": "Date Night",
+    "link": "https://www.thetastingroom.co.za",
     "active": true
   },
   {
@@ -53,6 +59,7 @@
     "days": "Tuesday–Wednesday",
     "howToClaim": "Visit any Panarottis on Tuesdays or Wednesdays and ask for the Pizza for Two deal at the till",
     "badge": "Weekly Special",
+    "link": "https://www.panarottis.co.za",
     "active": true
   },
   {
@@ -61,6 +68,7 @@
     "days": "Monday–Friday",
     "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
     "badge": null,
+    "link": "https://www.primi.co.za",
     "active": true
   }
 ]

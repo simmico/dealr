@@ -445,6 +445,20 @@ a.footer__meta:hover {
   background: rgba(193, 141, 82, 0.08);
 }
 
+/* ─── Hide subscriptions site-wide ──────────────────────────────────────────── */
+.nav__links li:has(> a[href="subscriptions.html"]),
+.more-drawer__row[href="subscriptions.html"] {
+  display: none !important;
+}
+
+main .section:has(a[href="subscriptions.html"]) {
+  display: none !important;
+}
+
+.footer__links li:has(a[href="subscriptions.html"]) {
+  display: none !important;
+}
+
 /* ─── Mobile Bottom Nav ──────────────────────────────────────────────────────── */
 .mobile-nav {
   display: none;
@@ -455,7 +469,7 @@ a.footer__meta:hover {
   background: var(--color-dark);
   z-index: 1100;
   border-top: 1px solid rgba(90, 143, 118, 0.15);
-  padding-bottom: env(safe-area-inset-bottom);
+  padding-bottom: max(env(safe-area-inset-bottom), 6px);
 }
 
 .mobile-nav__tab {

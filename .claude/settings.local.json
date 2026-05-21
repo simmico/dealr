@@ -7,7 +7,10 @@
       "Bash(git rm *)",
       "Bash(git push *)",
       "Bash(python *)",
-      "Bash(pip install *)"
+      "Bash(pip install *)",
+      "Bash(awk '{print $5, $9}')",
+      "Bash(sort -k2)",
+      "Bash(git checkout *)"
     ]
   }
 }

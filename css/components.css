@@ -249,16 +249,29 @@
   transition: all 200ms ease;
   cursor: pointer;
   white-space: nowrap;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .filter-btn:hover {
-  background: rgba(150, 205, 176, 0.2);
+  background: rgba(163, 213, 188, 0.2);
 }
 
 .filter-btn--active {
-  background: var(--color-mid);
-  border-color: var(--color-mid);
-  color: var(--color-text-light);
+  background: var(--color-mid) !important;
+  border-color: var(--color-mid) !important;
+  color: var(--color-text-light) !important;
+  box-shadow: 0 0 0 2px rgba(163, 213, 188, 0.35);
+}
+
+@media (max-width: 768px) {
+  .filter-btn--active {
+    background: var(--color-mint) !important;
+    color: var(--color-dark) !important;
+    border-color: var(--color-mint) !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
 }
 
 /* ─── Section Headers ────────────────────────────────────────────────────────── */

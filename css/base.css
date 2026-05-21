@@ -1,16 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=DM+Sans:wght@400;500&family=Space+Grotesk:wght@500;600&display=swap');
 
 /* ─── Custom Properties ─────────────────────────────────────────────────────── */
 :root {
   /* Colour palette */
-  --color-dark:       #081B1B;
-  --color-mid:        #203B37;
-  --color-light:      #5A8F76;
-  --color-mint:       #96CDB0;
+  --color-dark:       #0D2323;
+  --color-mid:        #274E4A;
+  --color-light:      #62A082;
+  --color-mint:       #A3D5BC;
   --color-gold:       #C18D52;
   --color-gold-light: #D4A96A;
-  --color-beige:      #EEE8B2;
-  --color-beige-dark: #E0D89A;
+  --color-beige:      #F2EEC4;
+  --color-beige-dark: #E8E0A8;
   --color-white:      #FFFFFF;
   --color-text-dark:  #0D1F0D;
   --color-text-mid:   #2A3D2A;
@@ -116,4 +116,102 @@ p {
   h1 { font-size: 2.4rem; }
   h2 { font-size: 1.8rem; }
   h3 { font-size: 1.4rem; }
+}
+
+/* ─── Consistent content hyperlink colour ────────────────────────────────────── */
+main p a:not([class]),
+main li a:not([class]),
+main td a:not([class]) {
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: rgba(193, 141, 82, 0.45);
+}
+
+main p a:not([class]):hover,
+main li a:not([class]):hover,
+main td a:not([class]):hover {
+  color: var(--color-gold-light);
+  text-decoration-color: var(--color-gold-light);
+}
+
+/* ─── Add to homescreen banner ───────────────────────────────────────────────── */
+.ath-banner {
+  position: fixed;
+  bottom: calc(72px + env(safe-area-inset-bottom) + 10px);
+  left: 12px;
+  right: 12px;
+  background: var(--color-mid);
+  border: 1px solid var(--color-gold);
+  border-radius: 14px;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  z-index: 1150;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+  animation: slideUp 300ms ease forwards;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+.ath-banner__content { flex: 1; }
+
+.ath-banner__text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  margin: 0 0 4px;
+  line-height: 1.4;
+}
+
+.ath-banner__steps {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--color-mint);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.ath-banner__actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.ath-banner__btn {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  padding: 7px 16px;
+  background: var(--color-gold);
+  color: var(--color-dark);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.ath-banner__close {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px 8px;
+  white-space: nowrap;
+  transition: color 150ms ease;
+}
+
+.ath-banner__close:hover { color: var(--color-mint); }
+
+@media (min-width: 769px) {
+  .ath-banner { display: none !important; }
 }

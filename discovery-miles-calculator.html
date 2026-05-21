@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Discovery Miles D-Day Calculator | Dealr</title>
-  <meta name="description" content="See exactly how many Discovery Miles you need to buy anything — and how much you save by spending on the 15th (Miles D-Day).">
+  <meta name="description" content="See exactly how many Discovery Miles you need to buy anything  -  and how much you save by spending on the 15th (Miles D-Day).">
   <meta name="theme-color" content="#081B1B">
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.svg" type="image/svg+xml">
@@ -86,7 +86,7 @@
     <section class="page-inner-hero" aria-label="Miles D-Day Calculator">
       <div>
         <h1>Miles D-Day Calculator.</h1>
-        <p class="page-inner-hero__subtitle">Know exactly how many miles you need — and how much you save by waiting for the 15th.</p>
+        <p class="page-inner-hero__subtitle">Know exactly how many miles you need  -  and how much you save by waiting for the 15th.</p>
       </div>
     </section>
 
@@ -102,7 +102,7 @@
             <div class="miles-rule-card">
               <div class="miles-rule-card__number">10:1</div>
               <div class="miles-rule-card__title">The Exchange Rate</div>
-              <div class="miles-rule-card__desc">10 Discovery Miles always equals R1.00. A R1,000 item is always 10,000 Miles at baseline — before any discounts.</div>
+              <div class="miles-rule-card__desc">10 Discovery Miles always equals R1.00. A R1,000 item is always 10,000 Miles at baseline  -  before any discounts.</div>
             </div>
             <div class="miles-rule-card">
               <div class="miles-rule-card__number">+5%</div>
@@ -112,12 +112,12 @@
             <div class="miles-rule-card">
               <div class="miles-rule-card__number">15th</div>
               <div class="miles-rule-card__title">D-Day Doubles It</div>
-              <div class="miles-rule-card__desc">On the 15th of every month, your total discount automatically doubles for 24 hours. Three products becomes 30% off — the maximum cap.</div>
+              <div class="miles-rule-card__desc">On the 15th of every month, your total discount automatically doubles for 24 hours. Three products becomes 30% off  -  the maximum cap.</div>
             </div>
           </div>
 
           <div style="text-align:center;margin-top:40px;">
-            <p style="font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted);margin-bottom:10px;">Try it yourself — the calculator is just below</p>
+            <p style="font-family:'DM Sans',sans-serif;font-size:0.9rem;color:var(--color-text-muted);margin-bottom:10px;">Try it yourself  -  the calculator is just below</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C18D52" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="animation:bounce 1.8s ease-in-out infinite;display:inline-block;"><polyline points="6 9 12 15 18 9"/></svg>
           </div>
         </div>
@@ -171,9 +171,27 @@
                 type="number"
                 min="0"
                 step="1"
-                placeholder="0.00"
-                oninput="updateCalc()"
+                placeholder="0"
+                oninput="sanitiseInput(this); updateCalc()"
                 aria-label="Item retail price in Rand"
+              >
+            </div>
+          </div>
+
+          <!-- Miles Input -->
+          <div class="miles-calc__input-row" style="margin-bottom:var(--space-lg)">
+            <label class="miles-calc__input-label" for="user-miles">How many Discovery Miles do you have?</label>
+            <div class="miles-calc__price-wrap">
+              <input
+                class="miles-price-input"
+                id="user-miles"
+                type="number"
+                min="0"
+                step="100"
+                placeholder="0"
+                oninput="sanitiseInput(this); updateCalc()"
+                aria-label="Your available Discovery Miles"
+                style="padding-left:16px"
               >
             </div>
           </div>
@@ -182,16 +200,50 @@
           <div class="miles-calc__results">
             <div class="miles-result">
               <span class="miles-result__label">Any normal day</span>
-              <span class="miles-result__discount" id="everyday-discount">0%</span>
-              <span class="miles-result__cost" id="everyday-cost">R—</span>
-              <span class="miles-result__miles-val" id="everyday-miles">— Miles</span>
+              <span class="miles-result__discount" id="everyday-discount">—</span>
+              <div class="miles-result__miles-block">
+                <span class="miles-result__miles-val" id="everyday-miles-used">— Miles used</span>
+                <span class="miles-result__miles-rval" id="everyday-miles-rval">R— value</span>
+              </div>
+              <div class="miles-result__formula">
+                <div class="miles-result__formula-row">
+                  <span class="miles-result__formula-lbl">Item cost</span>
+                  <span class="miles-result__formula-num" id="everyday-item-cost">R—</span>
+                </div>
+                <div class="miles-result__formula-row miles-result__formula-row--deduct">
+                  <span class="miles-result__formula-lbl">Miles cover</span>
+                  <span class="miles-result__formula-num" id="everyday-formula-miles">−R—</span>
+                </div>
+                <div class="miles-result__formula-divider"></div>
+                <div class="miles-result__formula-row miles-result__formula-row--total">
+                  <span class="miles-result__cash-label">Out of pocket</span>
+                  <span class="miles-result__cash" id="everyday-cash">R—</span>
+                </div>
+              </div>
             </div>
             <div class="miles-result miles-result--dday">
               <div class="miles-dday-badge">D-Day · 15th</div>
               <span class="miles-result__label">Miles D-Day (the 15th)</span>
-              <span class="miles-result__discount" id="dday-discount">0%</span>
-              <span class="miles-result__cost" id="dday-cost">R—</span>
-              <span class="miles-result__miles-val" id="dday-miles">— Miles</span>
+              <span class="miles-result__discount" id="dday-discount">—</span>
+              <div class="miles-result__miles-block">
+                <span class="miles-result__miles-val" id="dday-miles-used">— Miles used</span>
+                <span class="miles-result__miles-rval" id="dday-miles-rval">R— value</span>
+              </div>
+              <div class="miles-result__formula">
+                <div class="miles-result__formula-row">
+                  <span class="miles-result__formula-lbl">Item cost</span>
+                  <span class="miles-result__formula-num" id="dday-item-cost">R—</span>
+                </div>
+                <div class="miles-result__formula-row miles-result__formula-row--deduct">
+                  <span class="miles-result__formula-lbl">Miles cover</span>
+                  <span class="miles-result__formula-num" id="dday-formula-miles">−R—</span>
+                </div>
+                <div class="miles-result__formula-divider"></div>
+                <div class="miles-result__formula-row miles-result__formula-row--total">
+                  <span class="miles-result__cash-label">Out of pocket</span>
+                  <span class="miles-result__cash" id="dday-cash">R—</span>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -199,8 +251,8 @@
           <div class="miles-savings miles-savings--zero" id="savings-bar">
             <span class="miles-savings__label">Wait for D-Day and save</span>
             <div class="miles-savings__numbers">
-              <span class="miles-savings__big" id="savings-miles">0 Miles</span>
-              <span class="miles-savings__sub" id="savings-rand">(R0.00)</span>
+              <span class="miles-savings__big" id="savings-cash">R0.00</span>
+              <span class="miles-savings__sub">in out-of-pocket cost</span>
             </div>
           </div>
 
@@ -210,100 +262,35 @@
       </div>
     </section>
 
-    <!-- ── Case Studies ───────────────────────────────────────────────────────── -->
-    <section class="section section--beige" aria-label="Real examples">
+    <!-- ── How to Get MORE Miles ───────────────────────────────────────────────── -->
+    <section class="section section--beige" aria-label="How to earn more Discovery Miles">
       <div class="container">
         <header class="section-header">
-          <span class="section-eyebrow">Real Examples</span>
-          <h2>See the numbers in action</h2>
+          <span class="section-eyebrow">Earn More</span>
+          <h2>How to get MORE Miles</h2>
         </header>
 
-        <div class="miles-case-study">
-          <div class="miles-case-study__header">
-            <div class="miles-case-study__title">Buying a R1,000 item — mid-tier profile</div>
-            <div class="miles-case-study__meta">Vitality Health + Discovery Bank only (no Insure) · Everyday: 10% off · D-Day: 20% off</div>
-          </div>
-          <div style="overflow-x:auto;">
-            <table class="miles-case-table">
-              <thead>
-                <tr>
-                  <th>Scenario</th>
-                  <th>Retail Price</th>
-                  <th>Discount</th>
-                  <th>You Pay</th>
-                  <th>Miles Needed</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Cash (no miles)</td>
-                  <td>R1,000</td>
-                  <td>0%</td>
-                  <td>R1,000.00</td>
-                  <td style="color:var(--color-text-muted);">N/A</td>
-                </tr>
-                <tr>
-                  <td>Any normal day</td>
-                  <td>R1,000</td>
-                  <td>10% off</td>
-                  <td>R900.00</td>
-                  <td><strong>9,000 Miles</strong></td>
-                </tr>
-                <tr class="row--dday">
-                  <td><strong>Miles D-Day (15th)</strong></td>
-                  <td>R1,000</td>
-                  <td>20% off</td>
-                  <td>R800.00</td>
-                  <td><strong>8,000 Miles — save 1,000!</strong></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
+        <div class="miles-rule-cards">
 
-        <div class="miles-case-study">
-          <div class="miles-case-study__header">
-            <div class="miles-case-study__title">Buying a R5,000 appliance — fully optimised profile</div>
-            <div class="miles-case-study__meta">All 3 products active · Everyday: 15% off · D-Day: 30% off (maximum)</div>
+          <div class="miles-rule-card">
+            <div class="miles-rule-card__number">CC</div>
+            <div class="miles-rule-card__title">Get a Discovery Credit Card</div>
+            <div class="miles-rule-card__desc">A Discovery Bank credit card earns significantly more miles per rand than a standard debit card. Depending on your tier, you can earn up to 25 times more per transaction - making D-Day far more valuable the more products you hold.</div>
           </div>
-          <div style="overflow-x:auto;">
-            <table class="miles-case-table">
-              <thead>
-                <tr>
-                  <th>Scenario</th>
-                  <th>Retail Price</th>
-                  <th>Discount</th>
-                  <th>You Pay</th>
-                  <th>Miles Needed</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Cash (no miles)</td>
-                  <td>R5,000</td>
-                  <td>0%</td>
-                  <td>R5,000.00</td>
-                  <td style="color:var(--color-text-muted);">N/A</td>
-                </tr>
-                <tr>
-                  <td>Any normal day</td>
-                  <td>R5,000</td>
-                  <td>15% off</td>
-                  <td>R4,250.00</td>
-                  <td><strong>42,500 Miles</strong></td>
-                </tr>
-                <tr class="row--dday">
-                  <td><strong>Miles D-Day (15th)</strong></td>
-                  <td>R5,000</td>
-                  <td>30% off</td>
-                  <td>R3,500.00</td>
-                  <td><strong>35,000 Miles — save 7,500!</strong></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
 
+          <div class="miles-rule-card">
+            <div class="miles-rule-card__number">VC</div>
+            <div class="miles-rule-card__title">Use Your Virtual Card Online</div>
+            <div class="miles-rule-card__desc">Your Discovery Bank virtual card (available in the app) earns bonus miles on eligible online purchases. Use it specifically at D-Day partner stores - Takealot, Superbalist, Yuppiechef - to stack your earning rate with your discount tier.</div>
+          </div>
+
+          <div class="miles-rule-card">
+            <div class="miles-rule-card__number">1:100</div>
+            <div class="miles-rule-card__title">Know Your Rate and Cap</div>
+            <div class="miles-rule-card__desc">Physical transactional cards earn 1 mile per R100 spent. Credit and virtual cards earn more per rand. There is also a monthly miles cap - any spending above your cap earns nothing. Check your Discovery portal for your specific cap before planning a large purchase on the 15th.</div>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -417,6 +404,11 @@
 
     const state = { vitality: false, bank: false, insure: false };
 
+    function sanitiseInput(el) {
+      const v = parseFloat(el.value);
+      if (isNaN(v) || v < 0) el.value = '';
+    }
+
     function toggleProduct(key) {
       state[key] = !state[key];
       const btn = document.getElementById('toggle-' + key);
@@ -426,38 +418,57 @@
     }
 
     function updateCalc() {
-      const price = parseFloat(document.getElementById('item-price').value) || 0;
-      const count = [state.vitality, state.bank, state.insure].filter(Boolean).length;
-      const everyday = count * 0.05;
-      const dday = everyday * 2; // always exactly double, max is 0.30 when count=3
+      const price     = Math.max(0, parseFloat(document.getElementById('item-price').value) || 0);
+      const userMiles = Math.max(0, parseFloat(document.getElementById('user-miles').value) || 0);
+      const count     = [state.vitality, state.bank, state.insure].filter(Boolean).length;
 
-      const everydayCost = price * (1 - everyday);
-      const everydayMiles = Math.round(everydayCost * RATE);
-      const ddayCost = price * (1 - dday);
-      const ddayMiles = Math.round(ddayCost * RATE);
-      const milesSaved = everydayMiles - ddayMiles;
-      const randSaved = everydayCost - ddayCost;
+      const everydayDisc = count * 0.05;
+      const ddayDisc     = Math.min(everydayDisc * 2, 0.30);
+
+      // Discount reduces the miles needed to cover the full item price.
+      // With 10% discount you need 10% fewer miles — each mile covers more rand value.
+      const everydayMilesNeeded = price * RATE * (1 - everydayDisc);
+      const ddayMilesNeeded     = price * RATE * (1 - ddayDisc);
+
+      // Actual miles spent (can't exceed what's needed or what user has)
+      const everydayMilesUsed = Math.min(userMiles, everydayMilesNeeded);
+      const ddayMilesUsed     = Math.min(userMiles, ddayMilesNeeded);
+
+      // Rand value those miles cover (proportional share of item price)
+      const everydayMilesValue = everydayMilesNeeded > 0 ? (everydayMilesUsed / everydayMilesNeeded) * price : 0;
+      const ddayMilesValue     = ddayMilesNeeded > 0     ? (ddayMilesUsed / ddayMilesNeeded) * price         : 0;
+
+      // Out of pocket
+      const everydayCash = Math.max(0, price - everydayMilesValue);
+      const ddayCash     = Math.max(0, price - ddayMilesValue);
+      const cashSaved    = Math.max(0, everydayCash - ddayCash);
+
+      const hasPrice = price > 0;
 
       // Everyday column
-      document.getElementById('everyday-discount').textContent = everyday > 0 ? (everyday * 100).toFixed(0) + '% off' : '0% off';
-      document.getElementById('everyday-cost').textContent = price > 0 ? formatRand(everydayCost) : 'R—';
-      document.getElementById('everyday-miles').textContent = price > 0 ? formatMiles(everydayMiles) : '— Miles';
+      document.getElementById('everyday-discount').textContent      = hasPrice ? (everydayDisc * 100).toFixed(0) + '% off miles' : '—';
+      document.getElementById('everyday-miles-used').textContent    = hasPrice ? formatMiles(Math.round(everydayMilesUsed)) + ' used' : '— Miles used';
+      document.getElementById('everyday-miles-rval').textContent    = hasPrice ? formatRand(everydayMilesValue) + ' value' : 'R— value';
+      document.getElementById('everyday-item-cost').textContent     = hasPrice ? formatRand(price) : 'R—';
+      document.getElementById('everyday-formula-miles').textContent = hasPrice ? '−' + formatRand(everydayMilesValue) : '−R—';
+      document.getElementById('everyday-cash').textContent          = hasPrice ? formatRand(everydayCash) : 'R—';
 
       // D-Day column
-      document.getElementById('dday-discount').textContent = dday > 0 ? (dday * 100).toFixed(0) + '% off' : '0% off';
-      document.getElementById('dday-cost').textContent = price > 0 ? formatRand(ddayCost) : 'R—';
-      document.getElementById('dday-miles').textContent = price > 0 ? formatMiles(ddayMiles) : '— Miles';
+      document.getElementById('dday-discount').textContent      = hasPrice ? (ddayDisc * 100).toFixed(0) + '% off miles' : '—';
+      document.getElementById('dday-miles-used').textContent    = hasPrice ? formatMiles(Math.round(ddayMilesUsed)) + ' used' : '— Miles used';
+      document.getElementById('dday-miles-rval').textContent    = hasPrice ? formatRand(ddayMilesValue) + ' value' : 'R— value';
+      document.getElementById('dday-item-cost').textContent     = hasPrice ? formatRand(price) : 'R—';
+      document.getElementById('dday-formula-miles').textContent = hasPrice ? '−' + formatRand(ddayMilesValue) : '−R—';
+      document.getElementById('dday-cash').textContent          = hasPrice ? formatRand(ddayCash) : 'R—';
 
       // Savings bar
       const bar = document.getElementById('savings-bar');
-      if (price > 0 && milesSaved > 0) {
+      if (hasPrice && cashSaved > 0.005) {
         bar.classList.remove('miles-savings--zero');
-        document.getElementById('savings-miles').textContent = formatMiles(milesSaved);
-        document.getElementById('savings-rand').textContent = '(' + formatRand(randSaved) + ')';
+        document.getElementById('savings-cash').textContent = formatRand(cashSaved);
       } else {
         bar.classList.add('miles-savings--zero');
-        document.getElementById('savings-miles').textContent = '0 Miles';
-        document.getElementById('savings-rand').textContent = '(R0.00)';
+        document.getElementById('savings-cash').textContent = 'R0.00';
       }
     }
 
