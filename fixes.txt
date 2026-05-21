@@ -1,3 +1,10 @@
-Can we update the font for the numbers, they make the site look funny in terms of when there are numbers or something. suggest something and update.
+On the homepage there is a section with find our perfect bank. We removed that page so lets change the text with something else, you can decide.
 
-especially in the cards and stuff. Lets just make all numbers whats used 
+On the deals page I want a category for discovery. I am going to explain the concept and you can decide what to name it:
+Every Wednesday on the discovery app, if you log in and go to vitality mall there is a voucher that is availbe to purchase with miles. it is only available one day a week, on a wedndsayd and changes every week.
+
+I want a section maybe make it second or third in the order but when they click it, only one card will show and it will be this one. State that they should check back on Wednesday to see what the deal it as we will update it every Wednesday morning with the new deal.
+
+
+
+The text under the heading for restautant pages including the hub page does not match with the colour of the home or deals page. text is not readable. Make it the same colour as the other pages so restauramt is visible. example of text: "The best deals at South African restaurants - from fast food steals to date night specials."
