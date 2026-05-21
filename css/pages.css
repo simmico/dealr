@@ -117,8 +117,9 @@ body.page-home .hero__stats {
 }
 
 body.page-home .hero__stat {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-muted);
 }
 
@@ -214,9 +215,10 @@ body.page-home .how-it-works__item {
 }
 
 body.page-home .how-it-works__number {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-weight: 600;
   font-size: 5rem;
+  font-variant-numeric: tabular-nums;
   color: var(--color-gold);
   opacity: 0.35;
   line-height: 1;
@@ -2246,8 +2248,9 @@ body.page-discovery .subs-teaser__visual {
 }
 
 .miles-result__miles-val {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-muted);
   display: block;
 }
@@ -2295,8 +2298,9 @@ body.page-discovery .subs-teaser__visual {
 }
 
 .miles-result__miles-rval {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-muted);
   display: block;
 }
@@ -2322,8 +2326,9 @@ body.page-discovery .subs-teaser__visual {
 }
 
 .miles-result__formula-num {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 0.85rem;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-light);
   font-weight: 500;
 }

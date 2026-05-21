@@ -70,22 +70,24 @@
 }
 
 .card__deal-price {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
   font-size: 1.5rem;
+  font-variant-numeric: tabular-nums;
   color: var(--color-text-light);
 }
 
 .card__normal-price {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Space Grotesk', sans-serif;
   font-size: 0.9rem;
+  font-variant-numeric: tabular-nums;
   color: rgba(150, 205, 176, 0.65);
   text-decoration: line-through;
 }
 
 .card__saving-badge {
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 500;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
   font-size: 0.75rem;
   padding: 3px 10px;
   border-radius: 20px;
