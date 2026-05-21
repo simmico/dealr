@@ -1,20 +1,11 @@
-That was my previous prompt:
-
-"On the deals page I want a category for discovery. I am going to explain the concept and you can decide what to name it:
-Every Wednesday on the discovery app, if you log in and go to vitality mall there is a voucher that is availbe to purchase with miles. it is only available one day a week, on a wedndsayd and changes every week.
-
-I want a section maybe make it second or third in the order but when they click it, only one card will show and it will be this one. State that they should check back on Wednesday to see what the deal it as we will update it every Wednesday morning with the new deal."
-
-Now this made the code but the card is not visible. It shows the category but no card.
-
-For the menus, lets move discovery miles calculator to the top of discovery menu and even on the hub page.
-
 Now the following data needs to be replaced:
 
 Also should we rename fastfood to budget friendly? as I am giving deals like R30 and stuff or should we also have a card filder like the deals page and have budget meals as a category and combo deals with like slightly more expensive prices etc? so like ocean basket promos which are slightly more etc. or will that go under casual dining or will casual dining have specials like half price whatever??
 If so, go ahead with what you feel is best.
 
 I am going to give you data now, update the json files with the right data to go where.
+
+REMOVE WHATEVER IS THERE AND REPLACE WITH THIS
 
 contact phone number will only be for date nights so couples can book.
 

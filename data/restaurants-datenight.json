@@ -1,9 +1,9 @@
 [
   {
     "name": "The Tasting Room",
-    "deal": "Date Night Special — Spaghetti and Meatballs for two with a glass of wine each for R215 per couple, all day",
+    "deal": "Date Night — Spaghetti and Meatballs for two with a glass of wine each for R215 per couple. All day.",
     "days": "Monday–Tuesday",
-    "howToClaim": "Visit any Tasting Room branch on a Monday or Tuesday and ask for the Date Night special. All day, no booking required.",
+    "howToClaim": "Visit any Tasting Room branch on a Monday or Tuesday and ask for the Date Night special. See page 4 of the menu PDF for all promos.",
     "badge": "Date Night",
     "phone": "087 821 7708",
     "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
@@ -23,70 +23,10 @@
     "name": "Kream (Montecasino)",
     "deal": "Date Night — R850 per couple with a complimentary bottle of champagne. Monday and Tuesday evenings only.",
     "days": "Monday–Tuesday (evenings only)",
-    "howToClaim": "Book a table in advance — this is an exclusive offer and fills up quickly on Monday and Tuesday evenings.",
+    "howToClaim": "Book a table in advance — this exclusive offer fills quickly on Monday and Tuesday evenings.",
     "badge": "Date Night",
     "phone": "010 786 1584",
     "link": "https://montecasino.kreamrestaurant.co.za/wp-content/uploads/2025/10/Kream-Date-Night-Menu-October-2025.pdf",
-    "active": true
-  },
-  {
-    "name": "Mythos Greek Restaurant",
-    "deal": "Date Night set menu for two — starter, two mains, and dessert from R395 per couple on weeknights",
-    "days": "Monday–Thursday",
-    "howToClaim": "Book via the Mythos website or call ahead. Ask for the Date Night set menu when seated",
-    "badge": "Set Menu",
-    "phone": null,
-    "link": "https://www.mythos.co.za",
-    "active": true
-  },
-  {
-    "name": "The Entertainer App",
-    "deal": "2-for-1 mains at hundreds of participating restaurants across SA — pay for one, second one is free",
-    "days": "Monday–Sunday",
-    "howToClaim": "Download The Entertainer app (free via FNB Gold and above, or R499/year). Browse and redeem at checkout",
-    "badge": "App Only",
-    "phone": null,
-    "link": "https://www.theentertainersa.com",
-    "active": true
-  },
-  {
-    "name": "News Cafe",
-    "deal": "Happy Hour cocktails from R49 and 2-for-1 shooters between 5pm and 7pm, Monday to Friday",
-    "days": "Monday–Friday",
-    "howToClaim": "Visit any News Cafe between 17:00 and 19:00 on weeknights. Prices apply automatically at the bar",
-    "badge": "Happy Hour",
-    "phone": null,
-    "link": "https://www.newscafe.co.za",
-    "active": true
-  },
-  {
-    "name": "Assaggi Ristorante",
-    "deal": "Complimentary glass of house wine with any two-course dinner — present a printed reservation confirmation",
-    "days": "Tuesday–Thursday",
-    "howToClaim": "Book online via their website and print or show your confirmation. Valid for dinner service only",
-    "badge": null,
-    "phone": null,
-    "link": "https://www.assaggi.co.za",
-    "active": true
-  },
-  {
-    "name": "Panarottis",
-    "deal": "Pizza for Two special — two medium pizzas and two Cokes from R189 every Tuesday and Wednesday",
-    "days": "Tuesday–Wednesday",
-    "howToClaim": "Visit any Panarottis on Tuesdays or Wednesdays and ask for the Pizza for Two deal at the till",
-    "badge": "Weekly Special",
-    "phone": null,
-    "link": "https://www.panarottis.co.za",
-    "active": true
-  },
-  {
-    "name": "Primi Piatti",
-    "deal": "Happy Hour drinks at 50% off, plus complimentary olives and bread for the table before 6:30pm",
-    "days": "Monday–Friday",
-    "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
-    "badge": null,
-    "phone": null,
-    "link": "https://www.primi.co.za",
     "active": true
   }
 ]

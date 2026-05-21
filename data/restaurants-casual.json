@@ -1,9 +1,27 @@
 [
   {
+    "name": "Roco Mamas",
+    "deal": "Southern Fried Chicken Burger — from R69. Check the promos section of the menu.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Roco Mamas branch and look for the Southern Fried Chicken Burger under the promos section.",
+    "badge": "From R69",
+    "link": "https://rocomamas.com/za/menu#promos",
+    "active": true
+  },
+  {
+    "name": "Papachinos",
+    "deal": "Cake and Cappuccino — a slice of cake with a cappuccino for R70, all day every day",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order the Cake and Cappuccino combo at any Papachinos branch.",
+    "badge": "Everyday Value",
+    "link": "https://www.papachinos.co.za/cake-cappuccino",
+    "active": true
+  },
+  {
     "name": "Papachinos",
     "deal": "Mafia Monday — half-price pizza and pasta every Monday from 10am. Not valid on public holidays.",
     "days": "Monday",
-    "howToClaim": "Visit any Papachinos branch on a Monday from 10:00. The 50% discount applies automatically at the till — no voucher needed",
+    "howToClaim": "Visit any Papachinos on a Monday from 10:00. The 50% discount applies automatically at the till.",
     "badge": "Dine-in Only",
     "link": "https://www.papachinos.co.za/mafia-monday",
     "active": true
@@ -12,25 +30,16 @@
     "name": "Papachinos",
     "deal": "Teddy Tuesday — kids eat free when they bring the family",
     "days": "Tuesday",
-    "howToClaim": "Visit any Papachinos with the family on a Tuesday. Kids meal is complimentary with a paying adult",
+    "howToClaim": "Visit any Papachinos with the family on a Tuesday. Kids meal is complimentary with a paying adult.",
     "badge": "Kids Free",
     "link": "https://www.papachinos.co.za/teddy-tuesdays",
-    "active": true
-  },
-  {
-    "name": "Papachinos",
-    "deal": "Cake and Cappuccino — a slice of cake with a cappuccino for R70, all day every day",
-    "days": "Monday–Sunday",
-    "howToClaim": "Order the Cake and Cappuccino combo at any Papachinos branch",
-    "badge": "Everyday Value",
-    "link": "https://www.papachinos.co.za/cake-cappuccino",
     "active": true
   },
   {
     "name": "The Tasting Room",
     "deal": "Owner's Breakfast — 2 bacon rashers, 2 eggs, 2 slices of toast and grilled tomato for R35. All day weekdays; 10am–1pm weekends and public holidays.",
     "days": "Monday–Sunday",
-    "howToClaim": "Visit any Tasting Room branch and order the Owner's Breakfast. Check the menu PDF for full details.",
+    "howToClaim": "Visit any Tasting Room branch and order the Owner's Breakfast. See the last page of the menu PDF for the special.",
     "badge": "Everyday Value",
     "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
     "active": true
@@ -39,16 +48,16 @@
     "name": "The Tasting Room",
     "deal": "Limitless Mimosa — bottomless mimosas for R149pp, Monday to Friday",
     "days": "Monday–Friday",
-    "howToClaim": "Visit any Tasting Room branch on a weekday and ask for the Limitless Mimosa promotion. See page 4 of the menu PDF for all promos.",
+    "howToClaim": "Visit any Tasting Room branch on a weekday and ask for the Limitless Mimosa. See page 4 of the menu PDF for all promos.",
     "badge": "Weekly Special",
     "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
     "active": true
   },
   {
     "name": "The Tasting Room",
-    "deal": "Burger Wednesday — buy one burger, get one free for R135, all day every Wednesday",
+    "deal": "Burger Wednesday — buy one burger, get one free. R135 all day every Wednesday.",
     "days": "Wednesday",
-    "howToClaim": "Visit any Tasting Room branch on a Wednesday. The BOGO burger deal applies all day.",
+    "howToClaim": "Visit any Tasting Room on a Wednesday. The BOGO burger deal applies all day. See page 4 of the menu PDF.",
     "badge": "Weekly Special",
     "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
     "active": true
@@ -57,16 +66,16 @@
     "name": "Ocean Basket",
     "deal": "Kids Eat Free Monday — one free kids meal per paying adult meal",
     "days": "Monday",
-    "howToClaim": "Visit any participating Ocean Basket on a Monday. One free kids meal is included per adult meal ordered.",
+    "howToClaim": "Visit any participating Ocean Basket on a Monday. One free kids meal included per adult meal ordered.",
     "badge": "Kids Free",
     "link": "https://za.oceanbasket.com/promo/kids-eat-free/",
     "active": true
   },
   {
     "name": "Ocean Basket",
-    "deal": "Epic Catch — sit-down or takeaway meals from R125 to R145. Running 1 May to 30 June.",
+    "deal": "Epic Catch — sit-down or takeaway from R125 to R145. Running 1 May to 30 June.",
     "days": "Monday–Sunday",
-    "howToClaim": "Order from the Epic Catch menu at any participating Ocean Basket, available for sit-down or takeaway",
+    "howToClaim": "Order from the Epic Catch menu at any participating Ocean Basket, available for sit-down or takeaway.",
     "badge": "Limited Time",
     "link": "https://za.oceanbasket.com/promo/epic-catch/",
     "active": true
@@ -75,72 +84,9 @@
     "name": "Texan Wing Bar (Montecasino)",
     "deal": "All You Can Eat Bottomless Wings — unlimited wings for R199pp",
     "days": "Monday–Sunday",
-    "howToClaim": "Visit Texan Wing Bar at Montecasino and order the All You Can Eat bottomless wings deal",
+    "howToClaim": "Visit Texan Wing Bar at Montecasino and order the All You Can Eat bottomless wings deal.",
     "badge": "All You Can Eat",
     "link": "https://www.montecasino.co.za/offers/bottomless-wings/",
-    "active": true
-  },
-  {
-    "name": "Roco Mamas",
-    "deal": "Southern Fried Chicken Burger — from R69. Check the promos section of the menu.",
-    "days": "Monday–Sunday",
-    "howToClaim": "Visit any Roco Mamas branch and look for the Southern Fried Chicken Burger under the promos section",
-    "badge": "From R69",
-    "link": "https://rocomamas.com/za/menu#promos",
-    "active": true
-  },
-  {
-    "name": "Spur",
-    "deal": "Kids Eat Free Sundays — one free kids meal per paying adult with the Spur Family Card",
-    "days": "Sunday",
-    "howToClaim": "Register a Spur Family Card at your nearest Spur or online. Present card at checkout on Sundays",
-    "badge": "Loyalty",
-    "link": "https://www.spur.co.za",
-    "active": true
-  },
-  {
-    "name": "Spur",
-    "deal": "Classic Monday Burger Special — buy any single original Spur Burger and get another one free",
-    "days": "Monday",
-    "howToClaim": "Visit any Spur on a Monday for sit-down dining. The cheaper burger of the two is free automatically",
-    "badge": "Dine-in Only",
-    "link": "https://www.spur.co.za",
-    "active": true
-  },
-  {
-    "name": "Spur",
-    "deal": "Unreal Breakfast — 2 fried eggs, 2 rashers of grilled bacon, 1 pork sausage, fried tomato, and toast for under R50",
-    "days": "Monday–Sunday",
-    "howToClaim": "Order before 11:00 daily at any Spur branch. Available for sit-down only",
-    "badge": "Everyday Value",
-    "link": "https://www.spur.co.za",
-    "active": true
-  },
-  {
-    "name": "Panarottis",
-    "deal": "Big Monday Pizza Special — buy any standard pizza or pasta and get another one free",
-    "days": "Monday",
-    "howToClaim": "Dine in at any Panarottis on a Monday. Buy one pizza or pasta and the second one is free automatically",
-    "badge": "Dine-in Only",
-    "link": "https://www.panarottis.co.za",
-    "active": true
-  },
-  {
-    "name": "Panarottis",
-    "deal": "Thursday Pizza Night — Eat-As-Much-As-You-Can pizza slices for a fixed price per person",
-    "days": "Thursday",
-    "howToClaim": "Visit any Panarottis on a Thursday from 16:00. Pay the fixed per-person rate for continuous pizza slice rotations",
-    "badge": "Weekly Special",
-    "link": "https://www.panarottis.co.za",
-    "active": true
-  },
-  {
-    "name": "John Dory's",
-    "deal": "Half-Price Sushi Wednesdays — 50% off all single sushi plates and platters all day",
-    "days": "Wednesday",
-    "howToClaim": "Visit any John Dory's branch on a Wednesday for sit-down dining. Discount applies to all single plates at checkout",
-    "badge": "Dine-in Only",
-    "link": "https://www.johndorys.co.za",
     "active": true
   }
 ]
