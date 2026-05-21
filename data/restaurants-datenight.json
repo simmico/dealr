@@ -1,11 +1,32 @@
 [
   {
-    "name": "Vida e Caffe",
-    "deal": "Happy Hour — buy one coffee or hot drink, get one free between 3pm and 5pm daily",
+    "name": "The Tasting Room",
+    "deal": "Date Night Special — Spaghetti and Meatballs for two with a glass of wine each for R215 per couple, all day",
+    "days": "Monday–Tuesday",
+    "howToClaim": "Visit any Tasting Room branch on a Monday or Tuesday and ask for the Date Night special. All day, no booking required.",
+    "badge": "Date Night",
+    "phone": "087 821 7708",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "Hussar Grill",
+    "deal": "Date Night Set Menu — 2 courses for R499 per couple or 3 courses for R599 per couple. Includes a bottle of wine or two soft drinks.",
     "days": "Monday–Sunday",
-    "howToClaim": "Visit any Vida e Caffe between 15:00 and 17:00. Order at the counter and mention Happy Hour",
-    "badge": "Happy Hour",
-    "link": "https://www.vidacoffee.co.za",
+    "howToClaim": "Call to book your table. Ask to be transferred to your nearest branch as there are multiple locations.",
+    "badge": "Set Menu",
+    "phone": "011 568 4517",
+    "link": "https://hussargrill.co.za/menu/date-night",
+    "active": true
+  },
+  {
+    "name": "Kream (Montecasino)",
+    "deal": "Date Night — R850 per couple with a complimentary bottle of champagne. Monday and Tuesday evenings only.",
+    "days": "Monday–Tuesday (evenings only)",
+    "howToClaim": "Book a table in advance — this is an exclusive offer and fills up quickly on Monday and Tuesday evenings.",
+    "badge": "Date Night",
+    "phone": "010 786 1584",
+    "link": "https://montecasino.kreamrestaurant.co.za/wp-content/uploads/2025/10/Kream-Date-Night-Menu-October-2025.pdf",
     "active": true
   },
   {
@@ -14,7 +35,18 @@
     "days": "Monday–Thursday",
     "howToClaim": "Book via the Mythos website or call ahead. Ask for the Date Night set menu when seated",
     "badge": "Set Menu",
+    "phone": null,
     "link": "https://www.mythos.co.za",
+    "active": true
+  },
+  {
+    "name": "The Entertainer App",
+    "deal": "2-for-1 mains at hundreds of participating restaurants across SA — pay for one, second one is free",
+    "days": "Monday–Sunday",
+    "howToClaim": "Download The Entertainer app (free via FNB Gold and above, or R499/year). Browse and redeem at checkout",
+    "badge": "App Only",
+    "phone": null,
+    "link": "https://www.theentertainersa.com",
     "active": true
   },
   {
@@ -23,6 +55,7 @@
     "days": "Monday–Friday",
     "howToClaim": "Visit any News Cafe between 17:00 and 19:00 on weeknights. Prices apply automatically at the bar",
     "badge": "Happy Hour",
+    "phone": null,
     "link": "https://www.newscafe.co.za",
     "active": true
   },
@@ -32,25 +65,8 @@
     "days": "Tuesday–Thursday",
     "howToClaim": "Book online via their website and print or show your confirmation. Valid for dinner service only",
     "badge": null,
+    "phone": null,
     "link": "https://www.assaggi.co.za",
-    "active": true
-  },
-  {
-    "name": "The Entertainer App",
-    "deal": "2-for-1 mains at hundreds of participating restaurants across SA — pay for one, second one is free",
-    "days": "Monday–Sunday",
-    "howToClaim": "Download The Entertainer app (free via FNB Gold and above, or R499/year). Browse and redeem at checkout",
-    "badge": "App Only",
-    "link": "https://www.theentertainersa.com",
-    "active": true
-  },
-  {
-    "name": "The Tasting Room",
-    "deal": "Date Night Special — Spaghetti and Meatballs for two with a glass of wine each for R215 all day",
-    "days": "Monday–Tuesday",
-    "howToClaim": "Visit the Long Street or Cedar Road branch on a Monday or Tuesday and ask for the Date Night special",
-    "badge": "Date Night",
-    "link": "https://www.thetastingroom.co.za",
     "active": true
   },
   {
@@ -59,6 +75,7 @@
     "days": "Tuesday–Wednesday",
     "howToClaim": "Visit any Panarottis on Tuesdays or Wednesdays and ask for the Pizza for Two deal at the till",
     "badge": "Weekly Special",
+    "phone": null,
     "link": "https://www.panarottis.co.za",
     "active": true
   },
@@ -68,6 +85,7 @@
     "days": "Monday–Friday",
     "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
     "badge": null,
+    "phone": null,
     "link": "https://www.primi.co.za",
     "active": true
   }

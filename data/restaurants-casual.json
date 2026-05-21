@@ -1,65 +1,101 @@
 [
   {
-    "name": "Paparazzi / Papachinos",
-    "deal": "Half-price pizza and pasta every Monday — all mains at 50% off when you dine in",
+    "name": "Papachinos",
+    "deal": "Mafia Monday — half-price pizza and pasta every Monday from 10am. Not valid on public holidays.",
     "days": "Monday",
-    "howToClaim": "Visit any Papachinos branch on a Monday. No voucher needed - discount applies automatically at the till",
+    "howToClaim": "Visit any Papachinos branch on a Monday from 10:00. The 50% discount applies automatically at the till — no voucher needed",
     "badge": "Dine-in Only",
-    "link": "https://www.papachinos.co.za",
+    "link": "https://www.papachinos.co.za/mafia-monday",
+    "active": true
+  },
+  {
+    "name": "Papachinos",
+    "deal": "Teddy Tuesday — kids eat free when they bring the family",
+    "days": "Tuesday",
+    "howToClaim": "Visit any Papachinos with the family on a Tuesday. Kids meal is complimentary with a paying adult",
+    "badge": "Kids Free",
+    "link": "https://www.papachinos.co.za/teddy-tuesdays",
+    "active": true
+  },
+  {
+    "name": "Papachinos",
+    "deal": "Cake and Cappuccino — a slice of cake with a cappuccino for R70, all day every day",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order the Cake and Cappuccino combo at any Papachinos branch",
+    "badge": "Everyday Value",
+    "link": "https://www.papachinos.co.za/cake-cappuccino",
+    "active": true
+  },
+  {
+    "name": "The Tasting Room",
+    "deal": "Owner's Breakfast — 2 bacon rashers, 2 eggs, 2 slices of toast and grilled tomato for R35. All day weekdays; 10am–1pm weekends and public holidays.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Tasting Room branch and order the Owner's Breakfast. Check the menu PDF for full details.",
+    "badge": "Everyday Value",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "The Tasting Room",
+    "deal": "Limitless Mimosa — bottomless mimosas for R149pp, Monday to Friday",
+    "days": "Monday–Friday",
+    "howToClaim": "Visit any Tasting Room branch on a weekday and ask for the Limitless Mimosa promotion. See page 4 of the menu PDF for all promos.",
+    "badge": "Weekly Special",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "The Tasting Room",
+    "deal": "Burger Wednesday — buy one burger, get one free for R135, all day every Wednesday",
+    "days": "Wednesday",
+    "howToClaim": "Visit any Tasting Room branch on a Wednesday. The BOGO burger deal applies all day.",
+    "badge": "Weekly Special",
+    "link": "https://api.thetastingroom.co.za/site_images/20260504195450.pdf",
+    "active": true
+  },
+  {
+    "name": "Ocean Basket",
+    "deal": "Kids Eat Free Monday — one free kids meal per paying adult meal",
+    "days": "Monday",
+    "howToClaim": "Visit any participating Ocean Basket on a Monday. One free kids meal is included per adult meal ordered.",
+    "badge": "Kids Free",
+    "link": "https://za.oceanbasket.com/promo/kids-eat-free/",
+    "active": true
+  },
+  {
+    "name": "Ocean Basket",
+    "deal": "Epic Catch — sit-down or takeaway meals from R125 to R145. Running 1 May to 30 June.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order from the Epic Catch menu at any participating Ocean Basket, available for sit-down or takeaway",
+    "badge": "Limited Time",
+    "link": "https://za.oceanbasket.com/promo/epic-catch/",
+    "active": true
+  },
+  {
+    "name": "Texan Wing Bar (Montecasino)",
+    "deal": "All You Can Eat Bottomless Wings — unlimited wings for R199pp",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit Texan Wing Bar at Montecasino and order the All You Can Eat bottomless wings deal",
+    "badge": "All You Can Eat",
+    "link": "https://www.montecasino.co.za/offers/bottomless-wings/",
+    "active": true
+  },
+  {
+    "name": "Roco Mamas",
+    "deal": "Southern Fried Chicken Burger — from R69. Check the promos section of the menu.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Visit any Roco Mamas branch and look for the Southern Fried Chicken Burger under the promos section",
+    "badge": "From R69",
+    "link": "https://rocomamas.com/za/menu#promos",
     "active": true
   },
   {
     "name": "Spur",
-    "deal": "Kids eat free on Sundays — one free kids meal per paying adult with the Spur Family Card",
+    "deal": "Kids Eat Free Sundays — one free kids meal per paying adult with the Spur Family Card",
     "days": "Sunday",
     "howToClaim": "Register a Spur Family Card at your nearest Spur or online. Present card at checkout on Sundays",
     "badge": "Loyalty",
     "link": "https://www.spur.co.za",
-    "active": true
-  },
-  {
-    "name": "Ocean Basket",
-    "deal": "Epic Catch: Sushi 11 + Soda Combo — 11 pieces of fresh assorted sushi served with a refreshing soda for R99",
-    "days": "Monday–Sunday",
-    "howToClaim": "Order the Sushi 11 Epic Catch combo from the specials menu for sit-down or takeaway",
-    "badge": "Value Combo",
-    "link": "https://oceanbasket.com",
-    "active": true
-  },
-  {
-    "name": "Ocean Basket",
-    "deal": "Epic Catch: Sushi 16 — A generous 16-piece sushi platter built for hearty appetites for R125",
-    "days": "Monday–Sunday",
-    "howToClaim": "Ask for the Epic Catch Sushi 16 platter at any participating branch nationwide",
-    "badge": "Limited Time Only",
-    "link": "https://oceanbasket.com",
-    "active": true
-  },
-  {
-    "name": "Ocean Basket",
-    "deal": "Epic Catch: Seafood Burger + Soda — Crispy seafood patty tucked into a soft bun, served with a side of chips and a soda for R99",
-    "days": "Monday–Sunday",
-    "howToClaim": "Select your choice of seafood burger from the Epic Catch promotional menu tier",
-    "badge": "Value Combo",
-    "link": "https://oceanbasket.com",
-    "active": true
-  },
-  {
-    "name": "Ocean Basket",
-    "deal": "Epic Catch: Oceans Platter — A greatest-hits solo plate featuring classic fish, prawns, and signature sides for R145",
-    "days": "Monday–Sunday",
-    "howToClaim": "Order the solo Oceans Platter from the limited-time Epic Catch menu",
-    "badge": "Everyday Value",
-    "link": "https://oceanbasket.com",
-    "active": true
-  },
-  {
-    "name": "Primi Piatti",
-    "deal": "Happy Hour drinks at 50% off, plus complimentary olives and bread for the table before 6:30pm",
-    "days": "Monday–Friday",
-    "howToClaim": "Arrive before 18:30 on weeknights. Happy Hour pricing applies automatically at the bar",
-    "badge": null,
-    "link": "https://www.primi.co.za",
     "active": true
   },
   {
@@ -73,7 +109,7 @@
   },
   {
     "name": "Spur",
-    "deal": "Unreal Breakfast — get 2 fried eggs, 2 rashers of grilled bacon, 1 pork sausage, fried tomato, and toast for under R50",
+    "deal": "Unreal Breakfast — 2 fried eggs, 2 rashers of grilled bacon, 1 pork sausage, fried tomato, and toast for under R50",
     "days": "Monday–Sunday",
     "howToClaim": "Order before 11:00 daily at any Spur branch. Available for sit-down only",
     "badge": "Everyday Value",

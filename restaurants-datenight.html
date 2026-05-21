@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -41,13 +41,13 @@
         <li class="nav__item--has-dropdown">
           <a href="discovery.html" class="nav__link">Discovery</a>
           <ul class="nav__dropdown" role="list">
+            <li><a href="discovery-miles-calculator.html" class="nav__dropdown-link">Miles Calculator</a></li>
             <li><a href="vitality-core-guide.html" class="nav__dropdown-link">Core Guide</a></li>
             <li><a href="healthyfood-benefit-guide.html" class="nav__dropdown-link">HealthyFood</a></li>
             <li><a href="vitality-gym-benefit.html" class="nav__dropdown-link">Gym Benefit</a></li>
             <li><a href="ster-kinekor-movie-benefit.html" class="nav__dropdown-link">Movies</a></li>
             <li><a href="active-rewards-apple-watch.html" class="nav__dropdown-link">Apple Watch</a></li>
             <li><a href="healthyfood-studio-classes.html" class="nav__dropdown-link">Cooking Studio</a></li>
-            <li><a href="discovery-miles-calculator.html" class="nav__dropdown-link">Miles Calculator</a></li>
           </ul>
         </li>
         <li class="nav__item--has-dropdown">
@@ -242,6 +242,7 @@
               '<span class="resto-card__meta-label">How to claim</span>' +
               '<p class="resto-card__claim">' + d.howToClaim + '</p>' +
             '</div>' +
+            (d.phone ? '<p class="resto-card__phone"><strong>Book:</strong> <a href="tel:' + d.phone.replace(/\s/g,'') + '">' + d.phone + '</a></p>' : '') +
             (d.link ? '<a href="' + d.link + '" class="resto-card__view-deal" target="_blank" rel="noopener noreferrer">View deal →</a>' : '') +
           '</article>';
         });

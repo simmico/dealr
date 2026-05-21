@@ -1,83 +1,74 @@
 [
   {
-    "name": "McDonald's",
-    "deal": "Nazo 30th Birthday Promo — Special limited-edition promotional tier standalone burger options starting right at R29.90",
-    "days": "Monday–Sunday",
-    "howToClaim": "Ask for the R30 Nazo value tier at the counter, drive-thru, or unlock the exclusive pricing tier directly inside the McDonald's SA App",
-    "badge": "Limited Time Only",
-    "link": "https://www.mcdonalds.co.za",
-    "active": true
-  },
-  {
     "name": "KFC",
-    "deal": "Streetwise 2 — 2 pieces of Original Recipe chicken and a small portion of chips for under R40",
+    "deal": "Streetwise 2 with Chips — 2 pieces of Original Recipe chicken with a portion of chips for R40",
     "days": "Monday–Sunday",
-    "howToClaim": "Order a Streetwise 2 over the counter, at the drive-thru, or via the KFC South Africa app",
+    "howToClaim": "Order the Streetwise 2 with Chips over the counter, at the drive-thru, or via the KFC South Africa app. Order direct from the KFC app rather than Uber Eats to avoid the delivery markup.",
     "badge": "Everyday Value",
-    "link": "https://kfc.co.za",
+    "link": "https://order.kfc.co.za/menu/streetwise/streetwisetwo-chips",
     "active": true
   },
   {
-    "name": "The Fish & Chip Co.",
-    "deal": "Small Hake & Mini Chips combo — hot battered hake fillet served with a 200g portion of straight-cut chips for R47.90",
+    "name": "McDonald's",
+    "deal": "Nazo Small Meal — value meal starting from R30",
     "days": "Monday–Sunday",
-    "howToClaim": "Order in-store at any local branch for takeaway or collection",
-    "badge": "Everyday Value",
-    "link": "https://www.thefishandchipco.co.za",
-    "active": true
-  },
-  {
-    "name": "The Fish & Chip Co.",
-    "deal": "Small Russian & Mini Chips combo — classic smoked Russian sausage with a 200g portion of chips for R42.90",
-    "days": "Monday–Sunday",
-    "howToClaim": "Ask for the Small Russian and Mini Chips meal option at the counter",
-    "badge": "Everyday Value",
-    "link": "https://www.thefishandchipco.co.za",
-    "active": true
-  },
-  {
-    "name": "Nando's",
-    "deal": "Casa Deals value tier — budget-friendly signature meals like a 1/4 chicken and side starting from R65",
-    "days": "Monday–Sunday",
-    "howToClaim": "Order from the Casa Deals section of the menu in-store, drive-thru, or via the Nando's app",
-    "badge": "Everyday Value",
-    "link": "https://www.nandos.co.za",
-    "active": true
-  },
-  {
-    "name": "Steers",
-    "deal": "Wacky Wednesday — get two classic Steers beef or chicken burgers for a heavily discounted promotional price",
-    "days": "Wednesday",
-    "howToClaim": "Order the Wacky Wednesday promotional bundle at any Steers branch, drive-thru, or via the Steers delivery app",
-    "badge": "Weekly Special",
-    "link": "https://www.steers.co.za",
+    "howToClaim": "Order at the counter or via the McDonald's app. No direct link available — order in store or on the McDonald's SA app.",
+    "badge": "Budget Meal",
+    "link": null,
     "active": true
   },
   {
     "name": "Debonairs Pizza",
-    "deal": "Real Deal Pizzas — everyday pocket-friendly value tier featuring small (19cm) select pizzas from R39.90 to R44.90",
+    "deal": "Pizza Wrap — freshly made pizza wraps from R25",
     "days": "Monday–Sunday",
-    "howToClaim": "Order any pizza from the Real Deal menu category online, on the app, or at any Debonairs counter",
-    "badge": "Everyday Value",
-    "link": "https://www.debonairs.co.za",
+    "howToClaim": "Order online, on the app, or at any Debonairs counter",
+    "badge": "From R25",
+    "link": "https://debonairspizza.co.za/pizza-specials/pizzawrap/",
     "active": true
   },
   {
-    "name": "Wimpy",
-    "deal": "Quick Bites Mzansi Breakfast — classic breakfast featuring 1 egg, 2 rashers of bacon, and toast at a budget-friendly everyday price",
+    "name": "Debonairs Pizza",
+    "deal": "Real Deal Bundle — Real Deal pizza with Cheesegrillers for R59",
     "days": "Monday–Sunday",
-    "howToClaim": "Order from the Quick Bites section of the menu at any Wimpy branch during breakfast hours",
-    "badge": "Everyday Value",
-    "link": "https://wimpy.co.za",
+    "howToClaim": "Order the Real Deal Bundle online, on the Debonairs app, or at the counter",
+    "badge": "Bundle Deal",
+    "link": "https://debonairspizza.co.za/pizza-specials/real-deal-bundle/",
     "active": true
   },
   {
-    "name": "FreshStop",
-    "deal": "Food & Coffee Combo — pair a standard Seattle Coffee Co. blend with selected hot food items for a discounted combo price",
+    "name": "Pedros",
+    "deal": "Strips and Rice — chicken strips with rice for R30. Listed under Single Meals on the menu.",
     "days": "Monday–Sunday",
-    "howToClaim": "Visit any Caltex/Astron Energy FreshStop forecourt. Select a qualifying hot food item and pair it with a Seattle coffee at the till",
+    "howToClaim": "Visit any Pedros branch and order from the Single Meals section of the menu",
     "badge": "Everyday Value",
-    "link": "https://www.freshstop.co.za",
+    "link": "https://pedroschicken.co.za/menu/",
+    "active": true
+  },
+  {
+    "name": "Chicken Licken",
+    "deal": "Easy Bucks Menu — everything on the Easy Bucks menu for R30",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order from the Easy Bucks menu at any Chicken Licken branch",
+    "badge": "Budget Menu",
+    "link": "https://chickenlicken.co.za/products?cId=9#EASY",
+    "active": true
+  },
+  {
+    "name": "Romans Pizza",
+    "deal": "Sava Flava and Drink — R38. Price may vary slightly by branch.",
+    "days": "Monday–Sunday",
+    "howToClaim": "Go to the Romans Pizza website, select your nearest branch, and confirm the Sava Flava pricing at that location",
+    "badge": "Everyday Value",
+    "link": "https://romanspizza.co.za/",
+    "active": true
+  },
+  {
+    "name": "Fishaways",
+    "deal": "Hake, Rice and Chips — a full portion of hake with rice and chips for R49",
+    "days": "Monday–Sunday",
+    "howToClaim": "Order in-store at any Fishaways branch or check the promo page for current offers",
+    "badge": "Everyday Value",
+    "link": "https://fishaways.co.za/promo/",
     "active": true
   }
 ]
