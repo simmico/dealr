@@ -1709,6 +1709,22 @@ body.page-home .banking-cta-card .btn {
   color: var(--color-gold);
 }
 
+.resto-card__phone {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.82rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.resto-card__phone strong {
+  font-weight: 500;
+  color: rgba(150, 205, 176, 0.6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.7rem;
+}
+
 /* ═══════════════════════════════════════════════════════════════════════════
    SUBSCRIPTION SUB-PAGES (streaming, data, apps)
    ═══════════════════════════════════════════════════════════════════════════ */

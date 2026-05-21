@@ -1,117 +1,109 @@
 Now the following data needs to be replaced:
 
-Also should we rename fastfood to budget friendly? as I am giving deals like R30 and stuff or should we also have a card filder like the deals page and have budget meals as a category and combo deals with like slightly more expensive prices etc? so like ocean basket promos which are slightly more etc. or will that go under casual dining or will casual dining have specials like half price whatever??
-If so, go ahead with what you feel is best.
-
-I am going to give you data now, update the json files with the right data to go where.
-
-REMOVE WHATEVER IS THERE AND REPLACE WITH THIS
-
-contact phone number will only be for date nights so couples can book.
+REMOVE WHATEVER IS THERE AND REPLACE WITH THIS for deals page:
 
 
-KFC: streetwise 2 with chips R40
-link:https://order.kfc.co.za/menu/streetwise/streetwisetwo-chips
+Resturarants:
+ Mugg and Bean (On the move ONLY not normal mugg and bean)
+Buy a breakfast, sadnwhich (fresh sandwihch or toasted) or muffin and Add on any easy (medium) hot drink for R25
+TIP use mugg and bean app to earn cashback rewards
+Link:
+https://www.muggandbean.co.za/our-menu/on-the-move-menu/
 
-Mention order from kfc app to save as uber will charge more.
+For the subscriptin section mention:
+Mugg and bean coffee subscription
+Options: 5 coffees 99 works out to R20 a cup
+10 coffees 199 works out to R20 a cup
+15 coffees 269 works out to R18 a cup
+All is easy (medium) sized
+Have 30 days to redeem them
+can only redeem once a day on the following drinks:
+CAPPUCCINO
+AMERICANO
+CAFFÉ MOCHA
+CAFFÉ LATTE
+FILTER COFFEE
+Link https://www.muggandbean.co.za/coffee-subscription/ to read more.
+To redeem or buy download mugg and bean app
 
+banking:
+Kauai ebucks reward
+breakdown of the Kauai vouchers that customers can earn based on their benefit rewards level:
+Reward level 1 – Choose any short Iced or Hot drink from the menu
+Reward level 2 – Choose any small (350ml) smoothie (Smoothies / Protein Smoothies / Superfood Smoothies)
+Reward level 3 – Choose any large (500ml) smoothie (Smoothies / Protein Smoothies / Superfood Smoothies)
+Reward level 4 – Redeem R100 voucher on any item on the menu
+Reward level 5 – Redeem R120 voucher on any item on the menu
+Aspire – Any small (350ml) smoothie (Smoothies / Protein Smoothies / Superfood Smoothies)
+https://kauai.co.za/promo/kauai-fnb-ebucks-rewards-campaign/
 
-Mcdonalds Nazo small meal:
-R30
-Link:No link available for nazo. Order in store or mcdonalds app.
+Health:
+Vitality Kauai
+Get a smoothie when you achieve your weekly goal SIDE NOTE TIP USING THIS WILL FORFIET YOUR WEEKLY GAME BOARD PLAY TO EARN MILES
+https://kauai.co.za/promo/kauai-x-discovery-vitality-active-rewards-programme/
 
+Kauai vitality add a meal promo
+If you redeem your weekly goal as an instant reward you cn add a meal FROM R60
+Add a selected Breakfast item from R60
+Add a Sourdough Toastie from R70
+Add a selected Meal item from R93
+Link: https://kauai.co.za/promo/kauai-x-discovery-meal-deal-promotion/
 
-Debonairs pizza Pizza wrap:
-FROM 25
-Link:https://debonairspizza.co.za/pizza-specials/pizzawrap/
+Clicks cashback:
+get cachback on card on 20th of every month
+1 point for every R5 spent at clicks OR the body shop (2% cashback)
+Spend 600 or more and earn 4% cashback
+get up to 14% cashback 10% on pay day savings offers. 2% on all prodicts and extra 2% on 600 or more means 14% cashback. Excudes nappies and toilet paper
+PRO TIP STACK WITH ADDING CLICKS TO DISCVOERY VITALITY AND GET back 25% 
+Points valid for 12 months. MUST SWIPE CLUB CARD TO GET OR REDEEM POINTS
 
-Debonairs pizza Real deal:
-59
-Real deal + cheesegrillers
-https://debonairspizza.co.za/pizza-specials/real-deal-bundle/
+Clicks 2 for 2 special
+buy two get one free
+BONUS BUY VITALITY PRODUCTS TO STACK AND EARN (you can filter by vitality on the website)
+https://clicks.co.za/products/c/OH1?q=%3Arelevance%3ApromoStickerplp%3A3&text=
 
-
-Pedros:
-Strips and rice R30
-https://pedroschicken.co.za/menu/ (mention its under single meals on the menu)
-
-
-Chicken licken:
-easy bucks menu
-Everything R30
-Link: https://chickenlicken.co.za/products?cId=9#EASY
-
-
-Roco Mamas:
-Southern fried chicken burger
-FROM 69
-Link: https://rocomamas.com/za/menu#promos
-
-Romans Pizza Sava Flava and Drink:
-R38
-Go to menu and click nearest one to see price on link
-link:https://romanspizza.co.za/
-
-Fishaways hake rice and chips:
-R49
-https://fishaways.co.za/promo/
-
-Papachinos:
-Cake and cuppachino R70 (All day every day)
-https://www.papachinos.co.za/cake-cappuccino
-
-Papachinos:
-Mafia Monday
-Half price pizza and pasta every Monday from 10am not on public holidays
-https://www.papachinos.co.za/mafia-monday
-
-Papachinos:
-teddy Tuesday kids eat free when they bring the family:
-https://www.papachinos.co.za/teddy-tuesdays
-
-Tasting room Owners breakfast : (CASUAL DINING NOT FAST FOOD)
-R35 2 bacon rashers 2 eggs 2 slices of toast grilled tomato
-All day weekdays. 10am to 1pm weekends and public holidays
-last page in link shows the special
-https://api.thetastingroom.co.za/site_images/20260504195450.pdf
-
-
-Tasting room:
-Multiple Monday-Friday limitless mimosa (149pp)
-Monday and tueusday date night (Add this on date night page) Spagetti and meatballs for two with a glass of wine each (215 per couple) -All day
-Wednesday burger special buy one get one R135 All day
-Contact:087 821 7708 
-all promotions mentioned page 4
-https://api.thetastingroom.co.za/site_images/20260504195450.pdf
+Banking:
+The 99c Offer
+FNB Easy Bundle customers can pay just 99c
+for a loaf Of brown or White bread from
+Pick n Pay bakeries up to 4 times in a month.
 
 
-Ocean basket:
-kids eat free Monday.
-One free kids meal per adult meal
-https://za.oceanbasket.com/promo/kids-eat-free/
+fnb ebucks starbucks voucher
+Enjoy a Starbucks Voucher on us every week with your virtual card
+Qualifying customers will receive a complimentary voucher for 850 off on any purchase of 875 or more, for redemption at any
+participating Starbucks when you make at least 5 payments using your FNB Virtual Card (es well as FNB Pay or digital wallets) linked to
+your virtual card every week and meet the criteria specified below:
+• FNB Premier, Private Clients, Private Wealth and RMB Private Bank clients must be on reward level 2 or above.
+• FNB Aspire customers must qualify for eBucks and heve a minimum balance of RI 50 000 in a qualifying FNB Savings and
+Investment •ccount or have qualifying credit product_
+Customers with an active FNBy or FNBy Next account who ere over the age of 18.
+https://www.ebucks.com/web/eBucks/partners/starbucks.jsp
 
-Ocean basket epic catch:
-From 1May - 30 June
-Sit down OR takeaway
-From 125-145
-https://za.oceanbasket.com/promo/epic-catch/
+Krispy Kreme:
+Multiple (same link for all):
+#MakeMyMonday: delicious coffee and hot chocolate for ONLY R22 (240ml), R27 (350ml) or R32 (480ml) to brighten up a Monday.
+#ChillerTuesday: TWO 350ml Chillers for 50% off on a Tuesday.
+CAN ONLY BE REDEEMED ON THE APP
 
-Texan wing bar Montecasino:
-All you can eat wings bottomless wings
-199pp
-https://www.montecasino.co.za/offers/bottomless-wings/
+Just for downloafing app:
+Just for signing up to our loyalty app, you will receive an Original Glazed® Doughnut on us!
 
-HUssar grill ddate night:
-2 course 499 per couple
-3 course 599 per couple
-Includes bottle of wine or two soft drinks
-contact:011 568 4517 (ask to transfer your call as there are many branches)
-https://hussargrill.co.za/menu/date-night
+You can find this reward under the ‘Offers’ tab on the app.
 
-Kream date night:
-850 per couple
-complementary bottle of champainge
-MONDAY AND TUESDAY EVENING ONLY
-Contact:
-010 7861584
-https://montecasino.kreamrestaurant.co.za/wp-content/uploads/2025/10/Kream-Date-Night-Menu-October-2025.pdf
+Add this for krsipy kremem on the birday tab:
+Birthday
+Bonus
+Buy any dozen and get a dozen Original Glazed® Doughnuts on us!
+
+Ensure you download the app at least 48 hours before your birthday to qualify.
+
+Link:https://krispykremesa.com/rewards/
+
+
+remove groceries  from menu
+
+
+
+ON restaurants-datenight.html page, the text in the box that says BOOK next to the phone number is a bad colour choice also he weight of the text is a bit too big. FIX PLEASE
+
