@@ -1,7 +1,24 @@
-On the homepage, remove the groceries tab from the filters
+Go to the following pages:
+vitality-core-guide.html
+healthyfood-benefit-guide.html
+vitality-gym-benefit.html
+ster-kinekor-movie-benefit.html
+active-rewards-apple-watch.html
+healthyfood-studio-classes.html
 
-Get the data for the cards in the home page and deals page.
-Anything with a lot of text or long, summarise it and make it simple and esier for the user. Update the card titles to whats relevant etc. Remove em dashes. the fnb starbucks thing is not 850 rand off. Here is the data for starbucks: Qualifying customers will receive a complimentary voucher for R50 off on any purchase of R75 or more, for redemption at any participating Starbucks when you make at least 5 payments using your FNB Virtual Card (as well as FNB Pay or digital wallets) linked to your virtual card every week and meet the criteria specified.
+THEN cross refernce these pages with discovery's website. ONLY their website and no other sources ONLY HE OFFICAL WEBSITE to make sure the data/information is right.
+Fix whatever is wrong.
 
-All pages:
-MAKE ALL THE NUMBERS USED IN THE ENTIRE WEBSITE THE SAME FONT AS THE NUMBERS FROM THE CALCULATOR PAGE
+Make a textfile called discchanges.txt with all the before/after
+
+Do the same for banking:
+banking-ebucks.html Check FNB ebcuks website and compare ONLY THAT SITE
+
+banking-greenbacks.html check Nedbank greenbakcs website and compare ONLY THAT SITE
+
+banking-capitec.html capitec website and compare ONLY THAT SITE
+
+
+banking-ucount.html CHECK standard bank website and compare ONLY THAT SITE
+
+One txt file for the banking changes called bankupdates.txt

@@ -10,7 +10,16 @@
       "Bash(pip install *)",
       "Bash(awk '{print $5, $9}')",
       "Bash(sort -k2)",
-      "Bash(git checkout *)"
+      "Bash(git checkout *)",
+      "WebFetch(domain:www.discovery.co.za)",
+      "WebFetch(domain:www.nedbank.co.za)",
+      "WebFetch(domain:www.capitecbank.co.za)",
+      "WebFetch(domain:ucount.standardbank.co.za)",
+      "WebFetch(domain:www.ebucks.com)",
+      "WebFetch(domain:www.standardbank.co.za)",
+      "WebFetch(domain:www.fnb.co.za)",
+      "WebFetch(domain:personal.nedbank.co.za)",
+      "WebFetch(domain:www.healthyfoodstudio.co.za)"
     ]
   }
 }
