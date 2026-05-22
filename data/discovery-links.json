@@ -1,13 +1,11 @@
 {
-  "vitality_dashboard": "https://www.discovery.co.za/portal/logged-in/vitality",
+  "vitality_dashboard": "https://www.discovery.co.za/vitality/vitality-points-tracker",
   "claim_points": "https://www.discovery.co.za/portal/logged-in/vitality/claim-points",
-  "healthyfood_activate": "https://www.discovery.co.za/portal/logged-in/vitality/healthyfood/activate",
+  "healthyfood_activate": "https://www.discovery.co.za/portal/individual/change-primary-partner",
   "manage_partners": "https://www.discovery.co.za/portal/logged-in/vitality/healthyfood/manage-partners",
-  "gym_activate": "https://www.discovery.co.za/portal/logged-in/vitality/gym/activate",
-  "gym_history": "https://www.discovery.co.za/portal/logged-in/vitality/gym/history",
-  "movies_activate": "https://www.discovery.co.za/portal/logged-in/vitality/movies/activate",
-  "kids_health_review": "https://www.discovery.co.za/portal/logged-in/vitality/health-review/kids",
-  "active_rewards_dashboard": "https://www.discovery.co.za/portal/logged-in/vitality/active-rewards/dashboard",
-  "apple_watch_benefit": "https://www.discovery.co.za/portal/logged-in/vitality/rewards/apple-watch",
+  "gym_activate": "https://www.discovery.co.za/vitality/gym-and-fitness",
+  "movies_activate": "https://www.discovery.co.za/vitality/ster-kinekor",
+  "active_rewards_dashboard": "https://www.discovery.co.za/vitality/active-rewards",
+  "apple_watch_benefit": "https://www.discovery.co.za/vitality/apple-watch",
   "healthyfood_studio": "https://www.healthyfoodstudio.co.za"
 }

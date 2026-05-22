@@ -1,24 +1,19 @@
 Go to the following pages:
-vitality-core-guide.html
-healthyfood-benefit-guide.html
-vitality-gym-benefit.html
-ster-kinekor-movie-benefit.html
-active-rewards-apple-watch.html
-healthyfood-studio-classes.html
 
-THEN cross refernce these pages with discovery's website. ONLY their website and no other sources ONLY HE OFFICAL WEBSITE to make sure the data/information is right.
-Fix whatever is wrong.
+Make sure there's no em dashes and all language is in UK English
 
-Make a textfile called discchanges.txt with all the before/after
+Go to the bankdata folder and then the capi folder. Read the files and then 
+Update the banking pages for banking-capitec.html
+With releveant information from there so that customers can see how to maximise their beenfits or get the most of out the beenfits.
 
-Do the same for banking:
-banking-ebucks.html Check FNB ebcuks website and compare ONLY THAT SITE
+Do the same for banking-ebucks.html
+The data for that is in folder bankdata, folder ebucks.
 
-banking-greenbacks.html check Nedbank greenbakcs website and compare ONLY THAT SITE
+Do the same for banking-ucount.html
+The data for that is in folder bankdata, folder ucount
 
-banking-capitec.html capitec website and compare ONLY THAT SITE
+Do the same for all the discovery pages with the relevant files in discovery folder (under bankdata folder)
+Summarise and make sure its relevant and has ways for the members to absolutely maximise their benefits and make the most out of their membership.
 
+I have updated the links for disvoery in the json file (data folder) please make sure its updated in the relevant files pulling from there.
 
-banking-ucount.html CHECK standard bank website and compare ONLY THAT SITE
-
-One txt file for the banking changes called bankupdates.txt

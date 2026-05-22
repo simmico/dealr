@@ -19,7 +19,16 @@
       "WebFetch(domain:www.standardbank.co.za)",
       "WebFetch(domain:www.fnb.co.za)",
       "WebFetch(domain:personal.nedbank.co.za)",
-      "WebFetch(domain:www.healthyfoodstudio.co.za)"
+      "WebFetch(domain:www.healthyfoodstudio.co.za)",
+      "Bash(node *)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/ucount/ucount.pdf\" -)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf.pdf\" -)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf \\(1\\).pdf\" -)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf \\(2\\).pdf\" -)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf \\(3\\).pdf\" -)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf \\(4\\).pdf\" -)",
+      "Bash(pdftotext 'C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf \\(__TRACKED_VAR__\\).pdf' -)",
+      "Bash(pdftotext \"C:/Users/test/Documents/Rio/dealr/bankdata/discovery/document_pdf \\(8\\).pdf\" -)"
     ]
   }
 }
