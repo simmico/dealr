@@ -1,19 +1,39 @@
-Go to the following pages:
+On the card-privellages.html page
 
-Make sure there's no em dashes and all language is in UK English
+Add something to say scroll for more after the box explaining "these come from visa not your bank"
 
-Go to the bankdata folder and then the capi folder. Read the files and then 
-Update the banking pages for banking-capitec.html
-With releveant information from there so that customers can see how to maximise their beenfits or get the most of out the beenfits.
+For the box with visa signature and infinite guest policy, te visa signature allows one free guest.
 
-Do the same for banking-ebucks.html
-The data for that is in folder bankdata, folder ebucks.
+For the deals page, go into the "bankdata" folder and read the discounts section in the partner rewards html file. Add some of those to the deals page under the appropriate categories like spotify under subscriptions and uber one or banking or whatever is appropriate
 
-Do the same for banking-ucount.html
-The data for that is in folder bankdata, folder ucount
+I want to be able to make a new page for FUEL as the price of fuel in SA is getting a bit much, I want south africans to know how to make the most of their rewards.
 
-Do the same for all the discovery pages with the relevant files in discovery folder (under bankdata folder)
-Summarise and make sure its relevant and has ways for the members to absolutely maximise their benefits and make the most out of their membership.
+Lets add this menu to the mobile menu too, I want it visible after the eats menu and before the bank menu. It should be an icon of a fuel pump or oil or something but make it relevant. So the bottom menu nav will have home, deals, eats, fuel, banking, more.
 
-I have updated the links for disvoery in the json file (data folder) please make sure its updated in the relevant files pulling from there.
+I have a folder called fuel with the information of the different programmes offered by the main energy companies in SA. I want you to use that and summarise a way to help customers earn more and explain how they can maximise their benefits and get the most out of their loyalty programs. Order the pages as BP first and Sasol and Total Energy LAST as they are the worst of the bunch with the most crap loyalty I've seen.
+
+Furthermore, on the fuel hub page I want a calculator like how I have one for discovery miles.
+THis calculator must be similar in design however it must change based on the place the customer is filling up fuel.
+Example, if the customer is filling up at BP he must select BP and then get the options for what he has (pnp, discovery, bp rewards)
+then the calculator must ask how much they are filling (litres). IF POSSIBLE I want a script or something which fetches the fuel price from online and this is displayed above the calculator as (Current fuel price pulled from www.com at Date) or diesel.
+
+Once the user selects the fuel type they then select which cards they have (discovery, bp, pnp) then they enter how many litres they are filling for BP if they select they have a discovery card, they select which status they have)
+The calculator then shows them their rewards:
+
+(If discovery is selected) you will earn Rxx,xx or xxxx miles
+You will earn x many smart shopper points
+You will earn x many BP whatever
+
+Each calculator needs to take the rewards level into account for the banks/vitality status etc.
+
+So whichevre fuel station ucount rewards is the user for example the user will select their tier etc then it shows how their points stack etc and for like pnp can redeem R20 or more in points towards paying for their fuel (https://www.pnp.co.za/smart-shopper/smart-shopper-partners)
+
+The calc then displays their results.
+
+You can also cross reference the bankdata folder for any fuel partners from the bank to help you.
+
+INCLUDED IN THE RESULTS
+I want them to know how they can utilise their points and if possible Links to the loyalty program where they can spend or what they can spend it on at the very least.
+
+In the calculator account for the usual no negative numbers etc...
 
