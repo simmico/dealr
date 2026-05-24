@@ -110,10 +110,10 @@
         <div style="background:rgba(193,141,82,0.1);border:1px solid rgba(193,141,82,0.3);border-radius:12px;padding:16px 20px;margin-bottom:24px;max-width:720px;margin-left:auto;margin-right:auto">
           <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-gold);margin-bottom:8px">Inland fuel prices · Source: <a href="https://www.aa.co.za/motoring/fuel-price/" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">AA South Africa</a></p>
           <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
-            <span id="fp-p95-label" style="font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--color-text-light)">Petrol 95: R22.87/l</span>
-            <span id="fp-p93-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Petrol 93: R22.62/l</span>
-            <span id="fp-d50-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 50ppm: R22.15/l</span>
-            <span id="fp-d500-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 500ppm: R21.95/l</span>
+            <span id="fp-p95-label" style="font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--color-text-light)">Petrol 95: R26.63/l</span>
+            <span id="fp-p93-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Petrol 93: R26.52/l</span>
+            <span id="fp-d50-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 50ppm: R31.17/l</span>
+            <span id="fp-d500-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 500ppm: R31.88/l</span>
           </div>
           <p id="fp-note" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">Prices auto-updated monthly from AA South Africa. Coastal prices differ slightly. Select your fuel type below to adjust reward calculations.</p>
         </div>
@@ -123,10 +123,10 @@
           <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:10px">Your fuel type</p>
           <div style="display:flex;gap:8px">
             <button class="miles-toggle active" id="fuel-petrol" onclick="setFuelType('petrol')" aria-pressed="true" style="flex:1">
-              <div class="miles-toggle__info"><span class="miles-toggle__label">Petrol 95</span><span id="fp-p95-btn" class="miles-toggle__pct">R22.87/l</span></div>
+              <div class="miles-toggle__info"><span class="miles-toggle__label">Petrol 95</span><span id="fp-p95-btn" class="miles-toggle__pct">R26.63/l</span></div>
             </button>
             <button class="miles-toggle" id="fuel-diesel" onclick="setFuelType('diesel')" aria-pressed="false" style="flex:1">
-              <div class="miles-toggle__info"><span class="miles-toggle__label">Diesel 50ppm</span><span id="fp-d50-btn" class="miles-toggle__pct">R22.15/l</span></div>
+              <div class="miles-toggle__info"><span class="miles-toggle__label">Diesel 50ppm</span><span id="fp-d50-btn" class="miles-toggle__pct">R31.17/l</span></div>
             </button>
           </div>
         </div>
@@ -421,7 +421,7 @@
     // ── Live fuel prices ─────────────────────────────────────────────────────
     (async () => {
       try {
-        const res = await fetch('/api/fuel-prices');
+        const res = await fetch('/data/fuel-prices.json');
         if (!res.ok) return;
         const p = await res.json();
         if (!p.petrol95 || !p.diesel50) return;
@@ -452,8 +452,8 @@
 
   <script>
     // ── Calculator state ────────────────────────────────────────────────────
-    let PETROL_PRICE   = 22.87;
-    let DIESEL_PRICE   = 22.15;
+    let PETROL_PRICE   = 26.63;
+    let DIESEL_PRICE   = 31.17;
     let VITALITY_PRICE = PETROL_PRICE;
 
     function applyLiveFuelPrices(p) {
