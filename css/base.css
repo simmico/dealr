@@ -5,8 +5,8 @@
   /* Colour palette */
   --color-dark:       #0A0F1E;
   --color-mid:        #141C33;
-  --color-light:      #00E87A;
-  --color-mint:       #00C060;
+  --color-light:      #C9922A;
+  --color-mint:       #DFB04E;
   --color-gold:       #C9922A;
   --color-gold-light: #DFB04E;
   --color-beige:      #E8DFB8;
@@ -15,7 +15,7 @@
   --color-text-dark:  #0A0F1E;
   --color-text-mid:   #141C33;
   --color-text-light: #F0EEE6;
-  --color-text-muted: #6B7FA8;
+  --color-text-muted: #8A7A5A;
 
   /* Spacing */
   --space-xs:  8px;

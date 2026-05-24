@@ -210,7 +210,7 @@
 }
 
 .btn--mint:hover {
-  background: #a8d9be;
+  background: var(--color-beige);
 }
 
 .btn--sm {

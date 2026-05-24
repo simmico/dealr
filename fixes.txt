@@ -1,2 +1,7 @@
+Here's the prompt:
 
--
+Update the CSS custom properties in css/base.css to use these new values:
+--color-light: #C9922A
+--color-mint: #DFB04E
+--color-text-muted: #8A7A5A
+Remove all uses of any green accent colour from the codebase. Anywhere --color-light was previously used for text, borders, labels, links, active states, or highlights, it now outputs gold since --color-light is now #C9922A. No green should appear anywhere on the site.
