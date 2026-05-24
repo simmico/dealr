@@ -252,6 +252,19 @@
   line-height: 1.6;
 }
 
+.footer__spottr {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-sm);
+  line-height: 1.6;
+}
+
+.spottr-link {
+  color: var(--color-gold);
+  text-decoration: underline;
+}
+
 .footer__links-label {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
