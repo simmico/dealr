@@ -107,15 +107,28 @@
       <div class="container">
 
         <!-- Fuel price reference -->
-        <div style="background:rgba(193,141,82,0.1);border:1px solid rgba(193,141,82,0.3);border-radius:12px;padding:16px 20px;margin-bottom:32px;max-width:720px;margin-left:auto;margin-right:auto">
-          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-gold);margin-bottom:8px">Approximate inland fuel prices — May 2026</p>
+        <div style="background:rgba(193,141,82,0.1);border:1px solid rgba(193,141,82,0.3);border-radius:12px;padding:16px 20px;margin-bottom:24px;max-width:720px;margin-left:auto;margin-right:auto">
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-gold);margin-bottom:8px">Inland fuel prices — May 2026 · Source: <a href="https://www.energy.gov.za/petroleum/fuel-prices" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">DMRE official announcement</a></p>
           <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
             <span style="font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--color-text-light)">Petrol 95: R22.87/l</span>
             <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Petrol 93: R22.62/l</span>
             <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 50ppm: R22.15/l</span>
             <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 500ppm: R21.95/l</span>
           </div>
-          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">Approximate inland prices. Exact prices differ by region and change monthly — this is a rough guide only. <a href="https://www.energy.gov.za/petroleum/fuel-prices" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">Check DMRE for official current prices →</a></p>
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">Prices updated manually each month from the official DMRE announcement. Coastal prices differ slightly. Select your fuel type below to adjust reward calculations.</p>
+        </div>
+
+        <!-- Fuel type selector -->
+        <div style="max-width:720px;margin:0 auto 28px">
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:10px">Your fuel type</p>
+          <div style="display:flex;gap:8px">
+            <button class="miles-toggle active" id="fuel-petrol" onclick="setFuelType('petrol')" aria-pressed="true" style="flex:1">
+              <div class="miles-toggle__info"><span class="miles-toggle__label">Petrol 95</span><span class="miles-toggle__pct">R22.87/l</span></div>
+            </button>
+            <button class="miles-toggle" id="fuel-diesel" onclick="setFuelType('diesel')" aria-pressed="false" style="flex:1">
+              <div class="miles-toggle__info"><span class="miles-toggle__label">Diesel 50ppm</span><span class="miles-toggle__pct">R22.15/l</span></div>
+            </button>
+          </div>
         </div>
 
         <!-- Tabs -->
@@ -154,10 +167,6 @@
               <button class="miles-toggle" id="bp-tog-vitality" onclick="toggleBP('vitality')" aria-pressed="false">
                 <div class="miles-toggle__dot" id="bp-dot-vitality"></div>
                 <div class="miles-toggle__info"><span class="miles-toggle__label">Discovery Insure Vitality Drive</span><span class="miles-toggle__pct">Up to 50% of monthly fuel spend back</span></div>
-              </button>
-              <button class="miles-toggle" id="bp-tog-vmiles" onclick="toggleBP('vmiles')" aria-pressed="false">
-                <div class="miles-toggle__dot" id="bp-dot-vmiles"></div>
-                <div class="miles-toggle__info"><span class="miles-toggle__label">Discovery Bank Vitality Money</span><span class="miles-toggle__pct">Up to 20% back in Discovery Miles on fuel spend</span></div>
               </button>
             </div>
 
@@ -387,7 +396,6 @@
     <a href="deals.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg><span>Deals</span></a>
     <a href="restaurants.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg><span>Eat</span></a>
     <a href="fuel.html" class="mobile-nav__tab mobile-nav__tab--active"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 22V6a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v16"/><path d="M3 10h12"/><path d="M17 5l3 2.5V20"/><path d="M20 7h1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-1"/><line x1="1" y1="22" x2="23" y2="22"/></svg><span>Fuel</span></a>
-    <a href="banking.html" class="mobile-nav__tab"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg><span>Banking</span></a>
     <button class="mobile-nav__tab" id="more-btn" aria-label="More pages" aria-expanded="false" aria-controls="more-drawer"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg><span>More</span></button>
   </nav>
 
@@ -395,6 +403,7 @@
   <div class="more-drawer" id="more-drawer" aria-hidden="true" role="dialog" aria-label="More pages">
     <div class="more-drawer__handle" aria-hidden="true"></div>
     <nav class="more-drawer__nav" aria-label="Additional pages">
+      <a href="banking.html" class="more-drawer__row"><span>Banking</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="22" x2="21" y2="22"/><line x1="6" y1="18" x2="6" y2="11"/><line x1="10" y1="18" x2="10" y2="11"/><line x1="14" y1="18" x2="14" y2="11"/><line x1="18" y1="18" x2="18" y2="11"/><polygon points="12 2 20 7 4 7"/></svg></a>
       <a href="discovery.html" class="more-drawer__row"><span>Discovery</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
       <a href="subscriptions.html" class="more-drawer__row"><span>Subscriptions</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
       <a href="birthdays.html" class="more-drawer__row"><span>Birthdays</span><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg></a>
@@ -410,7 +419,19 @@
 
   <script>
     // ── Calculator state ────────────────────────────────────────────────────
-    const VITALITY_PRICE = 22.87; // used for Vitality Drive spend calculation
+    const PETROL_PRICE  = 22.87;
+    const DIESEL_PRICE  = 22.15;
+    let   VITALITY_PRICE = PETROL_PRICE;
+
+    function setFuelType(type) {
+      VITALITY_PRICE = type === 'diesel' ? DIESEL_PRICE : PETROL_PRICE;
+      setToggle('fuel-petrol', type === 'petrol');
+      setToggle('fuel-diesel', type === 'diesel');
+      if (activeTab === 'bp')          calcBP();
+      else if (activeTab === 'shell')  calcShell();
+      else if (activeTab === 'engen')  calcEngen();
+      else if (activeTab === 'astron') calcAstron();
+    }
 
     const EBUCKS_RATES  = [0, 0.50, 1.00, 2.00, 4.00, 8.00];
     const UCOUNT_CREDIT = [0, 0.30, 0.45, 0.90, 1.50, 5.00];
@@ -418,7 +439,7 @@
     const UCOUNT_DOUBLE = [0, 0.60, 0.90, 1.80, 3.00, 10.00];
 
     // BP state
-    const bp = { base:false, pnp:false, nedbank:false, vitality:false, vmiles:false, vitalityPct:0 };
+    const bp = { base:false, pnp:false, nedbank:false, vitality:false, vitalityPct:0 };
     // Shell state
     const sh = { vplus:false, vitality:false, vitalityPct:0 };
     // Engen state
@@ -475,9 +496,9 @@
 
     function resetAll() {
       // BP
-      bp.base = bp.pnp = bp.nedbank = bp.vitality = bp.vmiles = false;
+      bp.base = bp.pnp = bp.nedbank = bp.vitality = false;
       bp.vitalityPct = 0;
-      ['base','pnp','nedbank','vitality','vmiles'].forEach(k => setToggle('bp-tog-'+k, false));
+      ['base','pnp','nedbank','vitality'].forEach(k => setToggle('bp-tog-'+k, false));
       document.getElementById('bp-vitality-row').style.display = 'none';
       ['blue','bronze','silver','gold','diamond'].forEach(k => setToggle('bp-vd-'+k, false));
       const bpL = document.getElementById('bp-litres'); if(bpL) bpL.value = '';
@@ -526,7 +547,7 @@
     function toggleBP(key) {
       bp[key] = !bp[key];
       setToggle('bp-tog-'+key, bp[key]);
-      document.getElementById('bp-vitality-row').style.display = (bp.vitality || bp.vmiles) ? 'flex' : 'none';
+      document.getElementById('bp-vitality-row').style.display = bp.vitality ? 'flex' : 'none';
       document.getElementById('bp-vitality-row').style.flexWrap = 'wrap';
       calcBP();
     }
@@ -565,12 +586,7 @@
         total += val;
         rows.push(resultRow('Discovery Vitality Drive', fmtR(val) + ' (' + bp.vitalityPct + '% of spend)', fmtR(val)+' cashback ('+bp.vitalityPct+'% of fuel spend). Based on your Vitality Drive status — drive well to earn more.', 'https://www.discovery.co.za/insure/vitality-drive'));
       }
-      if (bp.vmiles) {
-        const miles = Math.round(spend * 0.20 * 10);
-        const val = miles / 10;
-        total += val;
-        rows.push(resultRow('Discovery Miles (Vitality Money)', miles.toLocaleString('en-ZA') + ' Miles ≈ ' + fmtR(val), miles.toLocaleString('en-ZA')+' Discovery Miles (≈ '+fmtR(val)+'). Best redeemed on D-Day (15th) at Takealot, Superbalist, and more.', 'https://www.discovery.co.za/bank/vitality-money'));
-      }
+
       if (rows.length === 0) { document.getElementById('bp-results').style.display='none'; document.getElementById('bp-prompt').style.display='block'; return; }
       showResults('bp', rows, total, litres);
     }

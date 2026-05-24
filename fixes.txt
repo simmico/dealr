@@ -1,74 +1,7 @@
-On the card-privellages.html page
+FOr the fuel calculator page the following needs to be done:
 
-Add something to say scroll for more after the box explaining "these come from visa not your bank"
+We need a new way or website or API to pull fuel data from because the current one hasn't been updated in like a few years. THe prices have been stuck and not updated and even the SSL for the site expired 500 days ago
 
-For the box with visa signature and infinite guest policy, te visa signature allows one free guest.
+Also for the fuel calculator, have the user select fuel type (petrol or diesel)
 
-For the deals page, go into the "bankdata" folder and read the discounts section in the partner rewards html file. Add some of those to the deals page under the appropriate categories like spotify under subscriptions and uber one or banking or whatever is appropriate
-
-I want to be able to make a new page for FUEL as the price of fuel in SA is getting a bit much, I want south africans to know how to make the most of their rewards.
-
-Lets add this menu to the mobile menu too, I want it visible after the eats menu and before the bank menu. It should be an icon of a fuel pump or oil or something but make it relevant. So the bottom menu nav will have home, deals, eats, fuel, banking, more.
-
-I have a folder called fuel with the information of the different programmes offered by the main energy companies in SA. I want you to use that and summarise a way to help customers earn more and explain how they can maximise their benefits and get the most out of their loyalty programs. Order the pages as BP first and Sasol and Total Energy LAST as they are the worst of the bunch with the most crap loyalty I've seen.
-
-Furthermore, on the fuel hub page I want a calculator like how I have one for discovery miles.
-THis calculator must be similar in design however it must change based on the place the customer is filling up fuel.
-Example, if the customer is filling up at BP he must select BP and then get the options for what he has (pnp, discovery, bp rewards)
-then the calculator must ask how much they are filling (litres). IF POSSIBLE I want a script or something which fetches the fuel price from online and this is displayed above the calculator as (Current fuel price pulled from www.com at Date) or diesel.
-
-Once the user selects the fuel type they then select which cards they have (discovery, bp, pnp) then they enter how many litres they are filling for BP if they select they have a discovery card, they select which status they have)
-The calculator then shows them their rewards:
-
-(If discovery is selected) you will earn Rxx,xx or xxxx miles
-You will earn x many smart shopper points
-You will earn x many BP whatever
-
-Each calculator needs to take the rewards level into account for the banks/vitality status etc.
-
-So whichevre fuel station ucount rewards is the user for example the user will select their tier etc then it shows how their points stack etc and for like pnp can redeem R20 or more in points towards paying for their fuel (https://www.pnp.co.za/smart-shopper/smart-shopper-partners)
-
-The calc then displays their results.
-
-You can also cross reference the bankdata folder for any fuel partners from the bank to help you.
-
-INCLUDED IN THE RESULTS
-I want them to know how they can utilise their points and if possible Links to the loyalty program where they can spend or what they can spend it on at the very least.
-
-In the calculator account for the usual no negative numbers etc...
-
-
-
-Okay the above was the prompt I used to generate the pages.
-Here is what I want now.
-
-Please put each fuel reward into its own page and the fuel page is a hub page. THe calculator should be the first link on the hub page (see discovery page for example)
-
-capitec does not offer a fuel reward or benefit for their clients and shell is only partnered with discovery for fuel not capitec.
-
-The link to the fuel price is broken (idk if its because the site is linking an API or what but its showing a fuel price but the reference link is broken.
-
-THe drop down for fuel type is ugly and not nice or suiting the aestethic of the website. There also shouldn't be an input for  price per liter as we should be getting it automatically. I see the prices for diesel is wrong too. it is definitely over 22 rand so where you pulling data from is wrong or broken nor does it show the date it last fetched the data (unless its auto then state so) lets also add a disclaimer on the page that the exact prices differ but this is just to give a rough guide or something.
-A user should only select where they are filling from and enter the number of litres.
-
-Maybe the design is too cluttered and should be tab based? maybe a tab for each fuel company (four next to each other) idk you are the expert I am not familiar with design and UI/UX.
-
-Also for discovery it shouldn't be a drop down. It must ask their vitality drive status (blue bronze silver gold or diamond then the percentage they get back must be shown by us in the result as in blue 5%,  bronze 10% silver 20% gold 25% and diamond 50%)
-
-Side note. If I select bp first then Engen after, the vitality drive calculator part is still there. 
-
-fix all the drop downs etc
-
-Also for standard bank ucount rewards you only state credit card, yet I gave you the files for credit/debit card data. not all south africans have credit cards etc so please add their data too.
-
-Also Astron energy sign up URL is:
-https://admin.payment24.co/AstronRewards/home/Login
-
-Lets also give sasol and total their own page and instead of framing things as advise for the don't use their loyalty program we can say something like personally if you want to build around rewards etc etc as this is not financial advice and I don't want to get sued for it.
-
-Also for the calculator section where it says the rewards breakdown we can say for reward systems like bp where they get cashback per litre "this will add Rxx,xx to your bp rewards balance" or something like that.
-
-FOr the FNB ebucks link with Engen, add this:
-https://www.ebucks.com/web/eBucks/partners/engen.jsp
-
-
+On the menu bar for mobile, lets move banking to the "more" page where discovery is, everything else can stay
