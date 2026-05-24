@@ -1,0 +1,11 @@
+.git/
+.wrangler/
+node_modules/
+*.log
+config.js
+fixes.txt
+worker.js
+wrangler.jsonc
+package*.json
+README.md
+banks_blueprint.pdf

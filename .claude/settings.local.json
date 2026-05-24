@@ -32,7 +32,11 @@
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\\\\bankdata\" -Recurse -Name | Where-Object { $_ -match \"\\\\.html$\" -and $_ -notmatch \"_files\" })",
       "PowerShell(Get-ChildItem \"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\\\\bankdata\" -Recurse | Select-Object FullName | Where-Object { $_.FullName -match \"\\\\.html$\" })",
       "Bash(Select-Object -First 5)",
-      "Bash(python3 *)"
+      "Bash(python3 *)",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__accounts_list",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__set_active_account",
+      "mcp__claude_ai_Cloudflare_Developer_Platform__kv_namespace_create",
+      "PowerShell(npx wrangler whoami 2>&1)"
     ]
   }
 }

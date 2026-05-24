@@ -1,7 +1,0 @@
-FOr the fuel calculator page the following needs to be done:
-
-We need a new way or website or API to pull fuel data from because the current one hasn't been updated in like a few years. THe prices have been stuck and not updated and even the SSL for the site expired 500 days ago
-
-Also for the fuel calculator, have the user select fuel type (petrol or diesel)
-
-On the menu bar for mobile, lets move banking to the "more" page where discovery is, everything else can stay

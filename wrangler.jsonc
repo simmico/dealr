@@ -1,6 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "dealr",
+  "main": "worker.js",
   "compatibility_date": "2026-05-17",
   "observability": {
     "enabled": true
@@ -11,5 +12,14 @@
   },
   "compatibility_flags": [
     "nodejs_compat"
-  ]
+  ],
+  "kv_namespaces": [
+    {
+      "binding": "FUEL_PRICES",
+      "id": "abaa4d5a84bd4328815acea8de488aea"
+    }
+  ],
+  "triggers": {
+    "crons": ["0 22 1 * *"]
+  }
 }

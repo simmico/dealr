@@ -108,14 +108,14 @@
 
         <!-- Fuel price reference -->
         <div style="background:rgba(193,141,82,0.1);border:1px solid rgba(193,141,82,0.3);border-radius:12px;padding:16px 20px;margin-bottom:24px;max-width:720px;margin-left:auto;margin-right:auto">
-          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-gold);margin-bottom:8px">Inland fuel prices — May 2026 · Source: <a href="https://www.energy.gov.za/petroleum/fuel-prices" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">DMRE official announcement</a></p>
+          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-gold);margin-bottom:8px">Inland fuel prices · Source: <a href="https://www.aa.co.za/motoring/fuel-price/" target="_blank" rel="noopener noreferrer" style="color:var(--color-gold)">AA South Africa</a></p>
           <div style="display:flex;flex-wrap:wrap;gap:16px;align-items:center">
-            <span style="font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--color-text-light)">Petrol 95: R22.87/l</span>
-            <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Petrol 93: R22.62/l</span>
-            <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 50ppm: R22.15/l</span>
-            <span style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 500ppm: R21.95/l</span>
+            <span id="fp-p95-label" style="font-family:'DM Serif Display',serif;font-size:1.25rem;color:var(--color-text-light)">Petrol 95: R22.87/l</span>
+            <span id="fp-p93-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Petrol 93: R22.62/l</span>
+            <span id="fp-d50-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 50ppm: R22.15/l</span>
+            <span id="fp-d500-label" style="font-family:'DM Sans',sans-serif;font-size:0.85rem;color:var(--color-text-muted)">Diesel 500ppm: R21.95/l</span>
           </div>
-          <p style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">Prices updated manually each month from the official DMRE announcement. Coastal prices differ slightly. Select your fuel type below to adjust reward calculations.</p>
+          <p id="fp-note" style="font-family:'DM Sans',sans-serif;font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">Prices auto-updated monthly from AA South Africa. Coastal prices differ slightly. Select your fuel type below to adjust reward calculations.</p>
         </div>
 
         <!-- Fuel type selector -->
@@ -123,10 +123,10 @@
           <p style="font-family:'DM Sans',sans-serif;font-size:0.8rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--color-text-muted);margin-bottom:10px">Your fuel type</p>
           <div style="display:flex;gap:8px">
             <button class="miles-toggle active" id="fuel-petrol" onclick="setFuelType('petrol')" aria-pressed="true" style="flex:1">
-              <div class="miles-toggle__info"><span class="miles-toggle__label">Petrol 95</span><span class="miles-toggle__pct">R22.87/l</span></div>
+              <div class="miles-toggle__info"><span class="miles-toggle__label">Petrol 95</span><span id="fp-p95-btn" class="miles-toggle__pct">R22.87/l</span></div>
             </button>
             <button class="miles-toggle" id="fuel-diesel" onclick="setFuelType('diesel')" aria-pressed="false" style="flex:1">
-              <div class="miles-toggle__info"><span class="miles-toggle__label">Diesel 50ppm</span><span class="miles-toggle__pct">R22.15/l</span></div>
+              <div class="miles-toggle__info"><span class="miles-toggle__label">Diesel 50ppm</span><span id="fp-d50-btn" class="miles-toggle__pct">R22.15/l</span></div>
             </button>
           </div>
         </div>
@@ -418,10 +418,51 @@
   <script>(function(){var btn=document.getElementById('more-btn'),drawer=document.getElementById('more-drawer'),overlay=document.getElementById('more-overlay'),closeBtn=document.getElementById('more-close');if(!btn)return;function open(){drawer.classList.add('is-open');overlay.classList.add('is-open');drawer.setAttribute('aria-hidden','false');btn.setAttribute('aria-expanded','true');}function close(){drawer.classList.remove('is-open');overlay.classList.remove('is-open');drawer.setAttribute('aria-hidden','true');btn.setAttribute('aria-expanded','false');}btn.addEventListener('click',open);overlay.addEventListener('click',close);closeBtn.addEventListener('click',close);})();</script>
 
   <script>
+    // ── Live fuel prices ─────────────────────────────────────────────────────
+    (async () => {
+      try {
+        const res = await fetch('/api/fuel-prices');
+        if (!res.ok) return;
+        const p = await res.json();
+        if (!p.petrol95 || !p.diesel50) return;
+
+        const fmt = v => 'R' + v.toFixed(2) + '/l';
+        const s = id => document.getElementById(id);
+
+        if (s('fp-p95-label'))  s('fp-p95-label').textContent  = 'Petrol 95: '     + fmt(p.petrol95);
+        if (s('fp-p93-label'))  s('fp-p93-label').textContent  = 'Petrol 93: '     + fmt(p.petrol93);
+        if (s('fp-d50-label'))  s('fp-d50-label').textContent  = 'Diesel 50ppm: '  + fmt(p.diesel50);
+        if (s('fp-d500-label')) s('fp-d500-label').textContent = 'Diesel 500ppm: ' + fmt(p.diesel500);
+        if (s('fp-p95-btn'))    s('fp-p95-btn').textContent    = fmt(p.petrol95);
+        if (s('fp-d50-btn'))    s('fp-d50-btn').textContent    = fmt(p.diesel50);
+
+        if (p.updated) {
+          const date  = new Date(p.updated);
+          const label = date.toLocaleString('en-ZA', { month: 'long', year: 'numeric' });
+          const note  = s('fp-note');
+          if (note) note.textContent = 'Prices auto-updated monthly from AA South Africa (' + label + '). Coastal prices differ slightly. Select your fuel type below to adjust reward calculations.';
+        }
+
+        // applyLiveFuelPrices is defined in the calc script below; by the time this
+        // async callback fires, both script blocks have already run synchronously.
+        if (typeof applyLiveFuelPrices === 'function') applyLiveFuelPrices(p);
+      } catch (_) {}
+    })();
+  </script>
+
+  <script>
     // ── Calculator state ────────────────────────────────────────────────────
-    const PETROL_PRICE  = 22.87;
-    const DIESEL_PRICE  = 22.15;
-    let   VITALITY_PRICE = PETROL_PRICE;
+    let PETROL_PRICE   = 22.87;
+    let DIESEL_PRICE   = 22.15;
+    let VITALITY_PRICE = PETROL_PRICE;
+
+    function applyLiveFuelPrices(p) {
+      PETROL_PRICE  = p.petrol95;
+      DIESEL_PRICE  = p.diesel50;
+      VITALITY_PRICE = PETROL_PRICE;
+      const isD = document.getElementById('fuel-diesel')?.getAttribute('aria-pressed') === 'true';
+      setFuelType(isD ? 'diesel' : 'petrol');
+    }
 
     function setFuelType(type) {
       VITALITY_PRICE = type === 'diesel' ? DIESEL_PRICE : PETROL_PRICE;
