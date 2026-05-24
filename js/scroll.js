@@ -1,11 +1,5 @@
 import { addAnimationClasses } from './utils.js';
 
-// ── Service worker ───────────────────────────────────────────────────────────
-if ('serviceWorker' in navigator) {
-  const register = () => navigator.serviceWorker.register('/sw.js');
-  document.readyState === 'complete' ? register() : window.addEventListener('load', register);
-}
-
 // ── Nav scroll ───────────────────────────────────────────────────────────────
 const nav = document.getElementById('main-nav');
 const scrollIndicator = document.getElementById('scroll-indicator');
