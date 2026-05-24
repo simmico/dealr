@@ -197,7 +197,7 @@ body.page-home .featured-deals__see-all {
   font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
-  color: var(--color-light);
+  color: var(--color-gold);
   transition: color 200ms ease;
 }
 
@@ -778,7 +778,7 @@ body.page-banking .quiz-option {
   gap: 10px;
   padding: 20px 16px;
   background: var(--color-white);
-  border: 1px solid var(--color-light);
+  border: 1px solid var(--color-gold);
   border-radius: var(--radius-md, 12px);
   cursor: pointer;
   font-family: 'DM Sans', sans-serif;
@@ -850,7 +850,7 @@ body.page-banking .quiz-disclaimer {
   font-size: 0.8rem;
   color: var(--color-text-muted);
   background: rgba(90, 143, 118, 0.08);
-  border-left: 3px solid var(--color-light);
+  border-left: 3px solid var(--color-gold);
   border-radius: 0 var(--radius-md, 12px) var(--radius-md, 12px) 0;
   padding: 14px 16px;
   margin: 20px 0 28px;
@@ -1768,7 +1768,7 @@ body.page-home .banking-cta-card .btn {
   border-top: 1px solid rgba(90, 143, 118, 0.1);
   font-family: 'DM Sans', sans-serif;
   font-size: 0.8rem;
-  color: var(--color-light);
+  color: var(--color-gold);
   font-style: italic;
   line-height: 1.5;
 }

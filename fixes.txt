@@ -1,23 +1,2 @@
-Here's the prompt:
 
----
-
-Update the CSS custom properties in css/base.css to use these new values:
-
---color-dark: #0A0F1E
---color-mid: #141C33
---color-light: #00E87A
---color-mint: #00C060
---color-gold: #C9922A
---color-gold-light: #DFB04E
---color-beige: #F4F1E8
---color-beige-dark: #E8E4D4
---color-text-dark: #0A0F1E
---color-text-mid: #141C33
---color-text-light: #F0EEE6
---color-text-muted: #6B7FA8
-
-The electric green (#00E87A) is now the primary accent replacing the old green/teal light colour. Use it for CTAs, active nav states, category badges, focus indicators, and any highlight elements that previously used --color-light. The gold stays for fuel, banking, and financial content specifically. Anywhere a badge, tag, or pill uses the green accent as a background, the text colour should be --color-dark so it stays readable. The hero glow effect if present should use a radial gradient with the green at very low opacity, around 10 to 12 percent.
-
----
-
+-
