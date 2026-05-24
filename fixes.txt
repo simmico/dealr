@@ -1,0 +1,20 @@
+Here's the prompt:
+
+---
+
+Update the colours to use these new values:
+
+--color-dark: #071F1A
+--color-mid: #0F3530
+--color-light: #3D8C68
+--color-mint: #6DB897
+--color-gold: #C9922A
+--color-gold-light: #DFB04E
+--color-beige: #F2EAC4
+--color-beige-dark: #E6DC9E
+--color-text-dark: #071F1A
+--color-text-mid: #1A3A1A
+--color-text-light: #F2EAC4
+--color-text-muted: #5A8A6A
+
+---

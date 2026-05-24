@@ -3,19 +3,19 @@
 /* ─── Custom Properties ─────────────────────────────────────────────────────── */
 :root {
   /* Colour palette */
-  --color-dark:       #0D2323;
-  --color-mid:        #274E4A;
-  --color-light:      #62A082;
-  --color-mint:       #A3D5BC;
-  --color-gold:       #C18D52;
-  --color-gold-light: #D4A96A;
-  --color-beige:      #F2EEC4;
-  --color-beige-dark: #E8E0A8;
+  --color-dark:       #071F1A;
+  --color-mid:        #0F3530;
+  --color-light:      #3D8C68;
+  --color-mint:       #6DB897;
+  --color-gold:       #C9922A;
+  --color-gold-light: #DFB04E;
+  --color-beige:      #F2EAC4;
+  --color-beige-dark: #E6DC9E;
   --color-white:      #FFFFFF;
-  --color-text-dark:  #0D1F0D;
-  --color-text-mid:   #2A3D2A;
-  --color-text-light: #F0EDE2;
-  --color-text-muted: #7A9A7A;
+  --color-text-dark:  #071F1A;
+  --color-text-mid:   #1A3A1A;
+  --color-text-light: #F2EAC4;
+  --color-text-muted: #5A8A6A;
 
   /* Spacing */
   --space-xs:  8px;
