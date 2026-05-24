@@ -36,7 +36,17 @@
       "mcp__claude_ai_Cloudflare_Developer_Platform__accounts_list",
       "mcp__claude_ai_Cloudflare_Developer_Platform__set_active_account",
       "mcp__claude_ai_Cloudflare_Developer_Platform__kv_namespace_create",
-      "PowerShell(npx wrangler whoami 2>&1)"
+      "PowerShell(npx wrangler whoami 2>&1)",
+      "WebFetch(domain:www.aa.co.za)",
+      "WebFetch(domain:aa.co.za)",
+      "WebFetch(domain:www.sapia.org.za)",
+      "WebFetch(domain:www.energy.gov.za)",
+      "WebFetch(domain:www.globalpetrolprices.com)",
+      "WebSearch",
+      "WebFetch(domain:businesstech.co.za)",
+      "Bash(Select-String -Path \"C:\\\\Users\\\\test\\\\Documents\\\\Rio\\\\dealr\\\\fuel-bp.html\" -Pattern \"22\\\\.|price|litre|R[0-9]\")",
+      "Bash(Select-Object LineNumber,Line)",
+      "Bash(Format-Table -AutoSize -Wrap)"
     ]
   }
 }
