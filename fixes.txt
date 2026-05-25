@@ -9,7 +9,7 @@ Update the CSS custom properties in css/base.css to revert to these original val
 --color-light: #5A8F76
 --color-mint: #96CDB0
 --color-gold: #C18D52
---color-gold-light: #D4A96A
+--color-gold-light: #D4A96A 
 --color-beige: #EEE8B2
 --color-beige-dark: #E0D89A
 --color-text-dark: #0D1F0D
