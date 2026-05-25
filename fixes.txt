@@ -1,1 +1,22 @@
-lets make the text in the index page in the box white (most south africans with visa...)
+Here's the prompt:
+
+---
+
+Update the CSS custom properties in css/base.css to revert to these original values:
+
+--color-dark: #081B1B
+--color-mid: #203B37
+--color-light: #5A8F76
+--color-mint: #96CDB0
+--color-gold: #C18D52
+--color-gold-light: #D4A96A
+--color-beige: #EEE8B2
+--color-beige-dark: #E0D89A
+--color-text-dark: #0D1F0D
+--color-text-mid: #2A3D2A
+--color-text-light: #EEE8B2
+--color-text-muted: #7A9A7A
+
+---
+
+Back to the original forest green and gold. Clean slate.
